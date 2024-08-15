@@ -29,7 +29,8 @@ body {
 
 .grid-wrapper {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    width: 100%;
     /*column-gap: 20px;*/
 }
 
@@ -53,7 +54,7 @@ body {
 .poster img {
     width: 100%;
     height: 100%;
-    /*  object-fit: cover; Maintain aspect ratio of the image */
+    /* object-fit: cover; Maintain aspect ratio of the image */
 }
 
 .poster::after {
@@ -102,4 +103,26 @@ body {
     transition-property: color;
     transition-timing-function: ease;
     transition-duration: 0.5s;
+}
+
+.pagination {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-link {
+    color: #ffffff;
+    text-decoration: none;
+
+    padding: 5px;
+
+    border: solid white 1px;
+}
+
+.step-link:hover {
+    color: #ffff00;
+    border-color: #ffff00;
 }

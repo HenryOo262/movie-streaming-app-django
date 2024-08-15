@@ -19,10 +19,6 @@ a {
     color: #ffffff;
 }
 
-a:hover {
-    color: #ffff00;
-}
-
 .blackoverlay {
     background-color: rgba(0, 0, 0, 0.5);
 

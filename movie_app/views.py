@@ -10,7 +10,8 @@ from firebase_admin import storage, initialize_app, credentials
 from . import forms
 from .models import MovieResource, Movie
 from movieStreamingApp.forms import CommentForm
-from movieStreamingApp.models import Comment, Bookmark
+from movieStreamingApp.models import Comment
+from bookmark_app.models import Bookmark
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent

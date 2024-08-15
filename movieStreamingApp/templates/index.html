@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> MovWave - Watch Free Movies </title>
+        <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.png' %}">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        <link rel="stylesheet" href="{% static 'css/index.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <body>
+        <div class="blackoverlay"> </div>
+        <div class="index"> 
+            <img class="index-logo" src="{% static 'images/movwave-logo.png' %}" alt="movwave-logo">
+            <h1> Watch Movies Online For Free! </h1>
+            <form class="search-bar" action="" method="POST">
+                <input class="search-bar-input" type="text" placeholder="Search movies...">
+                <button class="search-bar-button" type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                </button>
+            </form>
+            <p> Top Searches </p>
+            <a class="homepage" href="{% url 'home' %}">
+                Go to Homepage <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+            </a>
+            <div class="about-movwave">
+                <p> Welcome to MovWave, the ultimate destination for movie lovers! Get ready to unlock a world of cinematic wonders with our extensive database and a host of exciting features. With an unparalleled collection of films spanning genres, eras, and languages, MovWave ensures there's something for every taste and mood. </p>
+                <p> At MovWave, we understand the diverse preferences of our viewers, and that's why we have meticulously curated a library that caters to all cinematic cravings. Whether you're a fan of action-packed blockbusters, heartwarming romances, mind-bending sci-fi, gripping thrillers, or critically acclaimed indie films, our vast collection guarantees endless entertainment. </p>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt non odit vel dolor quas repellat veniam magni reprehenderit nobis! Nisi necessitatibus iste rerum porro perferendis! Ducimus facilis placeat suscipit earum cum itaque commodi, quasi explicabo id, similique ab tempora sunt. Nisi maiores molestiae, quidem vero laborum recusandae libero itaque aliquam. </p>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem distinctio atque quod perspiciatis deleniti exercitationem reprehenderit tempore nobis inventore expedita. </p>
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt repellat a doloribus ullam illo impedit delectus tempore corporis voluptas aperiam nisi, obcaecati libero, necessitatibus cum aspernatur. Omnis sapiente unde quae! Cum cupiditate provident optio nulla voluptatibus nam dolor labore repellat veritatis asperiores recusandae amet nobis doloremque harum, deleniti, dignissimos et sunt velit alias suscipit eaque fuga nesciunt. Ex ullam omnis non perferendis quaerat sapiente maiores accusantium! </p>
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt repellat a doloribus ullam illo impedit delectus tempore corporis voluptas aperiam nisi, obcaecati libero, necessitatibus cum aspernatur. Omnis sapiente unde quae! Cum cupiditate provident optio nulla voluptatibus nam dolor labore repellat veritatis asperiores recusandae amet nobis doloremque harum, deleniti, dignissimos et sunt velit alias suscipit eaque fuga nesciunt. Ex ullam omnis non perferendis quaerat sapiente maiores accusantium! </p>
+                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat repudiandae, accusamus labore earum veniam rerum sit eaque ratione eius. Quis! </p>
+            </div>
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>

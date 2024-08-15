@@ -1,0 +1,42 @@
+{% extends 'base_page.html' %}
+
+{% load static %}
+
+{% block title %} <title> MovWave | HomePage </title> {% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block content %} 
+    <div class="content-wrapper">
+        <div>
+            <h1> Latest Movies </h1>
+        </div>
+        <div class="grid-wrapper">
+            {% for movie in movies %}
+                <a class="cell" href="{% url 'movie_app.movie' id=movie.id %}">
+                    <div class="poster">
+                        <img src="{{movie.poster}}">
+                    </div>
+                    <p> {{movie.title}} </p>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="content-wrapper">
+        <div>
+            <h1> Recommended </h1>
+        </div>
+        <div class="grid-wrapper">
+            {% for movie in movies %}
+                <a class="cell" href="{% url 'movie_app.movie' id=movie.id %}">
+                    <div class="poster">
+                        <img src="{{movie.poster}}">
+                    </div>
+                    <p> {{movie.title}} </p>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %} 

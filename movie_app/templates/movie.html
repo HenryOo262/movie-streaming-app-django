@@ -1,0 +1,85 @@
+{% extends 'base_page.html' %}
+
+{% load static %}
+
+{% block title %} <title> MovWave | {{movie.title}} </title> {% endblock %}
+{% block head %} 
+    <link rel="stylesheet" href="{% static 'css/movie.css' %}">
+{% endblock %}
+
+{% block content %} 
+    <div class="blackoverlay"></div>
+    <div class="video-wrapper">
+        <video class="video-player" id="video-player" controls muted="muted">                
+            <source src="{% url 'movie_app.movie_stream' source=movie_resource.source %}" type="video/mp4" />
+        </video>
+    </div>
+    <div class="button-wrapper">
+        <div>
+            <a class="download-button" href="{% url 'movie_app.movie_download' source=movie_resource.source %}"> Download </a>
+            <a class="upload-button" href="{% url 'movie_app.movie_upload' id=movie.id %}"> Upload </a>
+        </div>
+        <div>
+        {% for item in resolutions %}
+            {% if item.resolution == movie_resource.resolution%}
+                <a class="current-resolution-button" href="{% url 'movie_app.movie' id=movie_resource.movie.id resolution=item.resolution %}"> {{item.resolution}} </a>
+            {% else %}
+                <a class="available-resolution-button" href="{% url 'movie_app.movie' id=movie_resource.movie.id resolution=item.resolution %}"> {{item.resolution}} </a>
+            {% endif %}
+        {% endfor %}
+        </div>
+    </div>
+    <div class="metadata-wrapper">
+        <div class="poster-wrapper">
+            <img src="{{movie.poster}}">
+        </div>
+        <div class="description-wrapper">
+            <div class="header-wrapper">
+                <h1> {{movie.title}} ({{movie.releaseDate.year}}) </h1>
+                {% if user.is_authenticated %}
+                    {% if bookmarked %}
+                        <form method="POST" action="{% url 'movie_app.movie_bookmark' id=movie_resource.movie.id %}">
+                            {% csrf_token %}
+                            <button class="bookmark_button" type="submit"> 
+                                <svg class="bookmarked" xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#ffffff"><path d="M200-120v-640q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v640L480-240 200-120Zm80-122 200-86 200 86v-518H280v518Zm0-518h400-400Z"/></svg> 
+                            </button>
+                        </form>
+                    {% else %}
+                        <form method="POST" action="{% url 'movie_app.movie_bookmark' id=movie_resource.movie.id %}">
+                            {% csrf_token %}
+                            <button class="bookmark_button" type="submit"> 
+                                <svg class="not-bookmarked" xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#ffffff"><path d="M200-120v-640q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v640L480-240 200-120Zm80-122 200-86 200 86v-518H280v518Zm0-518h400-400Z"/></svg> 
+                            </button>
+                        </form>
+                    {% endif %}
+                {% endif %}
+            </div>
+            <p> {{movie.description}} </p>
+            <div class="grid-wrapper">
+                <div> <p> Release Date : </p> </div>
+                <div> <p> {{movie.releaseDate}} </p> </div>
+                <div> <p> Genres : </p> </div>
+                <div> <p> {% for genre in genres %} {{genre.name}} {% endfor %} </p> </div>
+                <div> <p> Countries : </p> </div>
+                <div> <p> {% for country in countries %} {{country.name}} {% endfor %} </p> </div>
+            </div>
+        </div>
+    </div>
+    <div class="comment-wrapper">
+        <div> <h2> Comments : </h2> </div>
+        {% if user.is_authenticated %}
+        <form class="form" method="POST" action="{% url 'movie_app.movie' id=movie_resource.movie.id %}">
+            {% csrf_token %}
+            <div> {{comment_form.commentText}} </div>
+            <button class="button" type="submit"> Add Comment </button>
+        </form>
+        {% else %}
+            <div> <a href="{% url 'auth_app.auth_login' %}"> <h2> Login to comment </h2> </a> </div>
+        {% endif %}
+        <div class="comment">
+            {% for comment in comments %}
+                <div> user-{{comment.user.username}} : {{comment.commentText}} [ {{comment.addedDateTime}} ]</div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %} 

@@ -1,0 +1,48 @@
+{% extends 'base_auth_form.html' %}
+
+{% load static %}
+
+{% block title %} <title> MovWave | Login </title> {% endblock %}
+
+{% block content %} 
+    <div class="blackoverlay"></div>
+    <form class="form" method="POST" action="{% url 'auth_app.auth_profile' %}">
+        {% csrf_token %}
+        <div class="header">
+            <h2> {{request.user.username}}'s Profile </h2>
+        </div>
+        <div class="header">
+            <p> Date Joined : {{user.date_joined}} </p>
+        </div>
+        <div class="grid-wrapper">
+            <div> {{form.username.label}} </div>
+            <div> {{form.username}} </div>
+        </div>
+        <div class="grid-wrapper">
+            <div> {{form.email.label}} </div>
+            <div> {{form.email}} </div>
+        </div>
+        <div class="grid-wrapper">
+            <div> {{form.first_name.label}} </div>
+            <div> {{form.first_name}} </div>
+        </div>
+        <div class="grid-wrapper">
+            <div> {{form.last_name.label}} </div>
+            <div> {{form.last_name}} </div>
+        </div>
+        <div class="header">
+            <a href="{% url 'auth_app.auth_passwordChange' %}"> Change Password  </a>
+        </div>
+        <button class="button" type="submit"> Update </button>
+        <div class="logout-wrapper">
+            <a class="logout" href="{% url 'auth_app.auth_logout' %}"> 
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z"/></svg>
+                Logout
+            </a> 
+        </div>
+        {% for message in messages %}
+            {{message}}
+        {% endfor %}
+        {{form.errors}}
+    </form>
+{% endblock %} 

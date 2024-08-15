@@ -1,0 +1,148 @@
+{% extends 'base_page.html' %}
+
+{% load static %}
+
+{% block title %} <title> MovWave | Upload </title> {% endblock %}
+{% block head %} 
+    <link rel="stylesheet" href="{% static 'css/movie_form.css' %}">
+{% endblock %}
+
+{% block content %} 
+    <form id="form" class="form" method="POST" enctype="multipart/form-data" action="{% url 'movie_app.movie_upload' %}">
+        {% csrf_token %}
+        <div class="grid-wrapper">
+            <div class="cell"> {{form.movie.label}} : </div> 
+            <div class="cell"> {{movie.title}} ({{movie.releaseDate.year}}) </div>
+            <div class="cell"> {{form.resolution.label}} : </div> 
+            <div class="cell"> {{form.resolution}} </div>
+            <div class="cell"> {{form.source.label}} : </div> 
+            <div class="cell"> {{form.source}} </div>
+        </div>   
+        <div class="button-wrapper">
+            <button id="button" type="submit"> Create Movie </button>
+        </div>
+        {{form.sourceFileName}}
+        {{form.movie}}
+    </form>
+    {% if messages %}
+        {% for message in messages %}
+            {{message}}
+        {% endfor %}
+    {% endif %}
+    {{form.errors}}
+    <div class="loading" id="loading">
+        <img src="{% static 'images/loading.gif' %}">
+        <h1> Delivering the file . . . . </h1>  
+    </div>
+{% endblock %} 
+
+{% block script %}
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js"
+    import { getStorage, ref, getDownloadURL, uploadBytesResumable } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-storage.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCqHB9LNDcFGQ12pW18kYN_bxmjbFpFH-I",
+      authDomain: "video-stream-app-6b509.firebaseapp.com",
+      projectId: "video-stream-app-6b509",
+      storageBucket: "video-stream-app-6b509.appspot.com",
+      messagingSenderId: "562471763473",
+      appId: "1:562471763473:web:5da474acaf796743163bb0",
+      measurementId: "G-CZQJ7EWYQE"
+    }
+
+    const app = initializeApp(firebaseConfig)
+    const storage = getStorage(app)
+
+    const button = document.querySelector('#button')
+    const loading = document.querySelector('#loading')
+    const form = document.querySelector('#form')
+    
+    const source = document.querySelector('#id_source')
+    const resolution = document.querySelector('#id_resolution')
+    const movie = document.querySelector('#id_movie')
+    const sourceFileName = document.querySelector('#id_sourceFileName')
+
+    document.addEventListener('DOMContentLoaded', () => {
+        loading.classList.add('hidden')
+    })
+
+    const showLoading = () => {
+        loading.classList.remove('hidden')
+        form.classList.add('hidden')
+        button.classList.add('hidden')
+    }
+
+    const hideLoading = () => {
+        loading.classList.add('hidden')
+        form.classList.remove('hidden')
+        button.classList.remove('hidden')
+    }
+
+    button.addEventListener('click', async (event) => {
+        event.preventDefault()
+
+        const file = source.files[0]
+        const filename = file.name
+        sourceFileName.value = filename
+        
+        if(file.type !== 'video/mp4') {
+            alert(`Invalid file format ${file.type} !`)
+            return
+        }
+
+        showLoading()
+        
+        // Append form values to FormData
+        const formData = new FormData(form)
+        formData.append('sourceFileName', sourceFileName.value)
+        formData.append('resolution', resolution.value)
+        formData.append('movie', movie.value)
+
+        // Submit the form
+        // Save video metadata in database
+        const response = await fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'X-CSRFToken': document.querySelector('[name=csrfmiddlewaretoken]').value
+            }
+        })
+
+        // Saving video metadata successful
+        // Upload video to firebase
+        if(response.status == '200') {
+            console.log(response.status)
+            alert('Resource file metadata saved in database successfully.')
+            const storageRef = ref(storage, `movies/${filename}`);
+            const uploadTask = uploadBytesResumable(storageRef, file);
+
+            uploadTask.on('state_changed', 
+                (snapshot) => {
+                    // Handle progress
+                    const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                    console.log('Upload is ' + progress + '% done');
+                }, 
+                (error) => {
+                    // Handle error
+                    console.error('Upload failed:', error);
+                    alert('File upload failed.')
+                    hideLoading()
+                }, 
+                () => {
+                    // Handle successful uploads
+                    console.log(uploadTask.snapshot.ref.name)
+                    hideLoading()
+                    alert('Upload uploaded successfully')
+                }
+            );
+        } else {    
+            // Saving video metadata fails
+            console.log(response.status)
+            alert('Error saving resource file metadata in the database.')
+            hideLoading()
+            return
+        }     
+    })
+  </script>
+{% endblock %}

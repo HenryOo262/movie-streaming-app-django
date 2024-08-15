@@ -1,0 +1,37 @@
+{% extends 'base_page.html' %}
+
+{% load static %}
+
+{% block title %} <title> MovWave | Create </title> {% endblock %}
+{% block head %} 
+    <link rel="stylesheet" href="{% static 'css/movie_form.css' %}">
+{% endblock %}
+
+{% block content %} 
+    <form id="form" class="form" method="POST" enctype="multipart/form-data" action="{% url 'movie_app.movie_create' %}">
+        {% csrf_token %}
+        <div class="grid-wrapper">
+            <div class="cell"> {{form.title.label}} : </div> 
+            <div class="cell"> {{form.title}} </div>
+            <div class="cell"> {{form.releaseDate.label}} : </div> 
+            <div class="cell"> {{form.releaseDate}} </div>
+            <div class="cell"> {{form.poster.label}} : </div> 
+            <div class="cell"> {{form.poster}} </div>
+            <div class="cell"> {{form.description.label}} : </div> 
+            <div class="cell"> {{form.description}} </div>
+            <div class="cell"> {{form.genre.label}} : </div> 
+            <div class="cell"> {{form.genre}} </div>
+            <div class="cell"> {{form.country.label}} : </div> 
+            <div class="cell"> {{form.country}} </div>
+        </div>
+        <div class="button-wrapper">
+            <button id="button" type="submit"> Create Movie </button>
+        </div>
+    </form>
+    {% if messages %}
+        {% for message in messages %}
+            {{message}}
+        {% endfor %}
+    {% endif %}
+    {{form.errors}}
+{% endblock %} 

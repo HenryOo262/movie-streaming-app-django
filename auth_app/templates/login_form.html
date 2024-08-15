@@ -1,0 +1,29 @@
+{% extends 'base_auth_form.html' %}
+
+{% load static %}
+
+{% block title %} <title> MovWave | Login </title> {% endblock %}
+
+{% block content %} 
+    <div class="blackoverlay"></div>
+    <form class="form" method="POST" action="{% url 'auth_app.auth_login' %}">
+        {% csrf_token %}
+        <div class="header">
+            <h2> Account Login </h2>
+        </div>
+        <div class="grid-wrapper">
+            <div> {{form.username.label}} </div>
+            <div> {{form.username}} </div>
+        </div>
+        <div class="grid-wrapper">
+            <div> {{form.password.label}} </div>
+            <div> {{form.password}} </div>
+        </div>
+        <button class="button" type="submit"> Login </button>
+        <p> Doesn't have an account ? <a href="{% url 'auth_app.auth_register' %}"> Register Here </a> </p>
+        {% for message in messages %}
+            {{message}}
+        {% endfor %}
+        {{form.errors}}
+    </form>
+{% endblock %} 

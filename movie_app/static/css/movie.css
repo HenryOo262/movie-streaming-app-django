@@ -143,6 +143,10 @@ a {
     column-gap: 10px;
 }
 
+.grid-wrapper a:hover, .login-to-comment a:hover {
+    color: #ffff00;
+}
+
 .comment-wrapper {
     background-color: #000000;
     color: #ffffff;

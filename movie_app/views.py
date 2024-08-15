@@ -72,12 +72,6 @@ def movie(request, id, resolution=None):
             movie.views = movie.views + 1
             movie.save()
 
-            print(productions)
-            if(productions):
-                print('not empty')
-            else:
-                print('empty')
-
             if request.user.is_authenticated:
                 bookmarks = Bookmark.objects.filter(user=request.user, object_id=id, content_type=ContentType.objects.get_for_model(Movie))
                 if bookmarks.exists():

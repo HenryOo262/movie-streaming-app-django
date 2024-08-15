@@ -61,33 +61,55 @@
                 <div> <p> Release Date : </p> </div>
                 <div> <p> {{movie.releaseDate}} </p> </div>
                 <div> <p> Genre : </p> </div>
-                <div> <p> {% for genre in genres %} {{genre.name}} {% endfor %} </p> </div>
+                <div> <p> 
+                    {% for genre in genres %} 
+                        <a href="{% url 'search_app.search' search_type='genre' search=genre.name %}"> {{genre.name}} </a>
+                    {% endfor %} 
+                </p> </div>
                 
                 <div> <p> Production : </p> </div>
                 {% if productions %}
-                    <div> <p> {% for production in productions %} {{production.name}} {% endfor %} </p> </div>
+                    <div> <p> 
+                        {% for production in productions %} 
+                            <a href="{% url 'search_app.search' search_type='production' search=production.name %}"> {{production.name}} </a>
+                        {% endfor %} 
+                    </p> </div>
                 {% else %}
                     <div> <p> N/A </p> </div>
                 {% endif %}
                 
                 <div> <p> Director : </p> </div>
                 {% if directors %}
-                    <div> <p> {% for director in directors %} {{director.name}} {% endfor %} </p> </div>
+                    <div> <p> 
+                        {% for director in directors %} 
+                            <a href="{% url 'search_app.search' search_type='director' search=director.name %}"> {{director.name}} </a>
+                        {% endfor %} 
+                    </p> </div>                
                 {% else %}
                     <div> <p> N/A </p> </div>
                 {% endif %}
                 
                 <div> <p> Cast : </p> </div>
                 {% if casts %}
-                    <div> <p> {% for cast in casts %} {{cast.name}} {% endfor %} </p> </div>
+                    <div> <p> 
+                        {% for cast in casts %} 
+                            <a href="{% url 'search_app.search' search_type='cast' search=cast.name %}"> {{cast.name}} </a>
+                        {% endfor %} 
+                    </p> </div>                
                 {% else %}
                     <div> <p> N/A </p> </div>
                 {% endif %}
                 
                 <div> <p> Country : </p> </div>
-                <div> <p> {% for country in countries %} {{country.name}} {% endfor %} </p> </div>
+                <div> <p> 
+                    {% for country in countries %} 
+                        <a href="{% url 'search_app.search' search_type='country' search=country.name %}"> {{country.name}} </a>
+                    {% endfor %} 
+                </p> </div>
+
                 <div> <p> Rating : </p> </div>
-                <div> <p> {{movie.rating}} </p> </div>
+                <div> <p> <a href="{% url 'search_app.search' search_type='rating' search=movie.rating %}"> {{movie.rating}} </a> </p> </div>
+                
                 <div> <p> Views : </p> </div>
                 <div> <p> {{movie.views}} </p> </div>
             </div>
@@ -102,7 +124,7 @@
             <button class="button" type="submit"> Add Comment </button>
         </form>
         {% else %}
-            <div> <a href="{% url 'auth_app.auth_login' %}"> <h2> Login to comment </h2> </a> </div>
+            <div class="login-to-comment"> <a href="{% url 'auth_app.auth_login' %}"> <h2> Login to comment </h2> </a> </div>
         {% endif %}
         <div class="comment">
             {% for comment in comments %}

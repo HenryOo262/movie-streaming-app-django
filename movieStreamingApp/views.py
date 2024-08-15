@@ -6,7 +6,7 @@ def index(request):
     return render(request, 'index.html')
 
 def home(request):
-    movies = Movie.objects.all()
+    movies = Movie.objects.all()[:12]
     context = {
         'movies': movies,
     }

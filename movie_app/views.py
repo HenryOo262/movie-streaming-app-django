@@ -10,7 +10,7 @@ from firebase_admin import storage, initialize_app, credentials
 from . import forms
 from .models import MovieResource, Movie
 from movieStreamingApp.forms import CommentForm
-from movieStreamingApp.models import Comment
+from movieStreamingApp.models import Comment, Production, Director, Cast
 from bookmark_app.models import Bookmark
 from pathlib import Path
 
@@ -64,7 +64,19 @@ def movie(request, id, resolution=None):
             resolutions = movie.movieresource_set.values('resolution')
             genres = movie.genres.filter()
             countries = movie.countries.filter()
+            productions = movie.productions.filter()
+            directors = movie.directors.filter()
+            casts = movie.casts.filter()
             comments = Comment.objects.filter(object_id=id, content_type=ContentType.objects.get_for_model(Movie)).order_by('-addedDateTime')
+
+            movie.views = movie.views + 1
+            movie.save()
+
+            print(productions)
+            if(productions):
+                print('not empty')
+            else:
+                print('empty')
 
             if request.user.is_authenticated:
                 bookmarks = Bookmark.objects.filter(user=request.user, object_id=id, content_type=ContentType.objects.get_for_model(Movie))
@@ -87,8 +99,11 @@ def movie(request, id, resolution=None):
                 'genres': genres,
                 'countries': countries,
                 'comments': comments,
+                'productions': productions,
+                'directors': directors,
+                'casts': casts,
                 'comment_form': comment_form,
-                'bookmarked': bookmarked
+                'bookmarked': bookmarked,
             }
             return render(request, 'movie.html', context)
         except Exception as e:
@@ -149,8 +164,14 @@ def movie_download(request, source):
 def movie_create(request):
     if request.method == 'GET':
         movie_form = forms.MovieForm()
+        productions = Production.objects.filter()
+        directors = Director.objects.filter()
+        casts = Cast.objects.filter()
         context = {
             'form': movie_form,
+            'productions': productions,
+            'directors': directors,
+            'casts': casts,
         }
         return render(request, 'movie_create.html', context)
     elif request.method == 'POST':
@@ -163,6 +184,15 @@ def movie_create(request):
                 genres = movie_form.cleaned_data['genre']
                 countries = movie_form.cleaned_data['country']
                 poster = movie_form.cleaned_data['poster']
+                rating = movie_form.cleaned_data['rating']
+                production = movie_form.cleaned_data['production']
+                coproduction1 = movie_form.cleaned_data['coproduction1']
+                coproduction2 = movie_form.cleaned_data['coproduction2']
+                director = movie_form.cleaned_data['director']
+                codirector = movie_form.cleaned_data['codirector']
+                cast = movie_form.cleaned_data['cast']
+                cocast1 = movie_form.cleaned_data['cocast1']
+                cocast2 = movie_form.cleaned_data['cocast2']
 
                 bucket = storage.bucket()
                 # creates a reference in bucket
@@ -171,10 +201,47 @@ def movie_create(request):
                 blob.make_public()  
                 poster_url = blob.public_url
 
-                new_movie = Movie(title=title, poster=poster_url, releaseDate=releaseDate, description=description)
+                new_movie = Movie(title=title, rating=rating, poster=poster_url, releaseDate=releaseDate, description=description)
                 new_movie.save()
                 new_movie.genres.set(genres)
                 new_movie.countries.set(countries)
+
+                # handle productions
+                productions = []
+                if not production is '':
+                    production, created = Production.objects.get_or_create(name=production)
+                    productions.append(production)
+                if not coproduction1 is '':
+                    coproduction1, created = Production.objects.get_or_create(name=coproduction1)
+                    productions.append(coproduction1)
+                if not coproduction2 is '':
+                    coproduction2, created = Production.objects.get_or_create(name=coproduction2)
+                    productions.append(coproduction2)
+                new_movie.productions.set(productions)
+
+                # handle directors
+                directors = []
+                if not director is '':
+                    director, created = Director.objects.get_or_create(name=director)
+                    directors.append(director)
+                if not codirector is '':
+                    codirector, created = Director.objects.get_or_create(name=codirector)
+                    directors.append(codirector)
+                new_movie.directors.set(directors)
+
+                # handle casts
+                casts = []
+                if not cast is '':
+                    cast, created = Cast.objects.get_or_create(name=cast)
+                    casts.append(cast)
+                if not cocast1 is '':
+                    cocast1, created = Cast.objects.get_or_create(name=cocast1)
+                    casts.append(cocast1)
+                if not cocast2 is '':
+                    cocast2, created = Cast.objects.get_or_create(name=cocast2)
+                    casts.append(cocast2)
+                new_movie.casts.set(casts)
+
                 messages.success(request, 'Movie has been succesfully created')
                 return redirect('movie_app.movie_upload', id=new_movie.id)
             except Exception as e:

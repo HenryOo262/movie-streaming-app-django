@@ -91,6 +91,10 @@ body {
     border-radius: 10px;
 }
 
+.title {
+    overflow: hidden;
+}
+
 .cell p {    
     transition-property: color;
     transition-timing-function: ease;

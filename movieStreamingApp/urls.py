@@ -9,5 +9,6 @@ urlpatterns = [
     path('home/', views.home, name='home'),
     path('movie/', include('movie_app.urls')),
     path('auth/', include('auth_app.urls')),
-    path('bookmarks/', include('bookmark_app.urls'))
+    path('bookmarks/', include('bookmark_app.urls')),
+    path('search/', include('search_app.urls'))
 ]

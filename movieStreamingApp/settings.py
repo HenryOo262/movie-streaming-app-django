@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'movie_app',
     'auth_app',
     'bookmark_app',
+    'search_app'
 ]
 
 MIDDLEWARE = [
@@ -52,7 +53,8 @@ TEMPLATES = [
             path.join('movieStreamingApp','templates'),
             path.join('movie_app','templates'),
             path.join('auth_app','templates'),
-            path.join('bookmark_app','templates')
+            path.join('bookmark_app','templates'),
+            path.join('search_app','templates'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {

@@ -54,14 +54,42 @@
                     {% endif %}
                 {% endif %}
             </div>
-            <p> {{movie.description}} </p>
+            <div>
+                <p> {{movie.description}} </p>
+            </div>
             <div class="grid-wrapper">
                 <div> <p> Release Date : </p> </div>
                 <div> <p> {{movie.releaseDate}} </p> </div>
-                <div> <p> Genres : </p> </div>
+                <div> <p> Genre : </p> </div>
                 <div> <p> {% for genre in genres %} {{genre.name}} {% endfor %} </p> </div>
-                <div> <p> Countries : </p> </div>
+                
+                <div> <p> Production : </p> </div>
+                {% if productions %}
+                    <div> <p> {% for production in productions %} {{production.name}} {% endfor %} </p> </div>
+                {% else %}
+                    <div> <p> N/A </p> </div>
+                {% endif %}
+                
+                <div> <p> Director : </p> </div>
+                {% if directors %}
+                    <div> <p> {% for director in directors %} {{director.name}} {% endfor %} </p> </div>
+                {% else %}
+                    <div> <p> N/A </p> </div>
+                {% endif %}
+                
+                <div> <p> Cast : </p> </div>
+                {% if casts %}
+                    <div> <p> {% for cast in casts %} {{cast.name}} {% endfor %} </p> </div>
+                {% else %}
+                    <div> <p> N/A </p> </div>
+                {% endif %}
+                
+                <div> <p> Country : </p> </div>
                 <div> <p> {% for country in countries %} {{country.name}} {% endfor %} </p> </div>
+                <div> <p> Rating : </p> </div>
+                <div> <p> {{movie.rating}} </p> </div>
+                <div> <p> Views : </p> </div>
+                <div> <p> {{movie.views}} </p> </div>
             </div>
         </div>
     </div>

@@ -50,6 +50,19 @@ body {
     justify-content: center;
 }
 
+.cell-multiinput {
+    margin: 10px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell-multiinput input {
+    margin-bottom: 5px;
+}
+
 .button-wrapper {
     margin-top: 20px;
 
@@ -88,6 +101,7 @@ body {
     height: auto; /* maintain aspect ratio */
 }
 
+/* for upload form */
 #id_movie {
     display: none;
     pointer-events: none;

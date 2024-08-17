@@ -24,34 +24,96 @@ body {
 }
 
 .modal-icon svg {
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-timing-function: ease;
-
     cursor: pointer;
 }
 
 .modal-icon svg:hover {
-    /* fill: #2d2d2d; */
-    transform: rotate(90deg);
-
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-timing-function: ease;
+    fill: #ffff00; 
 }
 
 .modal {
-    background-color: #2d2d2d;
+    background-color: #000000;
     color: #ffffff;
 
     position: absolute;
     top: 100%;
+    z-index: 2;
 
     padding: 20px;
 
-    border-radius: 10%;
+    display: grid;
+    grid-template-rows: repeat(auto,1fr);
+    row-gap: 20px;
 
+    border: solid 1px white;
+    border-radius: 10%;
     visibility: hidden;
+}
+
+.modal div {
+    width: 100%;
+}
+
+.modal a {
+    color: #ffffff;
+    text-decoration: none;
+
+    width: 100%;
+    padding: 5px;
+
+    border-radius: 5px;
+
+    display: block;
+    cursor: pointer;
+}
+
+.modal a:hover {
+    color: #ffff00;
+}
+
+.modalChild {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 14px;
+
+    position: absolute;
+    top: 100%;
+    left: 300%;
+    z-index: 2;
+
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    border: solid 1px white;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+.modalChild div {
+    width: 100%;
+}
+
+.modalChild a {
+    color: #ffffff;
+    text-decoration: none;
+
+    width: 100%;
+    padding: 5px;
+
+    border-radius: 5px;
+
+    display: block;
+    cursor: pointer;
+}
+
+.modalChild a:hover {
+    color: #ffff00;
+}
+
+.show-modal {
+    visibility: visible;
 }
 
 .search-bar {
@@ -67,9 +129,6 @@ body {
     min-height: 40px;
     height: auto;
 
-    /*
-    border: 1px solid #ffffff;
-    */
     border: none;
     border-radius: 25px;
     outline: none;
@@ -91,6 +150,10 @@ body {
     cursor: pointer;
 }
 
+.search-bar-button svg:hover {
+    fill: #ffff00;
+}
+
 .login {
     background-color: #000000;
     color: #ffffff;
@@ -110,11 +173,6 @@ body {
     align-items: center;
     justify-content: center;
 
-    transform: scale(1);
-    transition-duration: 0.3s;
-    transition-property: all;
-    transition-timing-function: ease;
-
     cursor: pointer;
 }
 
@@ -123,11 +181,6 @@ body {
 }
 
 .profile svg {
-    transform: scale(1);
-    transition-duration: 0.3s;
-    transition-property: all;
-    transition-timing-function: ease;
-
     cursor: pointer;
 }
 
@@ -136,8 +189,5 @@ body {
 }
 
 .login:hover, .profile svg:hover {
-    transform: scale(1.1);
-    transition-duration: 0.3s;
-    transition-property: all;
-    transition-timing-function: ease;
+    fill: #ffff00;
 }

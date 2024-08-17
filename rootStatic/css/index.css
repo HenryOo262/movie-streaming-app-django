@@ -95,6 +95,10 @@ body {
     cursor: pointer;
 }
 
+.search-bar-button svg:hover {
+    fill: #ffff00;
+}
+
 .homepage {
     background-color: #f0f0f0;
     color: #000000;

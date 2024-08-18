@@ -1,30 +1,17 @@
-import os
 import re
-from django.shortcuts import render, redirect
+from firebase_admin import storage
 from django.contrib import messages
 from django.db import IntegrityError
+from datetime import datetime, timedelta
+from django.shortcuts import render, redirect
 from django.contrib.contenttypes.models import ContentType
 from django.http import StreamingHttpResponse, HttpResponse, HttpResponseRedirect
-from datetime import datetime, timedelta
-from firebase_admin import storage, initialize_app, credentials
+
 from . import forms
 from .models import MovieResource, Movie
+from bookmark_app.models import Bookmark
 from movieStreamingApp.forms import CommentForm
 from movieStreamingApp.models import Comment, Production, Director, Cast
-from bookmark_app.models import Bookmark
-from pathlib import Path
-
-BASE_DIR = Path(__file__).resolve().parent.parent
-serviceAccount = os.path.join(BASE_DIR, 'firebase', './video-stream-app-6b509-firebase-adminsdk-f62d7-0d43816024.json')
-cred = credentials.Certificate(serviceAccount)
-buck = 'video-stream-app-6b509.appspot.com'
-
-initialize_app(cred, 
-    {'storageBucket': buck}
-)
-
-
-#######################################################################
 
 
 def file_iterator(blob, start, end):

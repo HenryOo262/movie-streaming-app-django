@@ -1,0 +1,47 @@
+
+.season-wrapper {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+
+    width: 75vw;
+
+    padding: 20px;
+    margin: 40px auto;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.seasons {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30px,1fr));
+    gap: 10px;
+}
+
+.season {
+    background-color: #000000;
+    color: #ffffff;
+    
+    padding: 5px;
+
+    border: solid 1px #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.season:hover {
+    color: #ffff00;
+    border: solid 1px #ffff00
+}
+
+.current-season {
+    background-color: #ffff00; 
+    color: #000000; 
+    pointer-events: none; 
+    border: solid 1px #000000;
+}

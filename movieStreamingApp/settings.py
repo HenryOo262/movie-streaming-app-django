@@ -1,9 +1,20 @@
+import os
 from pathlib import Path
 from os import path, getenv
+from firebase_admin import storage, initialize_app, credentials
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# Firebase setup
+BASE_DIR = Path(__file__).resolve().parent.parent
+serviceAccount = os.path.join(BASE_DIR, 'firebase', './video-stream-app-6b509-firebase-adminsdk-f62d7-0d43816024.json')
+cred = credentials.Certificate(serviceAccount)
+buck = 'video-stream-app-6b509.appspot.com'
+
+initialize_app(cred, 
+    {'storageBucket': buck}
+)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
@@ -28,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'movieStreamingApp',
     'movie_app',
+    'series_app',
     'auth_app',
     'bookmark_app',
     'search_app'
@@ -55,6 +67,7 @@ TEMPLATES = [
             path.join('auth_app','templates'),
             path.join('bookmark_app','templates'),
             path.join('search_app','templates'),
+            path.join('series_app','templates'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -135,6 +148,7 @@ STATICFILES_DIRS = [
     BASE_DIR/'rootStatic',
     BASE_DIR/'movie_app'/'static',
     BASE_DIR/'auth_app'/'static',
+    BASE_DIR/'series_app'/'static',
 ]
 
 # Default primary key field type

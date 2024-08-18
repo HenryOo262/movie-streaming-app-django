@@ -9,5 +9,5 @@ urlpatterns = [
     path('download/<str:source>/', views.movie_download, name='movie_app.movie_download'),
     path('create/', views.movie_create, name='movie_app.movie_create'),
     path('upload/<int:id>', views.movie_upload, name='movie_app.movie_upload'),
-    path('upload/', views.movie_upload, name='movie_app.movie_upload')
+    path('upload/', views.movie_upload, name='movie_app.movie_upload'),
 ]

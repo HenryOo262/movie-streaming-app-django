@@ -2,27 +2,32 @@
 
 {% load static %}
 
-{% block title %} <title> MovWave | Upload Movie </title> {% endblock %}
+{% block title %} <title> MovWave | Upload Series </title> {% endblock %}
 {% block head %} 
     <link rel="stylesheet" href="{% static 'css/movie_form.css' %}">
+    <link rel="stylesheet" href="{% static 'css/series_form.css' %}">
 {% endblock %}
 
 {% block content %} 
-    <form id="form" class="form" method="POST" enctype="multipart/form-data" action="{% url 'movie_app.movie_upload' %}">
+    <form id="form" class="form" method="POST" enctype="multipart/form-data" action="{% url 'series_app.series_upload' %}">
         {% csrf_token %}
         <div class="grid-wrapper">
-            <div class="cell"> {{form.movie.label}} : </div> 
-            <div class="cell"> {{movie.title}} ({{movie.releaseDate.year}}) </div>
+            <div class="cell"> Series : </div> 
+            <div class="cell"> {{series.title}} ({{series.releaseDate.year}}) </div>
+            <div class="cell"> {{form.season.label}} : </div> 
+            <div class="cell"> {{form.season}} </div>
+            <div class="cell"> {{form.episode.label}} : </div> 
+            <div class="cell"> {{form.episode}} </div>
             <div class="cell"> {{form.resolution.label}} : </div> 
             <div class="cell"> {{form.resolution}} </div>
             <div class="cell"> {{form.source.label}} : </div> 
             <div class="cell"> {{form.source}} </div>
         </div>   
         <div class="button-wrapper">
-            <button id="button" type="submit"> Create Movie </button>
+            <button id="button" type="submit"> Upload </button>
         </div>
         {{form.sourceFileName}}
-        {{form.movie}}
+        {{form.series}}
     </form>
     {% if messages %}
         {% for message in messages %}
@@ -58,9 +63,11 @@
     const loading = document.querySelector('#loading')
     const form = document.querySelector('#form')
     
+    const season = document.querySelector('#id_season')
+    const episode = document.querySelector('#id_episode')
     const source = document.querySelector('#id_source')
     const resolution = document.querySelector('#id_resolution')
-    const movie = document.querySelector('#id_movie')
+    const series = document.querySelector('#id_series')
     const sourceFileName = document.querySelector('#id_sourceFileName')
 
     document.addEventListener('DOMContentLoaded', () => {
@@ -97,7 +104,9 @@
         const formData = new FormData(form)
         formData.append('sourceFileName', sourceFileName.value)
         formData.append('resolution', resolution.value)
-        formData.append('movie', movie.value)
+        formData.append('series', series.value)
+        formData.append('season', season.value)
+        formData.append('episode', episode.value)
 
         // Submit the form
         // Save video metadata in database
@@ -114,7 +123,7 @@
         if(response.status == '200') {
             console.log(response.status)
             alert('Resource file metadata saved in database successfully.')
-            const storageRef = ref(storage, `movies/${filename}`);
+            const storageRef = ref(storage, `series/${filename}`);
             const uploadTask = uploadBytesResumable(storageRef, file);
 
             uploadTask.on('state_changed', 

@@ -1,14 +1,14 @@
 from django import forms
 from datetime import datetime
-from .models import Movie, MovieResource
+from .models import Series, SeriesResource
 from movieStreamingApp.models import Genre, Country
 
 
-class MovieForm(forms.ModelForm):
+class SeriesForm(forms.ModelForm):
     year_list = range(datetime.now().year, datetime.now().year-200, -1)
 
     class Meta:
-        model = Movie
+        model = Series
         fields = ['title','poster','releaseDate','rating','description','genres','countries','productions','directors','casts']
 
     releaseDate = forms.DateField(
@@ -90,8 +90,7 @@ class MovieForm(forms.ModelForm):
         if value.content_type not in ['image/jpeg', 'image/jpg', 'image/jfif']:
             raise forms.ValidationError('Poster must be either JPEG or JPG')
         return value
-    
-    '''
+
     def clean_director(self):
         director = self.cleaned_data.get('director')
         return director.strip()
@@ -123,16 +122,28 @@ class MovieForm(forms.ModelForm):
     def clean_coproduction2(self):
         coproduction2 = self.cleaned_data.get('coproduction2')
         return coproduction2.strip()
-    '''
+    
 
+class SeriesResourceForm(forms.Form):   # having problems with ModelForm, episode cannot be overidden
+    series = forms.IntegerField(
+        label="Series",
+        widget=forms.NumberInput()
+    )
 
-#######################################################################
+    season = forms.IntegerField(
+        label="Season",
+        widget=forms.NumberInput()
+    )
 
+    episode = forms.IntegerField(
+        label="Episode",
+        widget=forms.NumberInput()
+    )
 
-class MovieResourceForm(forms.ModelForm):
-    class Meta:
-        model = MovieResource
-        fields = ['movie', 'resolution','source']
+    resolution = forms.ChoiceField(
+        label="Resolution",
+        choices=[('320p','320p'),('480p','480p'),('720p','720p'),('1080p','1080p')]
+    )
 
     source = forms.FileField(
         label='Video File',
@@ -152,5 +163,17 @@ class MovieResourceForm(forms.ModelForm):
         value = self.cleaned_data.get('source')
         if not value.content_type == 'video/mp4':
             raise forms.ValidationError('File must be MP4')
+        return value
+    
+    def clean_season(self):
+        value = self.cleaned_data.get('season')
+        if value <= 0:
+            raise forms.ValidationError('Invalid season number')
+        return value
+    
+    def clean_episode(self):
+        value = self.cleaned_data.get('episode')
+        if value <= 0:
+            raise forms.ValidationError('Invalid episode number')
         return value
         

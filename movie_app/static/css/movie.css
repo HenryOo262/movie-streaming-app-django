@@ -80,14 +80,14 @@ a {
 }
 
 .metadata-wrapper {
-    width: 75vw;
     background-color: rgba(0, 0, 0, 0.5);
     color: #ffffff;
 
+    width: 75vw;
+    margin: 40px auto;
+
     display: grid;
     grid-template-columns: 25% 75%;
-
-    margin: 40px auto;
 }
 
 .poster-wrapper {
@@ -124,6 +124,7 @@ a {
 }
 
 .description-wrapper {
+    width: 100%;
     padding: 10px;
     text-align: left;
 
@@ -226,5 +227,17 @@ a {
 
         padding: 20px;
         margin-bottom: 0px;
+    }
+
+    .poster-wrapper {
+        width: 30vw;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .poster-wrapper {
+        width: 50vw;
+        height: auto;
     }
 }

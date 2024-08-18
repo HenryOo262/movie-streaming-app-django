@@ -2,13 +2,13 @@
 
 {% load static %}
 
-{% block title %} <title> MovWave | Create Movie </title> {% endblock %}
+{% block title %} <title> MovWave | Create Series </title> {% endblock %}
 {% block head %} 
     <link rel="stylesheet" href="{% static 'css/movie_form.css' %}">
 {% endblock %}
 
 {% block content %} 
-    <form id="form" class="form" method="POST" enctype="multipart/form-data" action="{% url 'movie_app.movie_create' %}">
+    <form id="form" class="form" method="POST" enctype="multipart/form-data" action="{% url 'series_app.series_create' %}">
         {% csrf_token %}
         <div class="grid-wrapper">
             <div class="cell"> {{form.title.label}} : </div> 

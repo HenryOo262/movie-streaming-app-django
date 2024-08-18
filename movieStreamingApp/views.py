@@ -1,17 +1,21 @@
-from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect
-from movie_app.models import Movie, MovieResource
+from django.http import HttpResponse, JsonResponse
+
 from .models import Genre, Country
-from django.urls import reverse
+from movie_app.models import Movie
+from series_app.models import Series
+
 
 def index(request):
     return render(request, 'index.html')
 
 
 def home(request):
-    movies = Movie.objects.all()[:12]
+    movies = Movie.objects.all().order_by('-releaseDate')[:12]
+    series = Series.objects.all().order_by('-releaseDate')[:12]
     context = {
         'movies': movies,
+        'series': series,
     }
     return render(request, 'home.html', context)  
 

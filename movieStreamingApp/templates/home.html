@@ -28,6 +28,23 @@
     </div>
     <div class="content-wrapper">
         <div>
+            <h1> Latest Series </h1>
+        </div>
+        <div class="grid-wrapper">
+            {% for tv in series %}
+                <a class="cell" href="{% url 'series_app.series' id=tv.id %}">
+                    <div class="poster">
+                        <img src="{{tv.poster}}">
+                    </div>
+                    <div class="title">
+                        <p> {{tv.title}} </p>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="content-wrapper">
+        <div>
             <h1> Recommended </h1>
         </div>
         <div class="grid-wrapper">

@@ -52,6 +52,10 @@ body {
     z-index: 2;
 }
 
+.index h1 {
+    text-align: center;
+}
+
 .index > * {
     margin: 10px;
 }
@@ -118,12 +122,44 @@ body {
     justify-content: center;
 }
 
+.homepage:hover  {
+    background-color: #000000;
+    color: #ffff00;
+}
+
 .homepage svg {
     margin-left: 5px;
+}
+
+.homepage:hover svg {
+    fill: #ffff00;
 }
 
 .about-movwave p {
     font-size: 14px;
 
     margin-top: 10px;
+}
+
+@media only screen and (max-width: 650px) {
+    .index {
+        width: 100vw;
+        margin: 0px;
+    }
+
+    .homepage {
+        font-size: 14px;
+        font-weight: 100;
+
+        padding: 10px 30px;
+    }
+
+    .about-movwave p {
+        font-size: 12px;
+    }
+
+    .index-logo {
+        width: 50%;
+        height: auto;
+    }
 }

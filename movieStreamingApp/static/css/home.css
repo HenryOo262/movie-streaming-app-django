@@ -130,3 +130,19 @@ body {
     color: #ffff00;
     border-color: #ffff00;
 }
+
+@media only screen and (max-width: 650px) {
+    .grid-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .grid-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+}

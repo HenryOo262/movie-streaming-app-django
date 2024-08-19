@@ -2,7 +2,7 @@ from django.urls import path, include
 from . import views
 
 urlpatterns = [
-    path('<int:id>-<str:resolution>', views.movie, name='movie_app.movie'),
+    path('<int:id>/<str:resolution>', views.movie, name='movie_app.movie'),
     path('<int:id>', views.movie, name='movie_app.movie'),
     path('stream/<str:source>/', views.movie_stream, name='movie_app.movie_stream'),
     path('download/<str:source>/', views.movie_download, name='movie_app.movie_download'),

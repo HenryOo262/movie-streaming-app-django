@@ -85,13 +85,16 @@ class MovieForm(forms.ModelForm):
         widget=forms.TextInput({'list':'production-list'})
     )
 
+    def clean_title(self):
+        value = self.cleaned_data.get('title')
+        return value.strip()
+
     def clean_poster(self):
         value = self.cleaned_data.get('poster')
         if value.content_type not in ['image/jpeg', 'image/jpg', 'image/jfif']:
             raise forms.ValidationError('Poster must be either JPEG or JPG')
         return value
-    
-    '''
+
     def clean_director(self):
         director = self.cleaned_data.get('director')
         return director.strip()
@@ -123,7 +126,6 @@ class MovieForm(forms.ModelForm):
     def clean_coproduction2(self):
         coproduction2 = self.cleaned_data.get('coproduction2')
         return coproduction2.strip()
-    '''
 
 
 #######################################################################

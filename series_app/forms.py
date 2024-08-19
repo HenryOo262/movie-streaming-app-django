@@ -85,6 +85,10 @@ class SeriesForm(forms.ModelForm):
         widget=forms.TextInput({'list':'production-list'})
     )
 
+    def clean_title(self):
+        value = self.cleaned_data.get('title')
+        return value.strip()
+
     def clean_poster(self):
         value = self.cleaned_data.get('poster')
         if value.content_type not in ['image/jpeg', 'image/jpg', 'image/jfif']:

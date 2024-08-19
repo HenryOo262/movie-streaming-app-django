@@ -16,7 +16,6 @@ from movieStreamingApp.models import Cast, Production, Director
 
 def file_iterator(blob, start, end):
     try:
-        # Download chunk directly as bytes
         chunk = blob.download_as_bytes(start=start, end=end)
         print(len(chunk))
         yield chunk
@@ -111,19 +110,6 @@ def series_stream(request, source):
     response['Content-Type'] = 'video/mp4'
 
     return response 
-
-
-def series_bookmark(request, id, current_season, current_episode, resolution):
-    """ Bookmark the series if it exists in Bookmark table, else delete the record """
-    if request.method == 'POST':
-        bookmark = Bookmark.objects.filter(user=request.user, object_id=id, content_type=ContentType.objects.get_for_model(Series))
-        if bookmark.exists():
-            bookmark.delete()
-            return redirect('series_app.series', id=id, current_season=current_season, current_episode=current_episode, resolution=resolution)
-        else:
-            new_bookmark = Bookmark(user=request.user, content_type=ContentType.objects.get_for_model(Series), object_id=id)
-            new_bookmark.save()
-            return redirect('series_app.series', id=id, current_season=current_season, current_episode=current_episode, resolution=resolution)
         
 
 def series_create(request):
@@ -256,3 +242,15 @@ def series_upload(request, id=None):
                 return HttpResponse(status = 500)
     
         return render(request, 'series_upload.html', {'form': seriesResource_form})
+
+
+def series_download(request, source):
+    """ Get a signed url of the video file """
+    try:
+        expiration = datetime.now() + timedelta(minutes=5)
+        download_url = storage.bucket().blob(f'series/{source}').generate_signed_url(expiration=expiration)
+        return render(request, 'movie_download.html', {'download_url':download_url})
+    
+    except Exception as e:
+        print(e)
+        return render(request, '404.html')

@@ -10,8 +10,21 @@
 
 {% block content %} 
     <div class="content-wrapper">
-        <div>
-            <h1> {{search|capfirst}} Movies </h1>
+        <div class="header-wrapper">
+            <h1> {{search|capfirst}} {{content_type|capfirst}} </h1>
+            <div class="contentType-wrapper">
+                {% if content_type == 'movies' %}
+                    <a class="contentType-button current-contentType" href="{% url 'search_app.search' content_type='movies' search_type=search_type search=search %}"> Movies </a>
+                {% else %}
+                    <a class="contentType-button" href="{% url 'search_app.search' content_type='movies' search_type=search_type search=search %}"> Movies </a>
+                {% endif %}
+
+                {% if content_type == 'series' %}
+                    <a class="contentType-button current-contentType" href="{% url 'search_app.search' content_type='series' search_type=search_type search=search %}"> Series </a>
+                {% else %}
+                    <a class="contentType-button" href="{% url 'search_app.search' content_type='series' search_type=search_type search=search %}"> Series </a>
+                {% endif %}
+            </div>
         </div>
         <div class="grid-wrapper">
             {% for movie in page_obj %}

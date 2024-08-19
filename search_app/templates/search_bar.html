@@ -10,8 +10,21 @@
 
 {% block content %} 
     <div class="content-wrapper">
-        <div>
+        <div class="header-wrapper">
             <h1> {{search|capfirst}} Movies </h1>
+            <div class="contentType-wrapper">
+                {% if content_type == 'movies' %}
+                    <a class="contentType-button current-contentType" href="?content_type=movies&input_value={{input_value}}"> Movies </a>
+                {% else %}
+                    <a class="contentType-button" href="?content_type=movies&input_value={{input_value}}"> Movies </a>
+                {% endif %}
+
+                {% if content_type == 'series' %}
+                    <a class="contentType-button current-contentType" href="?content_type=series&input_value={{input_value}}"> Series </a>
+                {% else %}
+                    <a class="contentType-button" href="?content_type=series&input_value={{input_value}}"> Series </a>
+                {% endif %}
+            </div>
         </div>
         <div class="grid-wrapper">
             {% for movie in page_obj %}
@@ -28,8 +41,8 @@
         <div class="pagination">
             <span class="step-links">
                 {% if page_obj.has_previous %}
-                    <a class="step-link" href="?input_value={{ input_value }}&page=1">&laquo; first</a>
-                    <a class="step-link" href="?input_value={{ input_value }}&page={{ page_obj.previous_page_number }}">previous</a>
+                    <a class="step-link" href="?content_type={{ content_type }}&input_value={{ input_value }}&page=1">&laquo; first</a>
+                    <a class="step-link" href="?content_type={{ content_type }}&input_value={{ input_value }}&page={{ page_obj.previous_page_number }}">previous</a>
                 {% endif %}
                 
                 <span class="current">
@@ -37,8 +50,8 @@
                 </span>
                 
                 {% if page_obj.has_next %}
-                    <a class="step-link" href="?input_value={{ input_value }}&page={{ page_obj.next_page_number }}">next</a>
-                    <a class="step-link" href="?input_value={{ input_value }}&page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+                    <a class="step-link" href="?content_type={{ content_type }}&input_value={{ input_value }}&page={{ page_obj.next_page_number }}">next</a>
+                    <a class="step-link" href="?content_type={{ content_type }}&input_value={{ input_value }}&page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
                 {% endif %}
             </span>
         </div>

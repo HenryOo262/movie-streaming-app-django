@@ -27,6 +27,45 @@ body {
     margin-bottom: 20px;
 }
 
+.header-wrapper {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contentType-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.contentType-button {
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+
+    padding: 10px;
+    margin-bottom: 0px;
+
+    border: solid 1px #ffffff;
+}
+
+.contentType-button:hover {
+    color: #ffff00;
+    border: solid 1px #ffff00;
+}
+
+.current-contentType {
+    background-color: #ffff00;
+    color: black;
+
+    border: solid 1px #000000;
+    pointer-events: none;
+}
+
 .grid-wrapper {
     display: grid;
     grid-template-columns: repeat(6, 1fr);

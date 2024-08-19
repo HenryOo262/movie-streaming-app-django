@@ -99,18 +99,6 @@ def movie(request, id, resolution=None):
             return redirect('movie_app.movie', id=id)
 
 
-def movie_bookmark(request, id):
-    if request.method == 'POST':
-        bookmark = Bookmark.objects.filter(user=request.user, object_id=id, content_type=ContentType.objects.get_for_model(Movie))
-        if bookmark.exists():
-            bookmark.delete()
-            return redirect('movie_app.movie', id=id)
-        else:
-            new_bookmark = Bookmark(user=request.user, content_type=ContentType.objects.get_for_model(Movie), object_id=id)
-            new_bookmark.save()
-            return redirect('movie_app.movie', id=id)
-
-
 def movie_stream(request, source):
     # access file from fire storage
     file = storage.bucket().blob(f'movies/{source}')

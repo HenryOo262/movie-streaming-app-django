@@ -21,7 +21,7 @@ class Series(models.Model):
 
 class Season(models.Model):
     series = models.ForeignKey(Series, blank=True, on_delete=models.CASCADE)
-    season = models.PositiveIntegerField(unique=True)
+    season = models.PositiveIntegerField()
 
     def __str__(self):
         return self.series.title + '-' + str(self.season)
@@ -29,7 +29,7 @@ class Season(models.Model):
 
 class Episode(models.Model):
     season = models.ForeignKey(Season, blank=True, on_delete=models.CASCADE)
-    episode = models.PositiveBigIntegerField(unique=True)
+    episode = models.PositiveBigIntegerField()
 
     def __str__(self):
         return self.season.series.title + '-' + str(self.season.season) + '-' + str(self.episode)

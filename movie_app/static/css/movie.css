@@ -148,64 +148,6 @@ a {
     color: #ffff00;
 }
 
-.comment-wrapper {
-    background-color: #000000;
-    color: #ffffff;
-
-    width: 100vw;
-
-    padding: 20px;
-    margin: 0px auto;
-
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-}
-
-.comment-wrapper div, .form {
-    margin-bottom: 20px;
-    width: 100%;
-}
-
-.button {
-    background-color: #000000;
-    color: #ffffff;
-
-    padding: 10px;
-    margin-bottom: 10px;
-
-    border: solid #ffffff 1px;
-    border-radius: 25px;
-
-    cursor: pointer;
-}
-
-.button:hover {
-    color: #ffff00;
-    border-color: #ffff00;
-}
-
-.commentText {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #ffffff;
-
-    padding: 20px;
-
-    width: 75%;
-
-    border: solid #ffffff 1px;
-    outline: none;
-}
-
-.comment {
-    background-color: #000000;
-
-    display: grid;
-    grid-template-rows: repeat(auto-fill, 1fr);
-    row-gap: 10px;
-}
-
 .bookmark_button {
     background: none;
 

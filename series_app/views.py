@@ -9,7 +9,9 @@ from django.http import HttpResponse, StreamingHttpResponse
 from firebase_admin import storage, initialize_app, credentials
 
 from . import forms
+from comment_app.models import Comment
 from bookmark_app.models import Bookmark
+from comment_app.forms import CommentForm, EditForm
 from .models import Series, Season, SeriesResource, Episode
 from movieStreamingApp.models import Cast, Production, Director
 
@@ -40,6 +42,10 @@ def series(request, id, current_season=None, current_episode=None, resolution=No
             current_episode = current_season.episode_set.get(episode=current_episode)
 
             resolutions = current_episode.seriesresource_set.values('resolution')
+
+            comment_form = CommentForm()
+            edit_form = EditForm()
+            comments = Comment.objects.filter(object_id=current_episode.id, content_type=ContentType.objects.get_for_model(Episode)).order_by('-addedDateTime')
 
             genres = series.genres.filter()
             countries = series.countries.filter()
@@ -72,12 +78,16 @@ def series(request, id, current_season=None, current_episode=None, resolution=No
                 'current_episode': current_episode,
                 'series_resource': series_resource,
                 'resolutions': resolutions,
+                'comments': comments,
+                'comment_form': comment_form,
+                'edit_form': edit_form,
                 'genres': genres,
                 'countries': countries,
                 'productions': productions,
                 'directors': directors,
                 'casts': casts,
                 'bookmarked': bookmarked,
+                'content_type':'series',
             }
             return render(request, 'series.html', context)
         

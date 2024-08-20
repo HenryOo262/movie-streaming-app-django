@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'series_app',
     'auth_app',
     'bookmark_app',
-    'search_app'
+    'search_app',
+    'comment_app',
 ]
 
 MIDDLEWARE = [
@@ -66,6 +67,7 @@ TEMPLATES = [
             path.join('movie_app','templates'),
             path.join('auth_app','templates'),
             path.join('bookmark_app','templates'),
+            path.join('comment_app','templates'),
             path.join('search_app','templates'),
             path.join('series_app','templates'),
         ],
@@ -149,6 +151,7 @@ STATICFILES_DIRS = [
     BASE_DIR/'movie_app'/'static',
     BASE_DIR/'auth_app'/'static',
     BASE_DIR/'series_app'/'static',
+    BASE_DIR/'comment_app'/'static',
 ]
 
 # Default primary key field type

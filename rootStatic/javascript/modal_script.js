@@ -1,11 +1,11 @@
 
-const modalButton = document.getElementById('modalButton')
-const modal = document.getElementById('modal')
-const modalChild = document.getElementById('modalChild')
+const modalButton = document.querySelector('#modalButton')
+const modal = document.querySelector('#modal')
+const modalChild = document.querySelector('#modalChild')
 
-const genreModal = document.getElementById('genreModal')
-const countryModal = document.getElementById('countryModal')
-const homeModal = document.getElementById('homeModal')
+const genreModal = document.querySelector('#genreModal')
+const countryModal = document.querySelector('#countryModal')
+const homeModal = document.querySelector('#homeModal')
 
 var genres, countries, hidden=true, childHidden=true
 

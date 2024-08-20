@@ -10,8 +10,9 @@ from django.http import StreamingHttpResponse, HttpResponse, HttpResponseRedirec
 from . import forms
 from .models import MovieResource, Movie
 from bookmark_app.models import Bookmark
-from movieStreamingApp.forms import CommentForm
-from movieStreamingApp.models import Comment, Production, Director, Cast
+from comment_app.models import Comment
+from comment_app.forms import CommentForm, EditForm
+from movieStreamingApp.models import Production, Director, Cast
 
 
 def file_iterator(blob, start, end):
@@ -47,6 +48,7 @@ def movie(request, id, resolution=None):
     if request.method == 'GET':
         try:
             comment_form = CommentForm()
+            edit_form = EditForm()
             movie = Movie.objects.get(id=id)
             resolutions = movie.movieresource_set.values('resolution')
             genres = movie.genres.filter()
@@ -84,7 +86,9 @@ def movie(request, id, resolution=None):
                 'directors': directors,
                 'casts': casts,
                 'comment_form': comment_form,
+                'edit_form': edit_form,
                 'bookmarked': bookmarked,
+                'content_type':'movies',
             }
             return render(request, 'movie.html', context)
         except Exception as e:

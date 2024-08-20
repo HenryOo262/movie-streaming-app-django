@@ -100,7 +100,7 @@
                 {% if productions %}
                     <div> <p> 
                         {% for production in productions %} 
-                            <a href=""> {{production.name}} </a>
+                            <a href="{% url 'search_app.search' content_type='series' search_type='production' search=production.name %}"> {{production.name}} </a>
                         {% endfor %} 
                     </p> </div>
                 {% else %}
@@ -111,7 +111,7 @@
                 {% if directors %}
                     <div> <p> 
                         {% for director in directors %} 
-                            <a href=""> {{director.name}} </a>
+                            <a href="{% url 'search_app.search' content_type='series' search_type='director' search=director.name %}"> {{director.name}} </a>
                         {% endfor %} 
                     </p> </div>                
                 {% else %}
@@ -122,7 +122,7 @@
                 {% if casts %}
                     <div> <p> 
                         {% for cast in casts %} 
-                            <a href=""> {{cast.name}} </a>
+                            <a href="{% url 'search_app.search' content_type='series' search_type='cast' search=cast.name %}"> {{cast.name}} </a>
                         {% endfor %} 
                     </p> </div>                
                 {% else %}
@@ -132,13 +132,14 @@
                 <div> <p> Country : </p> </div>
                 <div> <p> 
                     {% for country in countries %} 
-                        <a href=""> {{country.name}} </a>
+                        <a href="{% url 'search_app.search' content_type='series' search_type='country' search=country.name %}"> {{country.name}} </a>
                     {% endfor %} 
                 </p> </div>
 
                 <div> <p> Rating : </p> </div>
-                <div> <p> <a href=""> {{series.rating}} </a> </p> </div>
+                <div> <p> <a href="{% url 'search_app.search' content_type='series' search_type='rating' search=series.rating %}"> {{series.rating}} </a> </p> </div>
             </div>
         </div>
     </div>
+    {% include 'comment.html' %}
 {% endblock %} 

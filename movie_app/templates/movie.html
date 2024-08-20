@@ -112,21 +112,6 @@
             </div>
         </div>
     </div>
-    <div class="comment-wrapper">
-        <div> <h2> Comments : </h2> </div>
-        {% if user.is_authenticated %}
-        <form class="form" method="POST" action="{% url 'movie_app.movie' id=movie_resource.movie.id %}">
-            {% csrf_token %}
-            <div> {{comment_form.commentText}} </div>
-            <button class="button" type="submit"> Add Comment </button>
-        </form>
-        {% else %}
-            <div class="login-to-comment"> <a href="{% url 'auth_app.auth_login' %}"> <h2> Login to comment </h2> </a> </div>
-        {% endif %}
-        <div class="comment">
-            {% for comment in comments %}
-                <div> user-{{comment.user.username}} : {{comment.commentText}} [ {{comment.addedDateTime}} ]</div>
-            {% endfor %}
-        </div>
-    </div>
+    <!-- Include Comment Partial -->
+    {% include 'comment.html' %}
 {% endblock %} 

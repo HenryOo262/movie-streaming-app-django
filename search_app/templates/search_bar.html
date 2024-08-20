@@ -27,13 +27,17 @@
             </div>
         </div>
         <div class="grid-wrapper">
-            {% for movie in page_obj %}
-                <a class="cell" href="{% url 'movie_app.movie' id=movie.id %}">
+            {% for content in page_obj %}
+                {% if content_type == 'movies' %}
+                <a class="cell" href="{% url 'movie_app.movie' id=content.id %}">
+                {% elif content_type == 'series' %}
+                <a class="cell" href="{% url 'series_app.series' id=content.id %}">
+                {% endif %}
                     <div class="poster">
-                        <img src="{{movie.poster}}">
+                        <img src="{{content.poster}}">
                     </div>
                     <div class="title">
-                        <p> {{movie.title}} </p>
+                        <p> {{content.title}} </p>
                     </div>
                 </a>
             {% endfor %}

@@ -28,17 +28,6 @@ def bookmarks(request, content_type):
     return render(request, 'bookmark.html', context)   
 
 
-def bookmarks_series(request):
-    """ Returns Paginated Pages of Bookmarked series """
-    series_bookmarks = Bookmark.objects.filter(user=request.user, content_type=ContentType.objects.get_for_model(Series))
-    paginator = Paginator(series_bookmarks, 12)
-
-    page_number = request.GET.get("page")
-    page_obj = paginator.get_page(page_number)
-    
-    return render(request, 'bookmark.html', {"page_obj": page_obj, "content_type": "series"})   
-
-
 def movie_bookmark(request, id):
     """ Bookmark the movie if its id exists in Bookmark table, else delete the record """
     if request.method == 'POST':

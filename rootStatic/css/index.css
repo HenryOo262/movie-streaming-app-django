@@ -115,6 +115,7 @@ body {
 
     padding: 10px 50px;
 
+    border: solid 1px #f0f0f0;
     border-radius: 10px;
 
     display: flex;
@@ -125,6 +126,7 @@ body {
 .homepage:hover  {
     background-color: #000000;
     color: #ffff00;
+    border: solid 1px #ffff00;
 }
 
 .homepage svg {

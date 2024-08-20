@@ -92,7 +92,7 @@
                 <div> <p> Genre : </p> </div>
                 <div> <p> 
                     {% for genre in genres %} 
-                        <a href=""> {{genre.name}} </a>
+                        <a href="{% url 'search_app.search' content_type='series' search_type='genre' search=genre.name %}"> {{genre.name}} </a>
                     {% endfor %} 
                 </p> </div>
                 

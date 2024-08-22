@@ -3,14 +3,15 @@ from firebase_admin import storage
 from django.contrib import messages
 from django.db import IntegrityError
 from datetime import datetime, timedelta
+from django.core.paginator import Paginator
 from django.shortcuts import render, redirect
 from django.contrib.contenttypes.models import ContentType
 from django.http import StreamingHttpResponse, HttpResponse, HttpResponseRedirect
 
 from . import forms
+from comment_app.models import Comment
 from .models import MovieResource, Movie
 from bookmark_app.models import Bookmark
-from comment_app.models import Comment
 from comment_app.forms import CommentForm, EditForm
 from movieStreamingApp.models import Production, Director, Cast
 
@@ -19,44 +20,34 @@ def file_iterator(blob, start, end):
     try:
         # Download chunk directly as bytes
         chunk = blob.download_as_bytes(start=start, end=end)
-        print(len(chunk))
+        # print(len(chunk))
         yield chunk
     except Exception as e:
         print(f"Error downloading file chunk: {e}")
         raise
 
 
-#######################################################################
-
-
-def get_sources(x):
-    sources = []
-    for i in x:
-        sources.append(i.source)
-    return sources
-
-def get_resolutions(x):
-    resolutions = []
-    for i in x:
-        resolutions.append(i.resolution)
-    return resolutions
-
-
-#######################################################################
-
 def movie(request, id, resolution=None):
+    """ Send Movie Information """
     if request.method == 'GET':
+
         try:
-            comment_form = CommentForm()
-            edit_form = EditForm()
-            movie = Movie.objects.get(id=id)
-            resolutions = movie.movieresource_set.values('resolution')
-            genres = movie.genres.filter()
-            countries = movie.countries.filter()
-            productions = movie.productions.filter()
-            directors = movie.directors.filter()
-            casts = movie.casts.filter()
-            comments = Comment.objects.filter(object_id=id, content_type=ContentType.objects.get_for_model(Movie)).order_by('-addedDateTime')
+            comment_form  = CommentForm()
+            edit_form     = EditForm()
+            movie         = Movie.objects.get(id=id)
+            resolutions   = movie.movieresource_set.values('resolution')
+            genres        = movie.genres.filter()
+            countries     = movie.countries.filter()
+            productions   = movie.productions.filter()
+            directors     = movie.directors.filter()
+            casts         = movie.casts.filter()
+
+            '''
+            comments      = Comment.objects.filter(object_id=id, content_type=ContentType.objects.get_for_model(Movie)).order_by('-addedDateTime')
+            paginator     = Paginator(comments, 5)
+            page_number   = request.GET.get("page")
+            page_obj      = paginator.get_page(page_number)
+            '''
 
             movie.views = movie.views + 1
             movie.save()
@@ -81,7 +72,6 @@ def movie(request, id, resolution=None):
                 'resolutions': resolutions,
                 'genres': genres,
                 'countries': countries,
-                'comments': comments,
                 'productions': productions,
                 'directors': directors,
                 'casts': casts,
@@ -91,16 +81,10 @@ def movie(request, id, resolution=None):
                 'content_type':'movies',
             }
             return render(request, 'movie.html', context)
+        
         except Exception as e:
             print(e)
             return render(request, '404.html')
-    elif request.method == 'POST':
-        comment_form = CommentForm(request.POST)
-        if comment_form.is_valid():
-            commentText = comment_form.cleaned_data['commentText']
-            new_comment = Comment(user=request.user, commentText=commentText, content_type=ContentType.objects.get_for_model(Movie), object_id=id)
-            new_comment.save()
-            return redirect('movie_app.movie', id=id)
 
 
 def movie_stream(request, source):
@@ -108,13 +92,16 @@ def movie_stream(request, source):
     file = storage.bucket().blob(f'movies/{source}')
     file.reload()  
     file_size = file.size
+
     # get range from user ( initial is 0- )
     range = request.headers.get('Range', None)
     if not range:
         return HttpResponse(status=416)
+    
     # split x and y from range: x - y
     byte_range = re.search(r'bytes=(\d+)-(\d*)', range).groups()
     start = int(byte_range[0])
+
     # 1000Bytes is 0 - 999 just like array, 
     # thus end is either start + chunk or file_size - 1, whichever smaller
     # file_size - 1 to make sure there is no out of bound
@@ -125,6 +112,7 @@ def movie_stream(request, source):
     response['Accept-Ranges'] = 'bytes'
     response['Content-Length'] = end - start + 1
     response['Content-Type'] = 'video/mp4'
+
     return response 
 
 
@@ -135,6 +123,7 @@ def movie_download(request, source):
 
 
 def movie_create(request):
+    """ Send the movie create form and Process Data """
     if request.method == 'GET':
         movie_form = forms.MovieForm()
         productions = Production.objects.filter()
@@ -147,25 +136,27 @@ def movie_create(request):
             'casts': casts,
         }
         return render(request, 'movie_create.html', context)
+    
     elif request.method == 'POST':
         movie_form = forms.MovieForm(request.POST,request.FILES)
+
         if movie_form.is_valid():
             try:
-                title = movie_form.cleaned_data['title']
-                releaseDate = movie_form.cleaned_data['releaseDate']
-                description = movie_form.cleaned_data['description']
-                genres = movie_form.cleaned_data['genre']
-                countries = movie_form.cleaned_data['country']
-                poster = movie_form.cleaned_data['poster']
-                rating = movie_form.cleaned_data['rating']
-                production = movie_form.cleaned_data['production']
+                title        = movie_form.cleaned_data['title']
+                releaseDate  = movie_form.cleaned_data['releaseDate']
+                description  = movie_form.cleaned_data['description']
+                genres       = movie_form.cleaned_data['genre']
+                countries    = movie_form.cleaned_data['country']
+                poster       = movie_form.cleaned_data['poster']
+                rating       = movie_form.cleaned_data['rating']
+                production    = movie_form.cleaned_data['production']
                 coproduction1 = movie_form.cleaned_data['coproduction1']
                 coproduction2 = movie_form.cleaned_data['coproduction2']
-                director = movie_form.cleaned_data['director']
-                codirector = movie_form.cleaned_data['codirector']
-                cast = movie_form.cleaned_data['cast']
-                cocast1 = movie_form.cleaned_data['cocast1']
-                cocast2 = movie_form.cleaned_data['cocast2']
+                director      = movie_form.cleaned_data['director']
+                codirector    = movie_form.cleaned_data['codirector']
+                cast          = movie_form.cleaned_data['cast']
+                cocast1       = movie_form.cleaned_data['cocast1']
+                cocast2       = movie_form.cleaned_data['cocast2']
 
                 bucket = storage.bucket()
                 # creates a reference in bucket
@@ -217,15 +208,16 @@ def movie_create(request):
 
                 messages.success(request, 'Movie has been succesfully created')
                 return redirect('movie_app.movie_upload', id=new_movie.id)
+            
             except Exception as e:
                 print(e)
                 messages.error(request, 'An error has occured while creating the movie')
-                return render(request, 'movie_create.html', {'form': movie_form})
-        else:
-            return render(request, 'movie_create.html', {'form': movie_form})
+            
+        return render(request, 'movie_create.html', {'form': movie_form})
             
 
 def movie_upload(request, id=None):
+    """ Before uploading to firebase, save metadata to DB """
     if request.method == 'GET':
         movie = Movie.objects.get(id=id)
         movieResource_form = forms.MovieResourceForm(initial={'movie':movie})
@@ -234,21 +226,26 @@ def movie_upload(request, id=None):
             'form': movieResource_form
         }
         return render(request, 'movie_upload.html', context)
+    
     elif request.method == 'POST':
         movieResource_form = forms.MovieResourceForm(request.POST, request.FILES) 
         if movieResource_form.is_valid():
+            
             try:
-                resolution = movieResource_form.cleaned_data['resolution']
-                source = movieResource_form.cleaned_data['sourceFileName']
-                movie = movieResource_form.cleaned_data['movie']
+                resolution  = movieResource_form.cleaned_data['resolution']
+                source      = movieResource_form.cleaned_data['sourceFileName']
+                movie       = movieResource_form.cleaned_data['movie']
+
                 new_movieResource = MovieResource(movie=movie,resolution=resolution,source=source)
                 new_movieResource.save()
                 return HttpResponse(status = 200) 
+            
             except IntegrityError:
                 print(IntegrityError)
                 return HttpResponse(status = 500)
+            
             except Exception:
                 print(Exception)
                 return HttpResponse(status = 500)
-        else:
-            return render(request, 'movie_upload.html', {'form':movieResource_form})
+            
+        return render(request, 'movie_upload.html', {'form':movieResource_form})

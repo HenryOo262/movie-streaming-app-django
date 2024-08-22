@@ -176,6 +176,15 @@ body {
     cursor: pointer;
 }
 
+.login:hover {
+    color: #ffff00;
+    border: solid 2px #ffff00;
+}
+
+.login:hover svg {
+    fill: #ffff00;
+}
+
 .profile {
     margin-right: 20px;
 }

@@ -117,7 +117,7 @@
     z-index: 5;
 }
 
-.editModal form {
+.modalForm {
     padding: 10px;
 
     display: flex;
@@ -150,6 +150,27 @@
     fill: #ffff00;
 }
 
+.load-comments {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.loader:hover {
+    color: #ffff00;
+}
+
 .hidden {
     visibility: hidden;
+}
+
+.green {
+    color: #adff2f;
 }

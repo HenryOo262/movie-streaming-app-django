@@ -3,6 +3,7 @@ from pathlib import Path
 from django.contrib import messages
 from django.db import IntegrityError
 from datetime import datetime, timedelta
+from django.core.paginator import Paginator
 from django.shortcuts import render, redirect
 from django.contrib.contenttypes.models import ContentType
 from django.http import HttpResponse, StreamingHttpResponse
@@ -19,7 +20,7 @@ from movieStreamingApp.models import Cast, Production, Director
 def file_iterator(blob, start, end):
     try:
         chunk = blob.download_as_bytes(start=start, end=end)
-        print(len(chunk))
+        # print(len(chunk))
         yield chunk
     except Exception as e:
         print(f"Error downloading file chunk: {e}")
@@ -45,7 +46,13 @@ def series(request, id, current_season=None, current_episode=None, resolution=No
 
             comment_form = CommentForm()
             edit_form = EditForm()
-            comments = Comment.objects.filter(object_id=current_episode.id, content_type=ContentType.objects.get_for_model(Episode)).order_by('-addedDateTime')
+
+            '''
+            comments      = Comment.objects.filter(object_id=current_episode.id, content_type=ContentType.objects.get_for_model(Episode)).order_by('-addedDateTime')
+            paginator     = Paginator(comments, 5)
+            page_number   = request.GET.get("page")
+            page_obj      = paginator.get_page(page_number)
+            '''
 
             genres = series.genres.filter()
             countries = series.countries.filter()
@@ -78,7 +85,6 @@ def series(request, id, current_season=None, current_episode=None, resolution=No
                 'current_episode': current_episode,
                 'series_resource': series_resource,
                 'resolutions': resolutions,
-                'comments': comments,
                 'comment_form': comment_form,
                 'edit_form': edit_form,
                 'genres': genres,

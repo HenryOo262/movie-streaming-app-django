@@ -11,6 +11,9 @@ const counter1 = document.querySelector('#counter1')
 const counter2 = document.querySelector('#counter2')
 
 document.addEventListener('DOMContentLoaded', () => {
+    comment.value = ''
+    edit.value = ''
+
     counter1.textContent = String(comment.value.length) + '/' + 280
     counter2.textContent = String(edit.value.length) + '/' + 280
     checkCounter(comment, counter1)
@@ -42,7 +45,7 @@ function checkCounter(input, counter) {
 function callEditText(inputText) {
     // Remove Linebreaks
     // inputText = inputText.replace(/(\r\n|\n|\r)/gm, "");
-    edit.textContent = inputText
+    edit.value = inputText
 
     // Set The Word Counter of Modal
     checkCounter(edit, counter2)

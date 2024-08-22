@@ -28,6 +28,32 @@ def bookmarks(request, content_type):
     return render(request, 'bookmark.html', context)   
 
 
+def bookmark(request, content_type, id):
+    """ Bookmark Movies and Series """
+    if request.method == 'POST':
+        if content_type == 'movies':
+            model = Movie
+        elif content_type == 'series':
+            model = Series
+
+        try:
+            bookmark = Bookmark.objects.filter(user=request.user, object_id=id, content_type=ContentType.objects.get_for_model(model))
+            if bookmark.exists():
+                bookmark.delete()
+            else:
+                new_bookmark = Bookmark(user=request.user, content_type=ContentType.objects.get_for_model(model), object_id=id)
+                new_bookmark.save()
+            return HttpResponse(status = 200)
+        
+        except Exception as e:
+            print(e)
+            return HttpResponse(status = 500)
+
+
+#########################################################################
+
+
+'''
 def movie_bookmark(request, id):
     """ Bookmark the movie if its id exists in Bookmark table, else delete the record """
     if request.method == 'POST':
@@ -50,4 +76,4 @@ def series_bookmark(request, id, current_season, current_episode, resolution):
             new_bookmark = Bookmark(user=request.user, content_type=ContentType.objects.get_for_model(Series), object_id=id)
             new_bookmark.save()
     return redirect('series_app.series', id=id, current_season=current_season, current_episode=current_episode, resolution=resolution)
-        
+'''    

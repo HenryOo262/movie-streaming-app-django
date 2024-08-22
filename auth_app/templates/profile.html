@@ -12,7 +12,7 @@
             <h2> {{request.user.username}}'s Profile </h2>
         </div>
         <div class="header">
-            <p> Date Joined : {{user.date_joined}} </p>
+            <p> Date Joined : {{user.date_joined.date}} </p>
         </div>
         <div class="grid-wrapper">
             <div> {{form.username.label}} </div>

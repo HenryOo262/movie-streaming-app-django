@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
 from os import path, getenv
+from logging.handlers import RotatingFileHandler
 from firebase_admin import storage, initialize_app, credentials
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -166,3 +167,35 @@ SESSION_COOKIE_HTTPONLY = True
 SESSION_SAVE_EVERY_REQUEST = False
 
 LOGIN_URL = '/auth/login/'
+
+LOGGING = {
+    "version": 1,  # the dictConfig format version
+    "disable_existing_loggers": False,  # retain the default loggers
+    "handlers": {
+        "file": {
+            #"class": "logging.FileHandler",
+            "class": "logging.handlers.RotatingFileHandler",
+            "filename": "general.log",
+            "level": "DEBUG",
+            "formatter": "verbose",
+            'backupCount': 10, # keep at most 10 log files
+            'maxBytes': 5242880, # 5*1024*1024 bytes (5MB)
+        },
+    },
+    "loggers": {
+        "": {
+            "level": "DEBUG",
+            "handlers": ["file"],
+        },
+    },
+    "formatters": {
+        "verbose": {
+            "format": "{name} {levelname} {asctime} {module} {process:d} {thread:d} {message}",
+            "style": "{",
+        },
+        "simple": {
+            "format": "{levelname} {message}",
+            "style": "{",
+        },
+    },
+}

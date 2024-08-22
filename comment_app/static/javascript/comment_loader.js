@@ -65,7 +65,8 @@ function commentMaker(comment) {
 
     const addedDateTime = document.createElement('p')
     addedDateTime.className = 'green'
-    addedDateTime.innerText = comment.addedDateTime
+    const localDateTime = new Date(comment.addedDateTime).toLocaleString()
+    addedDateTime.innerText = localDateTime
     commentDiv.appendChild(addedDateTime)
 
     if(comment.userId == user_id) {

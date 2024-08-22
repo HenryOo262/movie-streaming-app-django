@@ -103,7 +103,7 @@ def load_comment(request, content_type, id, episode=None, season=None):
             'userName': x[1],
             'commentId': x[2],
             'commentText': x[3], 
-            'addedDateTime': str(x[4]).split('.')[0]
+            'addedDateTime': x[4].isoformat()
         })
 
     # Paginator slices []

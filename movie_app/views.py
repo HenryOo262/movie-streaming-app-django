@@ -5,6 +5,7 @@ from django.db import IntegrityError
 from datetime import datetime, timedelta
 from django.core.paginator import Paginator
 from django.shortcuts import render, redirect
+from django.core.exceptions import ObjectDoesNotExist, EmptyResultSet
 from utils.custom_decorators import superuser_required
 from django.contrib.contenttypes.models import ContentType
 from django.contrib.auth.decorators import login_required
@@ -65,6 +66,8 @@ def movie(request, id, resolution=None):
 
             if resolution == None:
                 movie_resource = movie.movieresource_set.first() 
+                if(movie_resource is None and request.user.is_superuser):
+                    return redirect('movie_app.movie_upload', id=id)
             else:
                 movie_resource = movie.movieresource_set.get(resolution=resolution)
             
@@ -83,7 +86,7 @@ def movie(request, id, resolution=None):
                 'content_type':'movies',
             }
             return render(request, 'movie.html', context)
-        
+
         except Exception as e:
             raise e
 

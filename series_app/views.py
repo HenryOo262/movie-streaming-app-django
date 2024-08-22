@@ -8,6 +8,7 @@ from django.shortcuts import render, redirect
 from django.contrib.contenttypes.models import ContentType
 from django.http import HttpResponse, StreamingHttpResponse
 from firebase_admin import storage, initialize_app, credentials
+from django.core.exceptions import ObjectDoesNotExist, EmptyResultSet
 from django.contrib.auth.decorators import user_passes_test
 from django.contrib.auth.decorators import login_required
 from utils.custom_decorators import superuser_required
@@ -39,11 +40,17 @@ def series(request, id, current_season=None, current_episode=None, resolution=No
         try:
             series = Series.objects.get(id=id)
 
-            seasons = series.season_set.values('season').order_by('season')
-            current_season = series.season_set.get(season=current_season)
+            try:
+                seasons = series.season_set.values('season').order_by('season')
+                current_season = series.season_set.get(season=current_season)
 
-            episodes = current_season.episode_set.values('episode').order_by('episode')
-            current_episode = current_season.episode_set.get(episode=current_episode)
+                episodes = current_season.episode_set.values('episode').order_by('episode')
+                current_episode = current_season.episode_set.get(episode=current_episode)
+                
+            except ObjectDoesNotExist as obj:
+                if(request.user.is_superuser) :
+                    return redirect('series_app.series_upload', id=id)
+                raise obj
 
             resolutions = current_episode.seriesresource_set.values('resolution')
 

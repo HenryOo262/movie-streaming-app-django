@@ -17,7 +17,9 @@
     <div class="button-wrapper">
         <div>
             <a class="download-button" href="{% url 'movie_app.movie_download' source=movie_resource.source %}"> Download </a>
+            {% if user.is_superuser %}
             <a class="upload-button" href="{% url 'movie_app.movie_upload' id=movie.id %}"> Upload </a>
+            {% endif %}
         </div>
         <div>
         {% for item in resolutions %}

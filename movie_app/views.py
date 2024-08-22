@@ -5,7 +5,9 @@ from django.db import IntegrityError
 from datetime import datetime, timedelta
 from django.core.paginator import Paginator
 from django.shortcuts import render, redirect
+from utils.custom_decorators import superuser_required
 from django.contrib.contenttypes.models import ContentType
+from django.contrib.auth.decorators import login_required
 from django.http import StreamingHttpResponse, HttpResponse, HttpResponseRedirect
 
 from . import forms
@@ -116,12 +118,14 @@ def movie_stream(request, source):
     return response 
 
 
+@login_required
 def movie_download(request, source):
     expiration = datetime.now() + timedelta(minutes=5)
     download_url = storage.bucket().blob(f'movies/{source}').generate_signed_url(expiration=expiration)
     return render(request, 'movie_download.html', {'download_url':download_url})
 
 
+@superuser_required
 def movie_create(request):
     """ Send the movie create form and Process Data """
     if request.method == 'GET':
@@ -216,6 +220,7 @@ def movie_create(request):
         return render(request, 'movie_create.html', {'form': movie_form})
             
 
+@superuser_required
 def movie_upload(request, id=None):
     """ Before uploading to firebase, save metadata to DB """
     if request.method == 'GET':

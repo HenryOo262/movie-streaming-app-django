@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.core.paginator import Paginator
 from django.shortcuts import render, redirect
+from django.contrib.auth.decorators import login_required
 from django.contrib.contenttypes.models import ContentType
 
 from .models import Bookmark
@@ -8,6 +9,7 @@ from movie_app.models import Movie
 from series_app.models import Series
 
 
+@login_required
 def bookmarks(request, content_type):
     """ Returns Paginated Pages of Bookmarked movies """
     if content_type == 'movies':
@@ -28,6 +30,7 @@ def bookmarks(request, content_type):
     return render(request, 'bookmark.html', context)   
 
 
+@login_required
 def bookmark(request, content_type, id):
     """ Bookmark Movies and Series """
     if request.method == 'POST':

@@ -1,25 +1,25 @@
+from django.contrib import messages
+from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
-from django.http import HttpResponse
-from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
-from django.contrib.auth.models import User
-from django.contrib.auth.forms import PasswordChangeForm
-from .forms import RegisterForm, LoginForm, ProfileForm
 
+from django.contrib.auth.models import User
+from .forms import RegisterForm, LoginForm, ProfileForm
+from django.contrib.auth.forms import PasswordChangeForm
+
+
+@login_required
 def auth_profile(request):
     if request.method == 'GET':
-        if request.user.is_authenticated:
-            initial_data = {
-                'username': request.user.username,
-                'email': request.user.email,
-                'first_name': request.user.first_name,
-                'last_name': request.user.last_name,
-            }
-            profile_form = ProfileForm(initial=initial_data)
-            return render(request, 'profile.html', {'form': profile_form})
-        else:
-            return redirect('auth_app.auth_login')
+        initial_data = {
+            'username': request.user.username,
+            'email': request.user.email,
+            'first_name': request.user.first_name,
+            'last_name': request.user.last_name,
+        }
+        profile_form = ProfileForm(initial=initial_data)
+        return render(request, 'profile.html', {'form': profile_form})
     elif request.method == 'POST':
         profile_form = ProfileForm(request.POST)
         if profile_form.is_valid():
@@ -38,6 +38,7 @@ def auth_profile(request):
         return render(request, 'profile.html', {'form': profile_form})
 
 
+@login_required
 def auth_passwordChange(request):
     if request.method == 'GET':
         passwordChange_form = PasswordChangeForm(request.user)
@@ -71,6 +72,7 @@ def auth_register(request):
                 print(Exception)
                 messages.error(request, 'Error registering user')
         return render(request, 'register_form.html', {'form': register_form})
+
 
 def auth_login(request):
     if request.method == 'GET':

@@ -1,7 +1,8 @@
 from django.contrib import messages
-from django.http import HttpResponse, JsonResponse
-from django.shortcuts import render, redirect
 from django.core.paginator import Paginator
+from django.shortcuts import render, redirect
+from django.http import HttpResponse, JsonResponse
+from django.contrib.auth.decorators import login_required
 from django.contrib.contenttypes.models import ContentType
 
 from .models import Comment
@@ -10,6 +11,7 @@ from .forms import CommentForm, EditForm
 from series_app.models import Series, Episode, Season
 
 
+@login_required
 def create_comment(request, content_type, id, season=None, episode=None):
     """ Add New Comments To The Comment Table """
     if request.method == 'POST':
@@ -40,6 +42,7 @@ def create_comment(request, content_type, id, season=None, episode=None):
         return HttpResponse(status = 500)
         
 
+@login_required
 def delete_comment(request, comment_id):
     """ Delete Comment """
     if request.method == 'DELETE':
@@ -54,6 +57,7 @@ def delete_comment(request, comment_id):
             return HttpResponse(status = 500)
     
 
+@login_required
 def edit_comment(request):
     """ Edit Comment """
     if request.method == 'POST':
@@ -105,7 +109,7 @@ def load_comment(request, content_type, id, episode=None, season=None):
         })
 
     # Paginator slices []
-    paginator = Paginator(comments, 5)
+    paginator = Paginator(comments, 4)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
     

@@ -8,6 +8,9 @@ from django.shortcuts import render, redirect
 from django.contrib.contenttypes.models import ContentType
 from django.http import HttpResponse, StreamingHttpResponse
 from firebase_admin import storage, initialize_app, credentials
+from django.contrib.auth.decorators import user_passes_test
+from django.contrib.auth.decorators import login_required
+from utils.custom_decorators import superuser_required
 
 from . import forms
 from comment_app.models import Comment
@@ -128,6 +131,7 @@ def series_stream(request, source):
     return response 
         
 
+@superuser_required
 def series_create(request):
     """ Send the series create form and process data """
     if request.method == 'GET':
@@ -218,6 +222,7 @@ def series_create(request):
         return render(request, 'series_create.html', {'form': series_form})
             
 
+@superuser_required
 def series_upload(request, id=None):
     """ Before uploading to firebase, save metadata to DB """
     if request.method == 'GET':
@@ -260,6 +265,7 @@ def series_upload(request, id=None):
         return render(request, 'series_upload.html', {'form': seriesResource_form})
 
 
+@login_required
 def series_download(request, source):
     """ Get a signed url of the video file """
     try:

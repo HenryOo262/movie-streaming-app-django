@@ -33,8 +33,7 @@ def auth_profile(request):
                 messages.success(request, 'Profile updated successfully')
                 return redirect('auth_app.auth_profile')
             except Exception as e:
-                print(e)
-                messages.error(request, 'Error updating profile')
+                raise e
         return render(request, 'profile.html', {'form': profile_form})
 
 
@@ -52,8 +51,7 @@ def auth_passwordChange(request):
                 messages.info(request, 'Password changed successfully. Please login again.')
                 return redirect('auth_app.auth_login')
             except Exception as e:
-                print(e)
-                messages.error(request, 'Error changing password')
+                raise e
         return render(request, 'passwordChange_form.html', {'form': passwordChange_form})
 
 
@@ -68,9 +66,8 @@ def auth_register(request):
                 register_form.save()
                 messages.success(request, 'Registered successfully')
                 return redirect('auth_app.auth_login')
-            except Exception:
-                print(Exception)
-                messages.error(request, 'Error registering user')
+            except Exception as e:
+                raise e
         return render(request, 'register_form.html', {'form': register_form})
 
 

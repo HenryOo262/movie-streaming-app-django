@@ -33,11 +33,11 @@ def create_comment(request, content_type, id, season=None, episode=None):
                 return HttpResponse(status = 200)
             
             except Exception as e:
-                print(e)
-                messages.error(request, 'Error occured while saving comment')
+                raise e
 
+        # If Invalid
         else:
-            messages.success(request, comment_form.errors.as_text())
+            messages.error(request, comment_form.errors.as_text())
 
         return HttpResponse(status = 500)
         
@@ -52,8 +52,7 @@ def delete_comment(request, comment_id):
             messages.success(request, 'Comment deleted successfully')
             return HttpResponse(status = 200)
         except Exception as e:
-            print(e)
-            messages.error(request, 'Error occured while deleting')
+            raise e
             return HttpResponse(status = 500)
     
 
@@ -74,8 +73,7 @@ def edit_comment(request):
                 return HttpResponse(status = 200)
             
             except Exception as e:
-                print(e)
-                messages.error(request, 'Error occured while editing')
+                raise e
 
         else:
             messages.error(request, edit_form.errors.as_text())

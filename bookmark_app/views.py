@@ -49,7 +49,7 @@ def bookmark(request, content_type, id):
             return HttpResponse(status = 200)
         
         except Exception as e:
-            print(e)
+            raise e
             return HttpResponse(status = 500)
 
 

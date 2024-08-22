@@ -101,8 +101,7 @@ def series(request, id, current_season=None, current_episode=None, resolution=No
             return render(request, 'series.html', context)
         
         except Exception as e:
-            print(e)
-            return render(request, '404.html')
+            raise e
 
 
 def series_stream(request, source):
@@ -216,8 +215,7 @@ def series_create(request):
                 return redirect('series_app.series_upload', id=new_series.id)
             
             except Exception as e:
-                print(e)
-                messages.error(request, 'An error has occured while creating the series')
+                raise e
         
         return render(request, 'series_create.html', {'form': series_form})
             
@@ -254,12 +252,12 @@ def series_upload(request, id=None):
                 new_seriesResource.save()
                 return HttpResponse(status = 200) 
             
-            except IntegrityError:
-                print(IntegrityError)
+            except IntegrityError as i:
+                raise i
                 return HttpResponse(status = 500)
             
-            except Exception:
-                print(Exception)
+            except Exception as e:
+                raise e
                 return HttpResponse(status = 500)
     
         return render(request, 'series_upload.html', {'form': seriesResource_form})
@@ -274,5 +272,4 @@ def series_download(request, source):
         return render(request, 'movie_download.html', {'download_url':download_url})
     
     except Exception as e:
-        print(e)
-        return render(request, '404.html')
+        raise e

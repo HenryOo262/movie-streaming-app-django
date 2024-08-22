@@ -111,7 +111,7 @@
 
         // Saving video metadata successful
         // Upload video to firebase
-        if(response.status == '200') {
+        if(response.ok) {
             console.log(response.status)
             alert('Resource file metadata saved in database successfully.')
             const storageRef = ref(storage, `movies/${filename}`);

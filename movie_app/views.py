@@ -26,7 +26,7 @@ def file_iterator(blob, start, end):
         yield chunk
     except Exception as e:
         print(f"Error downloading file chunk: {e}")
-        raise
+        raise e
 
 
 def movie(request, id, resolution=None):
@@ -85,8 +85,7 @@ def movie(request, id, resolution=None):
             return render(request, 'movie.html', context)
         
         except Exception as e:
-            print(e)
-            return render(request, '404.html')
+            raise e
 
 
 def movie_stream(request, source):
@@ -214,8 +213,7 @@ def movie_create(request):
                 return redirect('movie_app.movie_upload', id=new_movie.id)
             
             except Exception as e:
-                print(e)
-                messages.error(request, 'An error has occured while creating the movie')
+                raise e
             
         return render(request, 'movie_create.html', {'form': movie_form})
             
@@ -245,12 +243,12 @@ def movie_upload(request, id=None):
                 new_movieResource.save()
                 return HttpResponse(status = 200) 
             
-            except IntegrityError:
-                print(IntegrityError)
+            except IntegrityError as i:
+                raise i
                 return HttpResponse(status = 500)
             
-            except Exception:
-                print(Exception)
+            except Exception as e:
+                raise e
                 return HttpResponse(status = 500)
             
         return render(request, 'movie_upload.html', {'form':movieResource_form})

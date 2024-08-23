@@ -57,13 +57,6 @@ def series(request, id, current_season=None, current_episode=None, resolution=No
             comment_form = CommentForm()
             edit_form = EditForm()
 
-            '''
-            comments      = Comment.objects.filter(object_id=current_episode.id, content_type=ContentType.objects.get_for_model(Episode)).order_by('-addedDateTime')
-            paginator     = Paginator(comments, 5)
-            page_number   = request.GET.get("page")
-            page_obj      = paginator.get_page(page_number)
-            '''
-
             genres = series.genres.filter()
             countries = series.countries.filter()
             productions = series.productions.filter()
@@ -164,6 +157,7 @@ def series_create(request):
                 genres        = series_form.cleaned_data['genre']
                 countries     = series_form.cleaned_data['country']
                 poster        = series_form.cleaned_data['poster']
+                status        = series_form.cleaned_data['status']
                 rating        = series_form.cleaned_data['rating']
                 production    = series_form.cleaned_data['production']
                 coproduction1 = series_form.cleaned_data['coproduction1']
@@ -180,7 +174,7 @@ def series_create(request):
                 blob.make_public()  
                 poster_url = blob.public_url
 
-                new_series = Series(title=title, rating=rating, poster=poster_url, releaseDate=releaseDate, description=description)
+                new_series = Series(title=title, status=status, rating=rating, poster=poster_url, releaseDate=releaseDate, description=description)
                 new_series.save()
                 new_series.genres.set(genres)
                 new_series.countries.set(countries)

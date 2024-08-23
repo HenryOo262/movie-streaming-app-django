@@ -97,6 +97,9 @@
                         <a href="{% url 'search_app.search' content_type='series' search_type='genre' search=genre.name %}"> {{genre.name}} </a>
                     {% endfor %} 
                 </p> </div>
+
+                <div> <p> Status : </p> </div>
+                <div> <p> <a href="{% url 'search_app.search' content_type='series' search_type='status' search=series.status %}"> {{series.status}} </a> </p> </div>
                 
                 <div> <p> Production : </p> </div>
                 {% if productions %}

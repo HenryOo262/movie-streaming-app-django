@@ -1,11 +1,16 @@
 
 var page = 1  // load the second page for the first load
+var user_id
 
 const loader = document.querySelector('#loader')
 const comments = document.querySelector('#comments')
 const loadmore = comments.lastElementChild
 
-const user_id = parseInt(JSON.parse(document.getElementById('user_id').textContent))
+try {
+    user_id = parseInt(JSON.parse(document.getElementById('user_id').textContent))
+} catch(Exception) {
+    user_id = null
+} 
 
 loader.addEventListener('click', (event) => {
     event.preventDefault()

@@ -45,13 +45,6 @@ def movie(request, id, resolution=None):
             directors     = movie.directors.filter()
             casts         = movie.casts.filter()
 
-            '''
-            comments      = Comment.objects.filter(object_id=id, content_type=ContentType.objects.get_for_model(Movie)).order_by('-addedDateTime')
-            paginator     = Paginator(comments, 5)
-            page_number   = request.GET.get("page")
-            page_obj      = paginator.get_page(page_number)
-            '''
-
             movie.views = movie.views + 1
             movie.save()
 
@@ -178,36 +171,36 @@ def movie_create(request):
 
                 # handle productions
                 productions = []
-                if not production is '':
+                if production != '':
                     production, created = Production.objects.get_or_create(name=production)
                     productions.append(production)
-                if not coproduction1 is '':
+                if coproduction1 != '':
                     coproduction1, created = Production.objects.get_or_create(name=coproduction1)
                     productions.append(coproduction1)
-                if not coproduction2 is '':
+                if coproduction2 != '':
                     coproduction2, created = Production.objects.get_or_create(name=coproduction2)
                     productions.append(coproduction2)
                 new_movie.productions.set(productions)
 
                 # handle directors
                 directors = []
-                if not director is '':
+                if director != '':
                     director, created = Director.objects.get_or_create(name=director)
                     directors.append(director)
-                if not codirector is '':
+                if codirector != '':
                     codirector, created = Director.objects.get_or_create(name=codirector)
                     directors.append(codirector)
                 new_movie.directors.set(directors)
 
                 # handle casts
                 casts = []
-                if not cast is '':
+                if cast != '':
                     cast, created = Cast.objects.get_or_create(name=cast)
                     casts.append(cast)
-                if not cocast1 is '':
+                if cocast1 != '':
                     cocast1, created = Cast.objects.get_or_create(name=cocast1)
                     casts.append(cocast1)
-                if not cocast2 is '':
+                if cocast2 != '':
                     cocast2, created = Cast.objects.get_or_create(name=cocast2)
                     casts.append(cocast2)
                 new_movie.casts.set(casts)

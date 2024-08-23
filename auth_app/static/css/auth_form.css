@@ -107,8 +107,15 @@ a:hover {
     padding: 10px;
 
     border-radius: 5px;
-    border-style: none;
-    outline: none;
+    border: none;
+    outline: solid 2px #2b2b2b;
+
+    transition-duration: 0.4s;
+}
+
+.grid-wrapper input:focus {
+    outline: solid 2px #ffff00;
+    transition-duration: 0.4s;
 }
 
 .logout-wrapper {

@@ -9,7 +9,7 @@ class SeriesForm(forms.ModelForm):
 
     class Meta:
         model = Series
-        fields = ['title','poster','releaseDate','rating','description','genres','countries','productions','directors','casts']
+        fields = ['title','poster','releaseDate','status','rating','description','genres','countries','productions','directors','casts']
 
     releaseDate = forms.DateField(
         label='Release Date',

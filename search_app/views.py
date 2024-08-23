@@ -16,18 +16,26 @@ def search(request, content_type=None, search_type=None, search=None):
     elif content_type == 'series':
         model = Series
 
-    if search_type == 'genre':
-        content = model.objects.filter(genres__name__icontains=search)
-    elif search_type == 'production':
-        content = model.objects.filter(productions__name__icontains=search)
-    elif search_type == 'cast':
-        content = model.objects.filter(casts__name__icontains=search)
-    elif search_type == 'director':
-        content = model.objects.filter(directors__name__icontains=search)
-    elif search_type == 'rating':
-        content = model.objects.filter(rating=search)
-    elif search_type == 'country':
-        content = model.objects.filter(countries__name__icontains=search)
+    searchTypeInvalidForMovie = False
+
+    try:
+        if search_type == 'genre':
+            content = model.objects.filter(genres__name__icontains=search)
+        elif search_type == 'production':
+            content = model.objects.filter(productions__name__icontains=search)
+        elif search_type == 'cast':
+            content = model.objects.filter(casts__name__icontains=search)
+        elif search_type == 'director':
+            content = model.objects.filter(directors__name__icontains=search)
+        elif search_type == 'rating':
+            content = model.objects.filter(rating=search)
+        elif search_type == 'status':
+            content = model.objects.filter(status=search)
+            searchTypeInvalidForMovie = True
+        elif search_type == 'country':
+            content = model.objects.filter(countries__name__icontains=search)
+    except Exception as e:
+        return HttpResponse(e)
 
     paginator = Paginator(content, 12)
 
@@ -39,6 +47,7 @@ def search(request, content_type=None, search_type=None, search=None):
         "content_type": content_type,
         "search_type": search_type,
         "search": search,
+        "searchTypeInvalidForMovie": searchTypeInvalidForMovie,
     }
     return render(request, 'search.html', context) 
 

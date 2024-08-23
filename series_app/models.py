@@ -6,6 +6,7 @@ class Series(models.Model):
     poster      = models.CharField(max_length=255, unique=True)
     releaseDate = models.DateField()
     description = models.TextField()
+    status      = models.CharField(max_length=10, choices=[('Ongoing','Ongoing'),('Completed','Completed'),('Hiatus','Hiatus'),('Canceled','Canceled')])
     rating      = models.CharField(max_length=5, choices=[('G','G'),('PG','PG'),('PG-13','PG-13'),('R','R'),('NC-17','NC-17')])
     addedDateTime = models.DateTimeField(auto_now_add=True)
     genres      = models.ManyToManyField(Genre, blank=True)

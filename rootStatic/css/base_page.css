@@ -32,34 +32,31 @@ body {
 }
 
 .modal {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #f5f5f5;
+    color: #000000;
 
     position: absolute;
     top: 100%;
     z-index: 3;
 
-    padding: 20px;
+    width: fit-content;
+    padding: 10px 10px;
 
     display: grid;
     grid-template-rows: repeat(auto,1fr);
     row-gap: 20px;
 
     border: solid 1px white;
-    border-radius: 10%;
+    border-radius: 2px;
     visibility: hidden;
 }
 
-.modal div {
-    width: 100%;
-}
-
 .modal a {
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
 
     width: 100%;
-    padding: 5px;
+    padding: 5px 10px;
 
     border-radius: 5px;
 
@@ -68,13 +65,14 @@ body {
 }
 
 .modal a:hover {
+    background-color: #000000;
     color: #ffff00;
 }
 
 .modalChild {
-    background-color: #000000;
-    color: #ffffff;
-    font-size: 14px;
+    background-color: #f5f5f5;
+    color: #000000;
+    font-size: 12px;
 
     position: absolute;
     top: 100%;
@@ -84,22 +82,21 @@ body {
     padding: 10px;
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
 
-    border: solid 1px white;
-    border-radius: 10px;
+    border-radius: 2px;
+
     visibility: hidden;
 }
 
-.modalChild div {
-    width: 100%;
-}
 
 .modalChild a {
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
 
-    width: 100%;
+    width: fit-content;
+    height: fit-content;
     padding: 5px;
 
     border-radius: 5px;
@@ -110,6 +107,7 @@ body {
 
 .modalChild a:hover {
     color: #ffff00;
+    background-color: #000000;
 }
 
 .show-modal {

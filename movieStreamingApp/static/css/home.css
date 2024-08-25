@@ -7,6 +7,26 @@ body {
     background-size: cover;
 }
 
+.welcome-user {
+    color: #ffffff;
+
+    width: 100%;
+    margin: 10px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.welcome-user h1 {
+    background-color: rgba(0, 0, 0, 0.5);
+
+    padding: 10px;
+    margin-right: 40px;
+
+    border-radius: 5px;
+}
+
 .content-wrapper {
     background-color: rgba(0, 0, 0, 0.5);
     color: #ffffff;
@@ -176,6 +196,14 @@ body {
         grid-template-columns: repeat(3, 1fr);
         width: 100%;
     }
+
+    .welcome-user {
+        justify-content: center;
+    }
+
+    .welcome-user h1 {
+        margin: 0px;
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -183,5 +211,9 @@ body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
+    }
+
+    .welcome-user {
+        font-size: 12px;
     }
 }

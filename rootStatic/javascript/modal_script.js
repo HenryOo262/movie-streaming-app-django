@@ -50,9 +50,10 @@ function searchTermFetch() {
 function populateModalChild(items, searchTerm) {
     modalChild.innerHTML = ''
     items.forEach(item => {
-        const div = document.createElement('div')
-        div.innerHTML = `<a href="${window.location.origin}/search/${searchTerm}/${item}">${item}</a>`
-        modalChild.appendChild(div)
+        const a = document.createElement('a')
+        a.href = `${window.location.origin}/search/${searchTerm}/${item}`
+        a.innerText = `${item}`
+        modalChild.appendChild(a)
     })
 }
 

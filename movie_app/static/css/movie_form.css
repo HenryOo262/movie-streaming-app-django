@@ -83,15 +83,6 @@ body {
     justify-content: center;
 }
 
-.checkbox-cell {
-    margin: 10px auto;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 .cell-multiinput {
     margin: 10px auto;
 
@@ -120,8 +111,6 @@ body {
 }
 
 .loading {
-    background-color: #ffffff;
-
     position: relative;
 
     margin: 20px auto;

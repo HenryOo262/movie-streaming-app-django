@@ -12,6 +12,7 @@ from django.core.exceptions import ObjectDoesNotExist, EmptyResultSet
 from django.contrib.auth.decorators import user_passes_test
 from django.contrib.auth.decorators import login_required
 from utils.custom_decorators import superuser_required
+from utils.file_iterator import file_iterator
 
 from . import forms
 from comment_app.models import Comment
@@ -19,16 +20,6 @@ from bookmark_app.models import Bookmark
 from comment_app.forms import CommentForm, EditForm
 from .models import Series, Season, SeriesResource, Episode
 from movieStreamingApp.models import Cast, Production, Director
-
-
-def file_iterator(blob, start, end):
-    try:
-        chunk = blob.download_as_bytes(start=start, end=end)
-        # print(len(chunk))
-        yield chunk
-    except Exception as e:
-        print(f"Error downloading file chunk: {e}")
-        raise
 
 
 def series(request, id, current_season=None, current_episode=None, resolution=None):

@@ -10,6 +10,7 @@ from utils.custom_decorators import superuser_required
 from django.contrib.contenttypes.models import ContentType
 from django.contrib.auth.decorators import login_required
 from django.http import StreamingHttpResponse, HttpResponse, HttpResponseRedirect
+from utils.file_iterator import file_iterator
 
 from . import forms
 from comment_app.models import Comment
@@ -17,17 +18,6 @@ from .models import MovieResource, Movie
 from bookmark_app.models import Bookmark
 from comment_app.forms import CommentForm, EditForm
 from movieStreamingApp.models import Production, Director, Cast
-
-
-def file_iterator(blob, start, end):
-    try:
-        # Download chunk directly as bytes
-        chunk = blob.download_as_bytes(start=start, end=end)
-        # print(len(chunk))
-        yield chunk
-    except Exception as e:
-        print(f"Error downloading file chunk: {e}")
-        raise e
 
 
 def movie(request, id, resolution=None):

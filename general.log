@@ -3365,3 +3365,671 @@ urllib3.connectionpool DEBUG 2024-08-23 20:15:10,232 connectionpool 22624 19928 
 google.resumable_media._helpers INFO 2024-08-23 20:15:10,233 _helpers 22624 19928 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20Cuphead%20Show%202022%20free%20stream%20-%20Fbox.mp4?generation=1723995352673843&alt=media
 (which happens for composite objects), so client-side content integrity
 checking is not being performed.
+django.utils.autoreload INFO 2024-08-23 20:15:56,848 autoreload 22820 23636 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:21:51,778 autoreload 22820 23636 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:21:54,132 autoreload 22772 25552 Watching for file changes with StatReloader
+django.request ERROR 2024-08-23 20:21:55,075 log 22772 24672 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py", line 14, in home
+    latest_movies = Movie.objects.filter(movieResource__isnull=False).order_by('-releaseDate')[:12]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'movieResource' into field. Choices are: addedDateTime, casts, countries, description, directors, genres, id, movieresource, poster, productions, rating, releaseDate, title, views
+django.request ERROR 2024-08-23 20:21:55,277 log 22772 24672 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py", line 14, in home
+    latest_movies = Movie.objects.filter(movieResource__isnull=False).order_by('-releaseDate')[:12]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'movieResource' into field. Choices are: addedDateTime, casts, countries, description, directors, genres, id, movieresource, poster, productions, rating, releaseDate, title, views
+django.utils.autoreload INFO 2024-08-23 20:22:36,650 autoreload 22772 25552 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:22:38,763 autoreload 18200 25228 Watching for file changes with StatReloader
+django.request ERROR 2024-08-23 20:22:48,475 log 18200 19592 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py", line 14, in home
+    latest_movies = Movie.objects.filter(movieResource__isnull=False).order_by('-releaseDate')[:12]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'movieResource' into field. Choices are: addedDateTime, casts, countries, description, directors, genres, id, movieresource, poster, productions, rating, releaseDate, title, views
+django.utils.autoreload INFO 2024-08-23 20:23:04,516 autoreload 18200 25228 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:23:06,539 autoreload 10108 20284 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:23:23,632 autoreload 10108 20284 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:23:26,273 autoreload 23524 11436 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:23:28,328 autoreload 23524 11436 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:23:30,408 autoreload 20860 2960 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:24:24,053 autoreload 20860 2960 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:24:26,076 autoreload 23096 5268 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:25:29,285 autoreload 23096 5268 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:25:32,037 autoreload 6084 22752 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:27:04,007 autoreload 6084 22752 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:27:07,156 autoreload 9140 3144 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:27:18,758 autoreload 9140 3144 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:27:21,148 autoreload 4984 22924 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:27:32,891 autoreload 4984 22924 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:27:35,176 autoreload 25572 19420 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:28:01,903 autoreload 25572 19420 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:28:04,029 autoreload 24452 10112 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:28:17,947 autoreload 24452 10112 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:28:20,006 autoreload 20712 13532 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:28:30,552 autoreload 20712 13532 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:28:33,060 autoreload 22280 23808 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:29:38,119 autoreload 22280 23808 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:29:40,397 autoreload 23260 7700 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:29:54,341 autoreload 23260 7700 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:29:56,879 autoreload 12140 19832 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:30:28,352 autoreload 12140 19832 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:30:30,976 autoreload 25028 17196 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:31:21,272 autoreload 25028 17196 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:31:23,709 autoreload 22584 20268 Watching for file changes with StatReloader
+django.request ERROR 2024-08-23 20:31:24,333 log 22584 18276 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py", line 16, in home
+    mostviewed_movies = Movie.objects.filter(movieresource__isnull=False).distinct().order_by('-releaseDate','+views')[:12]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1701, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 2253, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword '+views' into field. Choices are: addedDateTime, casts, countries, description, directors, genres, id, movieresource, poster, productions, rating, releaseDate, title, views
+django.utils.autoreload INFO 2024-08-23 20:31:40,858 autoreload 22584 20268 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:31:42,884 autoreload 23648 25552 Watching for file changes with StatReloader
+django.request ERROR 2024-08-23 20:32:05,278 log 23648 15072 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py", line 16, in home
+    mostviewed_movies = Movie.objects.filter(movieresource__isnull=False).distinct().order_by('-releaseDate','+views')[:12]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1701, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 2253, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword '+views' into field. Choices are: addedDateTime, casts, countries, description, directors, genres, id, movieresource, poster, productions, rating, releaseDate, title, views
+django.request ERROR 2024-08-23 20:32:06,109 log 23648 15072 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py", line 16, in home
+    mostviewed_movies = Movie.objects.filter(movieresource__isnull=False).distinct().order_by('-releaseDate','+views')[:12]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1701, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 2253, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword '+views' into field. Choices are: addedDateTime, casts, countries, description, directors, genres, id, movieresource, poster, productions, rating, releaseDate, title, views
+django.utils.autoreload INFO 2024-08-23 20:32:26,028 autoreload 23648 25552 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:32:28,288 autoreload 22400 20776 Watching for file changes with StatReloader
+django.request ERROR 2024-08-23 20:32:28,680 log 22400 24764 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py", line 16, in home
+    mostviewed_movies = Movie.objects.filter(movieresource__isnull=False).distinct().order_by('-releaseDate','+view')[:12]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1701, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 2253, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword '+view' into field. Choices are: addedDateTime, casts, countries, description, directors, genres, id, movieresource, poster, productions, rating, releaseDate, title, views
+django.utils.autoreload INFO 2024-08-23 20:33:04,684 autoreload 22400 20776 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:33:06,871 autoreload 25400 25100 Watching for file changes with StatReloader
+django.request ERROR 2024-08-23 20:33:07,393 log 25400 6088 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py", line 16, in home
+    mostviewed_movies = Movie.objects.filter(movieresource__isnull=False).distinct().order_by('-releaseDate,views')[:12]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1701, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 2253, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'releaseDate,views' into field. Choices are: addedDateTime, casts, countries, description, directors, genres, id, movieresource, poster, productions, rating, releaseDate, title, views
+django.utils.autoreload INFO 2024-08-23 20:33:28,185 autoreload 25400 25100 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:33:30,248 autoreload 21044 14636 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:33:32,254 autoreload 21044 14636 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:33:34,346 autoreload 18948 25576 Watching for file changes with StatReloader
+django.request ERROR 2024-08-23 20:33:34,813 log 18948 24236 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py", line 16, in home
+    mostviewed_movies = Movie.objects.filter(movieresource__isnull=False).distinct().order_by('+views')[:12]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1701, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 2253, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword '+views' into field. Choices are: addedDateTime, casts, countries, description, directors, genres, id, movieresource, poster, productions, rating, releaseDate, title, views
+django.utils.autoreload INFO 2024-08-23 20:33:45,906 autoreload 18948 25576 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:33:48,077 autoreload 25332 23396 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:34:30,044 autoreload 25332 23396 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:34:32,448 autoreload 21520 18680 Watching for file changes with StatReloader
+django.request ERROR 2024-08-23 20:34:32,892 log 21520 18816 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py", line 16, in home
+    mostviewed_movies = Movie.objects.filter(movieresource__isnull=False).distinct().order_by('+views')[:12]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1701, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 2253, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword '+views' into field. Choices are: addedDateTime, casts, countries, description, directors, genres, id, movieresource, poster, productions, rating, releaseDate, title, views
+django.utils.autoreload INFO 2024-08-23 20:35:04,884 autoreload 21520 18680 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:35:07,109 autoreload 5672 2440 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:45:23,391 autoreload 5672 2440 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:45:25,804 autoreload 14024 12860 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:46:06,462 autoreload 14024 12860 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:46:08,635 autoreload 17652 19832 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:46:13,727 autoreload 17652 19832 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:46:16,563 autoreload 7728 5628 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:47:50,142 autoreload 7728 5628 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:47:52,220 autoreload 23372 8036 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:50:10,253 autoreload 23372 8036 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:50:12,580 autoreload 2960 11200 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:50:23,753 autoreload 2960 11200 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:50:25,955 autoreload 23876 24368 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:50:38,227 autoreload 23876 24368 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:50:40,727 autoreload 24072 12528 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:51:04,642 autoreload 24072 12528 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:51:06,571 autoreload 22744 1720 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:51:15,396 autoreload 22744 1720 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:51:17,542 autoreload 9644 25304 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:51:39,328 autoreload 9644 25304 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:51:41,934 autoreload 24108 14972 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:53:00,857 autoreload 24108 14972 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:53:03,111 autoreload 20808 24524 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:53:20,460 autoreload 20808 24524 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:53:23,182 autoreload 18552 23184 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:55:10,683 autoreload 18552 23184 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:55:12,662 autoreload 11300 22576 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:56:09,950 autoreload 11300 22576 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:56:12,620 autoreload 2472 25512 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:57:30,610 autoreload 2472 25512 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:57:32,915 autoreload 20356 5776 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:59:08,770 autoreload 20356 5776 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:59:10,827 autoreload 7560 17304 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:59:30,375 autoreload 7560 17304 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:59:32,421 autoreload 14316 25016 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:59:44,515 autoreload 14316 25016 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 20:59:46,648 autoreload 24060 20256 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 20:59:58,794 autoreload 24060 20256 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 21:00:00,906 autoreload 22980 11244 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 21:00:17,659 autoreload 22980 11244 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 21:00:20,219 autoreload 15552 1968 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 21:01:16,260 autoreload 15552 1968 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 21:01:18,797 autoreload 24096 22440 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-23 21:02:31,495 autoreload 24096 22440 C:\Users\Dell\Desktop\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-23 21:02:33,486 autoreload 1064 7240 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-24 00:41:41,710 autoreload 17260 10368 Watching for file changes with StatReloader
+urllib3.util.retry DEBUG 2024-08-24 00:42:37,619 retry 17260 1116 Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+google.auth.transport.requests DEBUG 2024-08-24 00:42:37,633 requests 17260 1116 Making request: POST https://oauth2.googleapis.com/token
+urllib3.connectionpool DEBUG 2024-08-24 00:42:37,650 connectionpool 17260 1116 Starting new HTTPS connection (1): oauth2.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-08-24 00:42:37,866 connectionpool 17260 1116 https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+urllib3.connectionpool DEBUG 2024-08-24 00:42:37,869 connectionpool 17260 1116 Starting new HTTPS connection (1): storage.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-08-24 00:42:38,045 connectionpool 17260 1116 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1067
+urllib3.connectionpool DEBUG 2024-08-24 00:42:38,218 connectionpool 17260 1116 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?generation=1724336194421952&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 00:42:38,219 _helpers 17260 1116 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?generation=1724336194421952&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 00:42:38,971 connectionpool 17260 1116 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1067
+urllib3.connectionpool DEBUG 2024-08-24 00:42:39,185 connectionpool 17260 1116 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?generation=1724336194421952&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 00:42:39,186 _helpers 17260 1116 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?generation=1724336194421952&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 00:42:39,671 connectionpool 17260 1116 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1067
+urllib3.connectionpool DEBUG 2024-08-24 00:42:39,785 connectionpool 17260 1116 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?generation=1724336194421952&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 00:42:39,786 _helpers 17260 1116 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?generation=1724336194421952&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 00:42:40,304 connectionpool 17260 1116 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1067
+urllib3.connectionpool DEBUG 2024-08-24 00:42:40,450 connectionpool 17260 1116 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?generation=1724336194421952&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 00:42:40,451 _helpers 17260 1116 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?generation=1724336194421952&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 00:42:49,324 connectionpool 17260 12580 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1067
+urllib3.connectionpool DEBUG 2024-08-24 00:42:49,433 connectionpool 17260 12580 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?generation=1724336194421952&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 00:42:49,434 _helpers 17260 12580 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?generation=1724336194421952&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 00:42:49,898 connectionpool 17260 2016 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1067
+urllib3.connectionpool DEBUG 2024-08-24 00:42:50,008 connectionpool 17260 2016 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?generation=1724336194421952&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 00:42:50,008 _helpers 17260 2016 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?generation=1724336194421952&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 00:42:50,555 connectionpool 17260 2016 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1067
+urllib3.connectionpool DEBUG 2024-08-24 00:42:50,665 connectionpool 17260 2016 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?generation=1724336194421952&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 00:42:50,666 _helpers 17260 2016 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?generation=1724336194421952&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 00:42:51,143 connectionpool 17260 2016 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1067
+urllib3.connectionpool DEBUG 2024-08-24 00:42:51,407 connectionpool 17260 2016 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?generation=1724336194421952&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 00:42:51,407 _helpers 17260 2016 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?generation=1724336194421952&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 00:42:51,829 connectionpool 17260 2016 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1067
+urllib3.connectionpool DEBUG 2024-08-24 00:42:51,924 connectionpool 17260 2016 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?generation=1724336194421952&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 00:42:51,925 _helpers 17260 2016 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?generation=1724336194421952&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 00:42:52,411 connectionpool 17260 2016 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1067
+urllib3.connectionpool DEBUG 2024-08-24 00:42:52,507 connectionpool 17260 2016 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?generation=1724336194421952&alt=media HTTP/11" 206 180504
+google.resumable_media._helpers INFO 2024-08-24 00:42:52,507 _helpers 17260 2016 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?generation=1724336194421952&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 00:42:52,726 connectionpool 17260 2016 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1067
+urllib3.connectionpool DEBUG 2024-08-24 00:42:52,814 connectionpool 17260 2016 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?generation=1724336194421952&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 00:42:52,815 _helpers 17260 2016 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?generation=1724336194421952&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 00:42:54,514 connectionpool 17260 2016 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1067
+urllib3.connectionpool DEBUG 2024-08-24 00:42:54,614 connectionpool 17260 2016 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?generation=1724336194421952&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 00:42:54,615 _helpers 17260 2016 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FWatch%20Drive%20Movie%20Online%20Fbox.mp4?generation=1724336194421952&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 00:43:01,979 connectionpool 17260 20780 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20Cuphead%20Show%202022%20free%20stream%20-%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1139
+urllib3.connectionpool DEBUG 2024-08-24 00:43:02,105 connectionpool 17260 20780 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20Cuphead%20Show%202022%20free%20stream%20-%20Fbox.mp4?generation=1723995352673843&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 00:43:02,106 _helpers 17260 20780 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20Cuphead%20Show%202022%20free%20stream%20-%20Fbox.mp4?generation=1723995352673843&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 00:43:02,553 connectionpool 17260 20780 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20Cuphead%20Show%202022%20free%20stream%20-%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1139
+urllib3.connectionpool DEBUG 2024-08-24 00:43:02,679 connectionpool 17260 20780 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20Cuphead%20Show%202022%20free%20stream%20-%20Fbox.mp4?generation=1723995352673843&alt=media HTTP/11" 206 665117
+google.resumable_media._helpers INFO 2024-08-24 00:43:02,679 _helpers 17260 20780 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20Cuphead%20Show%202022%20free%20stream%20-%20Fbox.mp4?generation=1723995352673843&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 00:43:03,241 connectionpool 17260 20780 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20Cuphead%20Show%202022%20free%20stream%20-%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1139
+urllib3.connectionpool DEBUG 2024-08-24 00:43:03,335 connectionpool 17260 20780 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20Cuphead%20Show%202022%20free%20stream%20-%20Fbox.mp4?generation=1723995352673843&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 00:43:03,336 _helpers 17260 20780 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20Cuphead%20Show%202022%20free%20stream%20-%20Fbox.mp4?generation=1723995352673843&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+django.utils.autoreload INFO 2024-08-24 00:45:03,839 autoreload 17260 10368 C:\Users\Dell\Desktop\movieStreamingApp\series_app\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-24 00:45:05,884 autoreload 21992 23444 Watching for file changes with StatReloader
+urllib3.util.retry DEBUG 2024-08-24 00:45:17,469 retry 21992 18668 Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+google.auth.transport.requests DEBUG 2024-08-24 00:45:17,472 requests 21992 18668 Making request: POST https://oauth2.googleapis.com/token
+urllib3.connectionpool DEBUG 2024-08-24 00:45:17,479 connectionpool 21992 18668 Starting new HTTPS connection (1): oauth2.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-08-24 00:45:17,624 connectionpool 21992 18668 https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+urllib3.connectionpool DEBUG 2024-08-24 00:45:17,626 connectionpool 21992 18668 Starting new HTTPS connection (1): storage.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-08-24 00:45:17,888 connectionpool 21992 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1128
+urllib3.connectionpool DEBUG 2024-08-24 00:45:18,008 connectionpool 21992 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 00:45:18,009 _helpers 21992 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 00:45:18,651 connectionpool 21992 7716 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1128
+urllib3.connectionpool DEBUG 2024-08-24 00:45:18,783 connectionpool 21992 7716 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media HTTP/11" 206 519134
+google.resumable_media._helpers INFO 2024-08-24 00:45:18,783 _helpers 21992 7716 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 00:45:19,022 connectionpool 21992 7716 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1128
+urllib3.connectionpool DEBUG 2024-08-24 00:45:19,113 connectionpool 21992 7716 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 00:45:19,114 _helpers 21992 7716 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 00:45:20,559 connectionpool 21992 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1128
+urllib3.connectionpool DEBUG 2024-08-24 00:45:20,647 connectionpool 21992 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 00:45:20,648 _helpers 21992 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 00:45:21,134 connectionpool 21992 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1128
+urllib3.connectionpool DEBUG 2024-08-24 00:45:21,268 connectionpool 21992 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 00:45:21,269 _helpers 21992 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 00:45:21,748 connectionpool 21992 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1128
+urllib3.connectionpool DEBUG 2024-08-24 00:45:21,839 connectionpool 21992 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 00:45:21,840 _helpers 21992 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 00:45:22,323 connectionpool 21992 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1128
+urllib3.connectionpool DEBUG 2024-08-24 00:45:22,480 connectionpool 21992 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 00:45:22,481 _helpers 21992 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+django.utils.autoreload INFO 2024-08-24 00:45:53,591 autoreload 21992 23444 C:\Users\Dell\Desktop\movieStreamingApp\movie_app\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-24 00:45:55,686 autoreload 17100 11452 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-24 00:46:02,916 autoreload 17100 11452 C:\Users\Dell\Desktop\movieStreamingApp\movie_app\views.py changed, reloading.
+django.utils.autoreload INFO 2024-08-24 00:46:04,908 autoreload 24928 23016 Watching for file changes with StatReloader
+urllib3.util.retry DEBUG 2024-08-24 00:46:10,588 retry 24928 21244 Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+google.auth.transport.requests DEBUG 2024-08-24 00:46:10,591 requests 24928 21244 Making request: POST https://oauth2.googleapis.com/token
+urllib3.connectionpool DEBUG 2024-08-24 00:46:10,598 connectionpool 24928 21244 Starting new HTTPS connection (1): oauth2.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-08-24 00:46:10,793 connectionpool 24928 21244 https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+urllib3.connectionpool DEBUG 2024-08-24 00:46:10,795 connectionpool 24928 21244 Starting new HTTPS connection (1): storage.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-08-24 00:46:10,973 connectionpool 24928 21244 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F%28CM%29IAmMother19nfweb480.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1017
+urllib3.connectionpool DEBUG 2024-08-24 00:46:11,118 connectionpool 24928 21244 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F(CM)IAmMother19nfweb480.mp4?generation=1722863754724975&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 00:46:11,118 _helpers 24928 21244 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F(CM)IAmMother19nfweb480.mp4?generation=1722863754724975&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 00:46:11,747 connectionpool 24928 20620 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F%28CM%29IAmMother19nfweb480.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1017
+urllib3.connectionpool DEBUG 2024-08-24 00:46:11,881 connectionpool 24928 20620 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F(CM)IAmMother19nfweb480.mp4?generation=1722863754724975&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 00:46:11,882 _helpers 24928 20620 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F(CM)IAmMother19nfweb480.mp4?generation=1722863754724975&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 00:46:12,358 connectionpool 24928 20620 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F%28CM%29IAmMother19nfweb480.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1017
+urllib3.connectionpool DEBUG 2024-08-24 00:46:12,516 connectionpool 24928 20620 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F(CM)IAmMother19nfweb480.mp4?generation=1722863754724975&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 00:46:12,517 _helpers 24928 20620 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F(CM)IAmMother19nfweb480.mp4?generation=1722863754724975&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 00:46:13,044 connectionpool 24928 20620 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F%28CM%29IAmMother19nfweb480.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1017
+urllib3.connectionpool DEBUG 2024-08-24 00:46:13,141 connectionpool 24928 20620 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F(CM)IAmMother19nfweb480.mp4?generation=1722863754724975&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 00:46:13,142 _helpers 24928 20620 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F(CM)IAmMother19nfweb480.mp4?generation=1722863754724975&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 00:46:13,725 connectionpool 24928 20620 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F%28CM%29IAmMother19nfweb480.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1017
+urllib3.connectionpool DEBUG 2024-08-24 00:46:13,840 connectionpool 24928 20620 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F(CM)IAmMother19nfweb480.mp4?generation=1722863754724975&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 00:46:13,841 _helpers 24928 20620 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F(CM)IAmMother19nfweb480.mp4?generation=1722863754724975&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 00:46:14,365 connectionpool 24928 20620 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F%28CM%29IAmMother19nfweb480.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1017
+urllib3.connectionpool DEBUG 2024-08-24 00:46:14,526 connectionpool 24928 20620 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F(CM)IAmMother19nfweb480.mp4?generation=1722863754724975&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 00:46:14,527 _helpers 24928 20620 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F(CM)IAmMother19nfweb480.mp4?generation=1722863754724975&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 00:46:14,990 connectionpool 24928 20620 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F%28CM%29IAmMother19nfweb480.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1017
+urllib3.connectionpool DEBUG 2024-08-24 00:46:15,085 connectionpool 24928 20620 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F(CM)IAmMother19nfweb480.mp4?generation=1722863754724975&alt=media HTTP/11" 206 733533
+google.resumable_media._helpers INFO 2024-08-24 00:46:15,085 _helpers 24928 20620 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F(CM)IAmMother19nfweb480.mp4?generation=1722863754724975&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 00:46:15,438 connectionpool 24928 20620 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F%28CM%29IAmMother19nfweb480.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1017
+urllib3.connectionpool DEBUG 2024-08-24 00:46:15,549 connectionpool 24928 20620 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F(CM)IAmMother19nfweb480.mp4?generation=1722863754724975&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 00:46:15,549 _helpers 24928 20620 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F(CM)IAmMother19nfweb480.mp4?generation=1722863754724975&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 00:46:16,266 connectionpool 24928 20620 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F%28CM%29IAmMother19nfweb480.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1017
+urllib3.connectionpool DEBUG 2024-08-24 00:46:16,369 connectionpool 24928 20620 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F(CM)IAmMother19nfweb480.mp4?generation=1722863754724975&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 00:46:16,370 _helpers 24928 20620 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F(CM)IAmMother19nfweb480.mp4?generation=1722863754724975&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+django.utils.autoreload INFO 2024-08-24 10:56:08,260 autoreload 24840 24440 Watching for file changes with StatReloader
+urllib3.util.retry DEBUG 2024-08-24 10:56:16,959 retry 24840 15576 Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+google.auth.transport.requests DEBUG 2024-08-24 10:56:16,972 requests 24840 15576 Making request: POST https://oauth2.googleapis.com/token
+urllib3.connectionpool DEBUG 2024-08-24 10:56:16,991 connectionpool 24840 15576 Starting new HTTPS connection (1): oauth2.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-08-24 10:56:17,220 connectionpool 24840 15576 https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+urllib3.connectionpool DEBUG 2024-08-24 10:56:17,223 connectionpool 24840 15576 Starting new HTTPS connection (1): storage.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-08-24 10:56:17,401 connectionpool 24840 15576 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20Jurassic%20Park%20Movie%20Watch%20Online.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1129
+urllib3.connectionpool DEBUG 2024-08-24 10:56:17,581 connectionpool 24840 15576 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20Jurassic%20Park%20Movie%20Watch%20Online.mp4?generation=1723686694198501&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 10:56:17,581 _helpers 24840 15576 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20Jurassic%20Park%20Movie%20Watch%20Online.mp4?generation=1723686694198501&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+google.api_core.retry DEBUG 2024-08-24 11:00:13,770 retry_base 24840 15576 Retrying due to ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')), sleeping 0.3s ...
+urllib3.connectionpool DEBUG 2024-08-24 11:00:14,030 connectionpool 24840 15576 Starting new HTTPS connection (2): storage.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-08-24 11:00:14,226 connectionpool 24840 15576 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FInterstellar.2014.360p.pp.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1023
+urllib3.connectionpool DEBUG 2024-08-24 11:00:14,362 connectionpool 24840 15576 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FInterstellar.2014.360p.pp.mp4?generation=1722863446333530&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 11:00:14,363 _helpers 24840 15576 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FInterstellar.2014.360p.pp.mp4?generation=1722863446333530&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 11:00:14,887 connectionpool 24840 15576 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FInterstellar.2014.360p.pp.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1023
+urllib3.connectionpool DEBUG 2024-08-24 11:00:15,045 connectionpool 24840 15576 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FInterstellar.2014.360p.pp.mp4?generation=1722863446333530&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 11:00:15,047 _helpers 24840 15576 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FInterstellar.2014.360p.pp.mp4?generation=1722863446333530&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+google.api_core.retry DEBUG 2024-08-24 11:35:59,655 retry_base 24840 25412 Retrying due to ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')), sleeping 0.8s ...
+urllib3.connectionpool DEBUG 2024-08-24 11:36:00,476 connectionpool 24840 25412 Starting new HTTPS connection (3): storage.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-08-24 11:36:00,669 connectionpool 24840 25412 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FBreaking%20Bad%202008%20Watch%20Online%20Free%20-%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1150
+urllib3.connectionpool DEBUG 2024-08-24 11:36:00,793 connectionpool 24840 25412 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FBreaking%20Bad%202008%20Watch%20Online%20Free%20-%20Fbox.mp4?generation=1724066588907662&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 11:36:00,793 _helpers 24840 25412 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FBreaking%20Bad%202008%20Watch%20Online%20Free%20-%20Fbox.mp4?generation=1724066588907662&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 11:36:01,286 connectionpool 24840 25412 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FBreaking%20Bad%202008%20Watch%20Online%20Free%20-%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1150
+urllib3.connectionpool DEBUG 2024-08-24 11:36:01,397 connectionpool 24840 25412 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FBreaking%20Bad%202008%20Watch%20Online%20Free%20-%20Fbox.mp4?generation=1724066588907662&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 11:36:01,398 _helpers 24840 25412 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FBreaking%20Bad%202008%20Watch%20Online%20Free%20-%20Fbox.mp4?generation=1724066588907662&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 11:36:01,867 connectionpool 24840 25412 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FBreaking%20Bad%202008%20Watch%20Online%20Free%20-%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1150
+urllib3.connectionpool DEBUG 2024-08-24 11:36:01,987 connectionpool 24840 25412 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FBreaking%20Bad%202008%20Watch%20Online%20Free%20-%20Fbox.mp4?generation=1724066588907662&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 11:36:01,988 _helpers 24840 25412 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FBreaking%20Bad%202008%20Watch%20Online%20Free%20-%20Fbox.mp4?generation=1724066588907662&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 11:36:02,486 connectionpool 24840 25412 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FBreaking%20Bad%202008%20Watch%20Online%20Free%20-%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1150
+urllib3.connectionpool DEBUG 2024-08-24 11:36:02,571 connectionpool 24840 25412 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FBreaking%20Bad%202008%20Watch%20Online%20Free%20-%20Fbox.mp4?generation=1724066588907662&alt=media HTTP/11" 206 419712
+google.resumable_media._helpers INFO 2024-08-24 11:36:02,572 _helpers 24840 25412 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FBreaking%20Bad%202008%20Watch%20Online%20Free%20-%20Fbox.mp4?generation=1724066588907662&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 11:36:02,750 connectionpool 24840 25412 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FBreaking%20Bad%202008%20Watch%20Online%20Free%20-%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1150
+urllib3.connectionpool DEBUG 2024-08-24 11:36:02,832 connectionpool 24840 25412 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FBreaking%20Bad%202008%20Watch%20Online%20Free%20-%20Fbox.mp4?generation=1724066588907662&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 11:36:02,833 _helpers 24840 25412 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FBreaking%20Bad%202008%20Watch%20Online%20Free%20-%20Fbox.mp4?generation=1724066588907662&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 11:37:17,951 connectionpool 24840 7608 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FBreaking%20Bad%202008%20Watch%20Online%20Free%20-%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1150
+urllib3.connectionpool DEBUG 2024-08-24 11:37:18,096 connectionpool 24840 7608 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FBreaking%20Bad%202008%20Watch%20Online%20Free%20-%20Fbox.mp4?generation=1724066588907662&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 11:37:18,097 _helpers 24840 7608 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FBreaking%20Bad%202008%20Watch%20Online%20Free%20-%20Fbox.mp4?generation=1724066588907662&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 11:37:18,549 connectionpool 24840 7608 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FBreaking%20Bad%202008%20Watch%20Online%20Free%20-%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1150
+urllib3.connectionpool DEBUG 2024-08-24 11:37:18,675 connectionpool 24840 7608 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FBreaking%20Bad%202008%20Watch%20Online%20Free%20-%20Fbox.mp4?generation=1724066588907662&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 11:37:18,676 _helpers 24840 7608 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FBreaking%20Bad%202008%20Watch%20Online%20Free%20-%20Fbox.mp4?generation=1724066588907662&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 11:37:19,149 connectionpool 24840 7608 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FBreaking%20Bad%202008%20Watch%20Online%20Free%20-%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1150
+urllib3.connectionpool DEBUG 2024-08-24 11:37:19,249 connectionpool 24840 7608 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FBreaking%20Bad%202008%20Watch%20Online%20Free%20-%20Fbox.mp4?generation=1724066588907662&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 11:37:19,251 _helpers 24840 7608 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FBreaking%20Bad%202008%20Watch%20Online%20Free%20-%20Fbox.mp4?generation=1724066588907662&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 11:37:24,294 connectionpool 24840 7608 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FBreaking%20Bad%202008%20Watch%20Online%20Free%20-%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1150
+urllib3.connectionpool DEBUG 2024-08-24 11:37:24,396 connectionpool 24840 7608 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FBreaking%20Bad%202008%20Watch%20Online%20Free%20-%20Fbox.mp4?generation=1724066588907662&alt=media HTTP/11" 206 419712
+google.resumable_media._helpers INFO 2024-08-24 11:37:24,397 _helpers 24840 7608 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FBreaking%20Bad%202008%20Watch%20Online%20Free%20-%20Fbox.mp4?generation=1724066588907662&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 11:37:24,608 connectionpool 24840 7608 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FBreaking%20Bad%202008%20Watch%20Online%20Free%20-%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1150
+urllib3.connectionpool DEBUG 2024-08-24 11:37:24,696 connectionpool 24840 7608 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FBreaking%20Bad%202008%20Watch%20Online%20Free%20-%20Fbox.mp4?generation=1724066588907662&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 11:37:24,697 _helpers 24840 7608 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FBreaking%20Bad%202008%20Watch%20Online%20Free%20-%20Fbox.mp4?generation=1724066588907662&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 11:39:56,021 connectionpool 24840 16832 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F%28CM%29IAmMother19nfweb480.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1017
+urllib3.connectionpool DEBUG 2024-08-24 11:39:56,205 connectionpool 24840 16832 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F(CM)IAmMother19nfweb480.mp4?generation=1722863754724975&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 11:39:56,206 _helpers 24840 16832 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F(CM)IAmMother19nfweb480.mp4?generation=1722863754724975&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 11:39:56,678 connectionpool 24840 16832 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F%28CM%29IAmMother19nfweb480.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1017
+urllib3.connectionpool DEBUG 2024-08-24 11:39:56,809 connectionpool 24840 16832 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F(CM)IAmMother19nfweb480.mp4?generation=1722863754724975&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 11:39:56,810 _helpers 24840 16832 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F(CM)IAmMother19nfweb480.mp4?generation=1722863754724975&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 11:39:57,290 connectionpool 24840 16832 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F%28CM%29IAmMother19nfweb480.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1017
+urllib3.connectionpool DEBUG 2024-08-24 11:39:57,429 connectionpool 24840 16832 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F(CM)IAmMother19nfweb480.mp4?generation=1722863754724975&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 11:39:57,430 _helpers 24840 16832 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2F(CM)IAmMother19nfweb480.mp4?generation=1722863754724975&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+google.api_core.retry DEBUG 2024-08-24 11:42:55,676 retry_base 24840 18032 Retrying due to ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')), sleeping 0.1s ...
+urllib3.connectionpool DEBUG 2024-08-24 11:42:55,829 connectionpool 24840 18032 Starting new HTTPS connection (4): storage.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-08-24 11:42:56,038 connectionpool 24840 18032 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1128
+urllib3.connectionpool DEBUG 2024-08-24 11:42:56,180 connectionpool 24840 18032 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 11:42:56,181 _helpers 24840 18032 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 11:42:56,663 connectionpool 24840 20252 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1128
+urllib3.connectionpool DEBUG 2024-08-24 11:42:56,791 connectionpool 24840 20252 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media HTTP/11" 206 519134
+google.resumable_media._helpers INFO 2024-08-24 11:42:56,793 _helpers 24840 20252 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 11:42:57,003 connectionpool 24840 20252 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1128
+urllib3.connectionpool DEBUG 2024-08-24 11:42:57,097 connectionpool 24840 20252 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media HTTP/11" 206 388062
+google.resumable_media._helpers INFO 2024-08-24 11:42:57,099 _helpers 24840 20252 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 11:42:57,271 connectionpool 24840 20252 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1128
+urllib3.connectionpool DEBUG 2024-08-24 11:42:57,368 connectionpool 24840 20252 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 11:42:57,370 _helpers 24840 20252 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 11:43:03,976 connectionpool 24840 7264 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20The%20Shining%20Movie%20Watch%20Online%20FREE.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1150
+urllib3.connectionpool DEBUG 2024-08-24 11:43:04,130 connectionpool 24840 7264 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20The%20Shining%20Movie%20Watch%20Online%20FREE.mp4?generation=1724346739398438&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 11:43:04,130 _helpers 24840 7264 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20The%20Shining%20Movie%20Watch%20Online%20FREE.mp4?generation=1724346739398438&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 11:43:04,592 connectionpool 24840 7264 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20The%20Shining%20Movie%20Watch%20Online%20FREE.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1150
+urllib3.connectionpool DEBUG 2024-08-24 11:43:04,747 connectionpool 24840 7264 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20The%20Shining%20Movie%20Watch%20Online%20FREE.mp4?generation=1724346739398438&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 11:43:04,749 _helpers 24840 7264 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20The%20Shining%20Movie%20Watch%20Online%20FREE.mp4?generation=1724346739398438&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 11:43:05,229 connectionpool 24840 7264 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20The%20Shining%20Movie%20Watch%20Online%20FREE.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1150
+urllib3.connectionpool DEBUG 2024-08-24 11:43:05,307 connectionpool 24840 7264 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20The%20Shining%20Movie%20Watch%20Online%20FREE.mp4?generation=1724346739398438&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 11:43:05,308 _helpers 24840 7264 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20The%20Shining%20Movie%20Watch%20Online%20FREE.mp4?generation=1724346739398438&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 11:43:05,769 connectionpool 24840 7264 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20The%20Shining%20Movie%20Watch%20Online%20FREE.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1150
+urllib3.connectionpool DEBUG 2024-08-24 11:43:05,888 connectionpool 24840 7264 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20The%20Shining%20Movie%20Watch%20Online%20FREE.mp4?generation=1724346739398438&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 11:43:05,889 _helpers 24840 7264 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20The%20Shining%20Movie%20Watch%20Online%20FREE.mp4?generation=1724346739398438&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 11:43:06,353 connectionpool 24840 7264 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20The%20Shining%20Movie%20Watch%20Online%20FREE.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1150
+urllib3.connectionpool DEBUG 2024-08-24 11:43:06,441 connectionpool 24840 7264 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20The%20Shining%20Movie%20Watch%20Online%20FREE.mp4?generation=1724346739398438&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 11:43:06,442 _helpers 24840 7264 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20The%20Shining%20Movie%20Watch%20Online%20FREE.mp4?generation=1724346739398438&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 11:43:06,991 connectionpool 24840 7264 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20The%20Shining%20Movie%20Watch%20Online%20FREE.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1150
+urllib3.connectionpool DEBUG 2024-08-24 11:43:07,143 connectionpool 24840 7264 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20The%20Shining%20Movie%20Watch%20Online%20FREE.mp4?generation=1724346739398438&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 11:43:07,145 _helpers 24840 7264 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20The%20Shining%20Movie%20Watch%20Online%20FREE.mp4?generation=1724346739398438&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 11:43:07,599 connectionpool 24840 7264 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20The%20Shining%20Movie%20Watch%20Online%20FREE.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1150
+urllib3.connectionpool DEBUG 2024-08-24 11:43:07,685 connectionpool 24840 7264 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20The%20Shining%20Movie%20Watch%20Online%20FREE.mp4?generation=1724346739398438&alt=media HTTP/11" 206 964343
+google.resumable_media._helpers INFO 2024-08-24 11:43:07,687 _helpers 24840 7264 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20The%20Shining%20Movie%20Watch%20Online%20FREE.mp4?generation=1724346739398438&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 11:43:22,925 connectionpool 24840 7264 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20The%20Shining%20Movie%20Watch%20Online%20FREE.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1150
+urllib3.connectionpool DEBUG 2024-08-24 11:43:23,033 connectionpool 24840 7264 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20The%20Shining%20Movie%20Watch%20Online%20FREE.mp4?generation=1724346739398438&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 11:43:23,034 _helpers 24840 7264 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20The%20Shining%20Movie%20Watch%20Online%20FREE.mp4?generation=1724346739398438&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 11:43:23,475 connectionpool 24840 7264 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20The%20Shining%20Movie%20Watch%20Online%20FREE.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1150
+urllib3.connectionpool DEBUG 2024-08-24 11:43:23,598 connectionpool 24840 7264 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20The%20Shining%20Movie%20Watch%20Online%20FREE.mp4?generation=1724346739398438&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 11:43:23,599 _helpers 24840 7264 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20The%20Shining%20Movie%20Watch%20Online%20FREE.mp4?generation=1724346739398438&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-24 11:43:24,079 connectionpool 24840 10324 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20The%20Shining%20Movie%20Watch%20Online%20FREE.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1150
+urllib3.connectionpool DEBUG 2024-08-24 11:43:24,178 connectionpool 24840 10324 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20The%20Shining%20Movie%20Watch%20Online%20FREE.mp4?generation=1724346739398438&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-24 11:43:24,180 _helpers 24840 10324 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FFbox%20-%20The%20Shining%20Movie%20Watch%20Online%20FREE.mp4?generation=1724346739398438&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.

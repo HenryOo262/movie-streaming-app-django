@@ -9,12 +9,15 @@
 {% endblock %}
 
 {% block content %} 
-    <div class="content-wrapper">
+    {% if user.is_authenticated %}
+    <div class="welcome-user"> <h1> Welcome {{user.username}} 😀 </h1> </div>
+    {% endif %}
+    <div class="content-wrapper" style="margin-top: 10px;">
         <div>
             <h1> Latest Movies </h1>
         </div>
         <div class="grid-wrapper">
-            {% for movie in movies %}
+            {% for movie in latest_movies %}
                 <a class="cell" href="{% url 'movie_app.movie' id=movie.id %}">
                     <div class="poster">
                         <img src="{{movie.poster}}">
@@ -26,12 +29,13 @@
             {% endfor %}
         </div>
     </div>
+    
     <div class="content-wrapper">
         <div>
             <h1> Latest Series </h1>
         </div>
         <div class="grid-wrapper">
-            {% for tv in series %}
+            {% for tv in latest_series %}
                 <a class="cell" href="{% url 'series_app.series' id=tv.id %}">
                     <div class="poster">
                         <img src="{{tv.poster}}">
@@ -43,18 +47,47 @@
             {% endfor %}
         </div>
     </div>
+
     <div class="content-wrapper">
         <div>
-            <h1> Recommended </h1>
+            <h1> Most Viewed </h1>
         </div>
         <div class="grid-wrapper">
-            {% for movie in movies %}
+            {% for movie in mostviewed_movies %}
                 <a class="cell" href="{% url 'movie_app.movie' id=movie.id %}">
                     <div class="poster">
                         <img src="{{movie.poster}}">
                     </div>
                     <div class="title">
                         <p> {{movie.title}} </p>
+                    </div>
+                </a>
+            {% endfor %}
+            {% for series in mostviewed_series %}
+                <a class="cell" href="{% url 'series_app.series' id=series.id %}">
+                    <div class="poster">
+                        <img src="{{series.poster}}">
+                    </div>
+                    <div class="title">
+                        <p> {{series.title}} </p>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <div>
+            <h1> Ongoing Series </h1>
+        </div>
+        <div class="grid-wrapper">
+            {% for series in ongoing_series %}
+                <a class="cell" href="{% url 'series_app.series' id=series.id %}">
+                    <div class="poster">
+                        <img src="{{series.poster}}">
+                    </div>
+                    <div class="title">
+                        <p> {{series.title}} </p>
                     </div>
                 </a>
             {% endfor %}

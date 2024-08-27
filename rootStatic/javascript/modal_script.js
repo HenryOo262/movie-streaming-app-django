@@ -31,6 +31,11 @@ countryModal.addEventListener('mouseover', () => {
     childHidden = false
 })
 
+homeModal.addEventListener('mouseover', () => {
+    modalChild.classList.remove('show-modal')
+    childHidden = true
+})
+
 function searchTermFetch() {
     fetch('/searchTerms/').then(response => {
         if (!response.ok) {

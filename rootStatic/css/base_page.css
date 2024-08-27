@@ -32,7 +32,7 @@ body {
 }
 
 .modal {
-    background-color: #f5f5f5;
+    background-color: #ffff00;
     color: #000000;
 
     position: absolute;
@@ -46,7 +46,7 @@ body {
     grid-template-rows: repeat(auto,1fr);
     row-gap: 20px;
 
-    border: solid 1px white;
+    border: solid 1px whitesmoke;
     border-radius: 2px;
     visibility: hidden;
 }
@@ -70,23 +70,29 @@ body {
 }
 
 .modalChild {
-    background-color: #f5f5f5;
+    background-color: #ffff00;
     color: #000000;
-    font-size: 12px;
+    font-size: 15px;
 
     position: absolute;
     top: 100%;
     left: 300%;
     z-index: 3;
 
+    height: 200px;
     padding: 10px;
 
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 1fr;
     justify-content: center;
 
+    border: solid 1px whitesmoke;
     border-radius: 2px;
 
+    scrollbar-color: #000000 #ffff00;
+
+    overflow: scroll;
+    overflow-x: hidden;
     visibility: hidden;
 }
 
@@ -95,7 +101,7 @@ body {
     color: #000000;
     text-decoration: none;
 
-    width: fit-content;
+    width: 120px;
     height: fit-content;
     padding: 5px;
 

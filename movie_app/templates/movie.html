@@ -66,6 +66,7 @@
                 <div> <p> 
                     {% for genre in genres %} 
                         <a href="{% url 'search_app.search' search_type='genre' search=genre.name %}"> {{genre.name}} </a>
+                        {% if not forloop.last %} , {% endif %}
                     {% endfor %} 
                 </p> </div>
                 
@@ -74,6 +75,7 @@
                     <div> <p> 
                         {% for production in productions %} 
                             <a href="{% url 'search_app.search' search_type='production' search=production.name %}"> {{production.name}} </a>
+                            {% if not forloop.last %} , {% endif %}
                         {% endfor %} 
                     </p> </div>
                 {% else %}
@@ -85,6 +87,7 @@
                     <div> <p> 
                         {% for director in directors %} 
                             <a href="{% url 'search_app.search' search_type='director' search=director.name %}"> {{director.name}} </a>
+                            {% if not forloop.last %} , {% endif %}
                         {% endfor %} 
                     </p> </div>                
                 {% else %}
@@ -96,6 +99,7 @@
                     <div> <p> 
                         {% for cast in casts %} 
                             <a href="{% url 'search_app.search' search_type='cast' search=cast.name %}"> {{cast.name}} </a>
+                            {% if not forloop.last %} , {% endif %}
                         {% endfor %} 
                     </p> </div>                
                 {% else %}
@@ -106,6 +110,7 @@
                 <div> <p> 
                     {% for country in countries %} 
                         <a href="{% url 'search_app.search' search_type='country' search=country.name %}"> {{country.name}} </a>
+                        {% if not forloop.last %} , {% endif %}
                     {% endfor %} 
                 </p> </div>
 

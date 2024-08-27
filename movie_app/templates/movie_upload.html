@@ -8,16 +8,22 @@
 {% endblock %}
 
 {% block content %} 
-    <form id="form" class="form" method="POST" enctype="multipart/form-data" action="{% url 'movie_app.movie_upload' %}">
+    <form id="form" class="form upload-form" method="POST" enctype="multipart/form-data" action="{% url 'movie_app.movie_upload' %}">
         {% csrf_token %}
-        <div class="grid-wrapper">
-            <div class="cell"> {{form.movie.label}} : </div> 
-            <div class="cell"> {{movie.title}} ({{movie.releaseDate.year}}) </div>
-            <div class="cell"> {{form.resolution.label}} : </div> 
-            <div class="cell"> {{form.resolution}} </div>
-            <div class="cell"> {{form.source.label}} : </div> 
-            <div class="cell"> {{form.source}} </div>
-        </div>   
+        <div class="grid-wrapper"> 
+            <div class="cell" style="width: auto;">
+                <div class="cell-title"> {{form.movie.label}} : </div>
+                <div class="cell-input"> {{movie.title}} ({{movie.releaseDate.year}}) </div>
+            </div>
+            <div class="cell" style="width: auto;">
+                <div class="cell-title"> {{form.resolution.label}} : </div>
+                <div class="cell-input"> {{form.resolution}} </div>
+            </div>
+        </div>
+        <div class="cell" style="width: auto;">
+            <div class="cell-title"> {{form.source.label}} : </div>
+            <div class="cell-input"> {{form.source}} </div>
+        </div>
         <div class="button-wrapper">
             <button id="button" type="submit"> Upload </button>
         </div>

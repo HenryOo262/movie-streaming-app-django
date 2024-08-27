@@ -11,48 +11,67 @@
     <form id="form" class="form" method="POST" enctype="multipart/form-data" action="{% url 'movie_app.movie_create' %}">
         {% csrf_token %}
         <div class="grid-wrapper">
-            <div class="cell"> {{form.title.label}} : </div> 
-            <div class="cell"> {{form.title}} </div>
-            <div class="cell"> {{form.releaseDate.label}} : </div> 
-            <div class="cell"> {{form.releaseDate}} </div>
-            <div class="cell"> {{form.poster.label}} : </div> 
-            <div class="cell"> {{form.poster}} </div>
-            <div class="cell"> {{form.description.label}} : </div> 
-            <div class="cell"> {{form.description}} </div>
-            <div class="cell"> {{form.rating.label}} : </div> 
-            <div class="cell"> {{form.rating}} </div>
-            <div class="cell"> {{form.genre.label}} : </div> 
+            <div class="cell">
+                <div class="cell-title"> {{form.title.label}} : </div>
+                <div class="cell-input"> {{form.title}} </div>
+            </div>
+            <div class="cell">
+                <div class="cell-title"> {{form.releaseDate.label}} : </div>
+                <div class="cell-input"> {{form.releaseDate}} </div>
+            </div>
+            <div class="cell">
+                <div class="cell-title"> {{form.poster.label}} :</div>
+                <div class="cell-input"> {{form.poster}} </div>
+            </div>
+            <div class="cell">
+                <div class="cell-title"> {{form.rating.label}} : </div>
+                <div class="cell-input"> {{form.rating}} </div>
+            </div>
+        </div>
+        <div class="cell">
+            <div class="cell-title"> {{form.description.label}} : </div> 
+            <div class="cell-input"> {{form.description}} </div>
+        </div>
+        <div class="cell"> 
+            <div class="cell-title"> {{form.genre.label}} : </div>
             <div class="checkbox-cell"> 
                 {% for checkbox in form.genre %}
-                    <div>
-                        {{ checkbox.tag }} {{ checkbox.choice_label }}
-                    </div>
+                    <div> {{ checkbox.tag }} {{ checkbox.choice_label }} </div>
                 {% endfor %}    
             </div>
-            <div class="cell"> {{form.country.label}} : </div> 
-            <div class="checkbox-cell"> 
-                {% for checkbox in form.country %}
-                    <div>
-                        {{ checkbox.tag }} {{ checkbox.choice_label }}
-                    </div>
-                {% endfor %}    
+       </div>
+       <div class="cell"> 
+            <div class="cell-title"> {{form.country.label}} : </div>
+                <div class="checkbox-cell"> 
+                    {% for checkbox in form.country %}
+                        <div> {{ checkbox.tag }} {{ checkbox.choice_label }} </div>
+                    {% endfor %}    
+                </div>
             </div>
-            <div class="cell"> {{form.production.label}} : </div> 
-            <div class="cell-multiinput"> 
-                {{form.production}} 
-                {{form.coproduction1}}
-                {{form.coproduction2}}
+        </div>
+        <div class="grid-wrapper-2">
+            <div class="cell"> 
+                <div class="cell-title"> {{form.cast.label}} : </div>
+                <div class="cell-multiinput"> 
+                    {{form.cast}} 
+                    {{form.cocast1}}
+                    {{form.cocast2}}   
+                </div>
             </div>
-            <div class="cell"> {{form.director.label}} : </div>
-            <div class="cell-multiinput"> 
-                {{form.director}} 
-                {{form.codirector}}
+            <div class="cell"> 
+                <div class="cell-title"> {{form.director.label}} : </div>
+                <div class="cell-multiinput"> 
+                    {{form.director}} 
+                    {{form.codirector}} 
+                </div>
             </div>
-            <div class="cell"> {{form.cast.label}} : </div>
-            <div class="cell-multiinput"> 
-                {{form.cast}} 
-                {{form.cocast1}}
-                {{form.cocast2}}
+            <div class="cell"> 
+                <div class="cell-title"> {{form.production.label}} : </div>
+                <div class="cell-multiinput"> 
+                    {{form.production}} 
+                    {{form.coproduction1}}
+                    {{form.coproduction2}}   
+                </div>
             </div>
         </div>
         <div class="button-wrapper">

@@ -24,27 +24,54 @@ body {
 
     position: relative;
 
-    width: 75vw;
+    width: 50vw;
+    height: 75vh;
+
+    margin: 40px auto;
+    padding: 40px;
+
+    overflow: scroll;
+    overflow-x: hidden;
+    border-radius: 1px;
+}
+
+.upload-form {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+
+    position: relative;
+
+    width: 35vw;
     height: auto;
 
     margin: 40px auto;
-    padding: 20px;
+    padding: 40px;
 
-    border-radius: 25px;
+    overflow: hidden;
+    border-radius: 1px;
 }
 
 .form input, .form textarea {
     background-color: #2b2b2b;
     color: #ffffff;
 
+    width: 75%;
     padding: 10px;
     font-size: 14px;
 
     outline: solid 2px #2b2b2b;
     border: none;
-    border-radius: 5px;
+    border-radius: 1px;
 
     transition-duration: 0.4s;
+}
+
+.form input[type="checkbox"] {
+    width: fit-content;
+}
+
+.form textarea {
+    width: 100%;
 }
 
 .form input:focus, .form textarea:focus {
@@ -61,7 +88,7 @@ body {
 
     outline: none;
     border: none;
-    border-radius: 5px;
+    border-radius: 1px;
 }
 
 .form input[type='file'] {
@@ -72,29 +99,52 @@ body {
 .grid-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    column-gap: 40px;
+}
+
+.grid-wrapper-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+}
+
+.grid-wrapper-2 .cell .cell-title {
+    font-size: 15px;
+}
+
+.cell-title {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.cell-input {
+    width: 100%;
 }
 
 .cell {
-    margin: 10px auto;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.checkbox-cell {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.cell-multiinput {
-    margin: 10px auto;
+    width: 100%;
+    margin-bottom: 20px;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
+    justify-content: start;
+}
+
+.checkbox-cell {
+    font-size: 14px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 5px;
+}
+
+.cell-multiinput {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
 }
 
 .cell-multiinput input {
@@ -102,8 +152,6 @@ body {
 }
 
 .button-wrapper {
-    margin-top: 20px;
-
     display: flex;
     align-items: center;
     justify-content: center;

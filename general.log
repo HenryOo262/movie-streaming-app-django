@@ -5463,3 +5463,916 @@ urllib3.connectionpool DEBUG 2024-08-27 15:54:48,623 connectionpool 8624 14164 h
 google.resumable_media._helpers INFO 2024-08-27 15:54:48,624 _helpers 8624 14164 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
 (which happens for composite objects), so client-side content integrity
 checking is not being performed.
+django.utils.autoreload INFO 2024-08-27 16:35:33,094 autoreload 3416 14932 Watching for file changes with StatReloader
+django.request WARNING 2024-08-27 17:12:17,050 log 3416 5256 Not Found: /movie/form
+django.request WARNING 2024-08-27 17:12:17,150 log 3416 5256 Not Found: /favicon.ico
+django.request WARNING 2024-08-27 17:12:20,741 log 3416 5256 Not Found: /movie/input
+django.utils.autoreload INFO 2024-08-27 17:20:43,171 autoreload 1860 1968 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-27 18:28:27,976 autoreload 1860 1968 C:\Users\Dell\Desktop\movieStreamingApp\movie_app\forms.py changed, reloading.
+django.utils.autoreload INFO 2024-08-27 18:28:31,125 autoreload 10352 16344 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-08-27 18:29:01,006 autoreload 10352 16344 C:\Users\Dell\Desktop\movieStreamingApp\movie_app\forms.py changed, reloading.
+django.utils.autoreload INFO 2024-08-27 18:29:03,037 autoreload 8432 11704 Watching for file changes with StatReloader
+django.request WARNING 2024-08-27 18:36:09,731 log 8432 10584 Not Found: /favicon.ico
+urllib3.util.retry DEBUG 2024-08-27 18:40:45,077 retry 8432 11044 Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+google.auth.transport.requests DEBUG 2024-08-27 18:40:45,097 requests 8432 11044 Making request: POST https://oauth2.googleapis.com/token
+urllib3.connectionpool DEBUG 2024-08-27 18:40:45,116 connectionpool 8432 11044 Starting new HTTPS connection (1): oauth2.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-08-27 18:40:45,342 connectionpool 8432 11044 https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+urllib3.connectionpool DEBUG 2024-08-27 18:40:45,348 connectionpool 8432 11044 Starting new HTTPS connection (1): storage.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-08-27 18:40:45,560 connectionpool 8432 11044 https://storage.googleapis.com:443 "POST /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable HTTP/11" 200 0
+urllib3.connectionpool DEBUG 2024-08-27 18:40:45,695 connectionpool 8432 11044 https://storage.googleapis.com:443 "PUT /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable&upload_id=AHxI1nNQv4U4jj9LeVa2CCDKhDbmxU4FEjGUl2T5ihV9RG3sJNwfpCV4bvRCa6Fo_jSDjaDR68ywJtVSwtbrw6iTiK-VAbnYRK1p8sUgkPrfqS0hRLY HTTP/11" 200 881
+urllib3.connectionpool DEBUG 2024-08-27 18:40:45,782 connectionpool 8432 11044 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2Flalaland.jfif/acl?prettyPrint=false HTTP/11" 200 2412
+urllib3.connectionpool DEBUG 2024-08-27 18:40:45,885 connectionpool 8432 11044 https://storage.googleapis.com:443 "PATCH /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2Flalaland.jfif?projection=full&prettyPrint=false HTTP/11" 200 3708
+django.utils.autoreload INFO 2024-08-27 18:43:44,829 autoreload 8432 11704 C:\Users\Dell\Desktop\movieStreamingApp\series_app\forms.py changed, reloading.
+django.utils.autoreload INFO 2024-08-27 18:43:46,951 autoreload 20280 17024 Watching for file changes with StatReloader
+urllib3.util.retry DEBUG 2024-08-27 18:49:15,853 retry 20280 6532 Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+google.auth.transport.requests DEBUG 2024-08-27 18:49:15,858 requests 20280 6532 Making request: POST https://oauth2.googleapis.com/token
+urllib3.connectionpool DEBUG 2024-08-27 18:49:15,865 connectionpool 20280 6532 Starting new HTTPS connection (1): oauth2.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-08-27 18:49:16,040 connectionpool 20280 6532 https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+urllib3.connectionpool DEBUG 2024-08-27 18:49:16,045 connectionpool 20280 6532 Starting new HTTPS connection (1): storage.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-08-27 18:49:16,232 connectionpool 20280 6532 https://storage.googleapis.com:443 "POST /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable HTTP/11" 200 0
+urllib3.connectionpool DEBUG 2024-08-27 18:49:16,647 connectionpool 20280 6532 https://storage.googleapis.com:443 "PUT /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable&upload_id=AHxI1nO6mLg2vMgl64js06DJag3dFK3iNy5OjdamfWVkyF0E4vff5Ho3M5BQv0_t7kql6qGKOUqTXu1oOUqur39sMkuYSfHHumh8AqB6mQm5ckaAAV8 HTTP/11" 200 875
+urllib3.connectionpool DEBUG 2024-08-27 18:49:16,733 connectionpool 20280 6532 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2Ffallout.jpg/acl?prettyPrint=false HTTP/11" 200 2388
+urllib3.connectionpool DEBUG 2024-08-27 18:49:16,850 connectionpool 20280 6532 https://storage.googleapis.com:443 "PATCH /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2Ffallout.jpg?projection=full&prettyPrint=false HTTP/11" 200 3672
+urllib3.connectionpool DEBUG 2024-08-27 18:50:07,635 connectionpool 20280 11120 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FLove%20Death%20and%20Robots%20Season%201%20Episode%201%20_%20Sonnie%27s%20Edge%20Fighting%20Intro%20scene.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1361
+urllib3.connectionpool DEBUG 2024-08-27 18:50:07,836 connectionpool 20280 11120 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FLove%20Death%20and%20Robots%20Season%201%20Episode%201%20_%20Sonnie's%20Edge%20Fighting%20Intro%20scene.mp4?generation=1724672760392761&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 18:50:07,837 _helpers 20280 11120 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FLove%20Death%20and%20Robots%20Season%201%20Episode%201%20_%20Sonnie's%20Edge%20Fighting%20Intro%20scene.mp4?generation=1724672760392761&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 18:50:08,313 connectionpool 20280 11120 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FLove%20Death%20and%20Robots%20Season%201%20Episode%201%20_%20Sonnie%27s%20Edge%20Fighting%20Intro%20scene.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1361
+urllib3.connectionpool DEBUG 2024-08-27 18:50:08,466 connectionpool 20280 11120 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FLove%20Death%20and%20Robots%20Season%201%20Episode%201%20_%20Sonnie's%20Edge%20Fighting%20Intro%20scene.mp4?generation=1724672760392761&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 18:50:08,467 _helpers 20280 11120 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FLove%20Death%20and%20Robots%20Season%201%20Episode%201%20_%20Sonnie's%20Edge%20Fighting%20Intro%20scene.mp4?generation=1724672760392761&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+django.request WARNING 2024-08-27 18:50:19,119 log 20280 15616 Not Found: /favicon.ico
+django.request WARNING 2024-08-27 18:52:02,865 log 20280 8972 Not Found: /favicon.ico
+google.api_core.retry DEBUG 2024-08-27 19:11:53,798 retry_base 20280 18616 Retrying due to ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')), sleeping 0.0s ...
+urllib3.connectionpool DEBUG 2024-08-27 19:11:53,836 connectionpool 20280 18616 Starting new HTTPS connection (2): storage.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-08-27 19:11:54,013 connectionpool 20280 18616 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FLa%20La%20Land%20%282016%29%20-%20Dancing%20in%20the%20Stars%20Scene%20%286_11%29%20_%20Movieclips.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1306
+urllib3.connectionpool DEBUG 2024-08-27 19:11:54,158 connectionpool 20280 18616 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FLa%20La%20Land%20(2016)%20-%20Dancing%20in%20the%20Stars%20Scene%20(6_11)%20_%20Movieclips.mp4?generation=1724762482790361&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:11:54,159 _helpers 20280 18616 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FLa%20La%20Land%20(2016)%20-%20Dancing%20in%20the%20Stars%20Scene%20(6_11)%20_%20Movieclips.mp4?generation=1724762482790361&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:12:02,102 connectionpool 20280 8964 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FLa%20La%20Land%20%282016%29%20-%20Dancing%20in%20the%20Stars%20Scene%20%286_11%29%20_%20Movieclips.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1306
+urllib3.connectionpool DEBUG 2024-08-27 19:12:02,253 connectionpool 20280 8964 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FLa%20La%20Land%20(2016)%20-%20Dancing%20in%20the%20Stars%20Scene%20(6_11)%20_%20Movieclips.mp4?generation=1724762482790361&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:12:02,255 _helpers 20280 8964 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FLa%20La%20Land%20(2016)%20-%20Dancing%20in%20the%20Stars%20Scene%20(6_11)%20_%20Movieclips.mp4?generation=1724762482790361&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:12:02,722 connectionpool 20280 8964 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FLa%20La%20Land%20%282016%29%20-%20Dancing%20in%20the%20Stars%20Scene%20%286_11%29%20_%20Movieclips.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1306
+urllib3.connectionpool DEBUG 2024-08-27 19:12:03,331 connectionpool 20280 8964 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FLa%20La%20Land%20(2016)%20-%20Dancing%20in%20the%20Stars%20Scene%20(6_11)%20_%20Movieclips.mp4?generation=1724762482790361&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:12:03,333 _helpers 20280 8964 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FLa%20La%20Land%20(2016)%20-%20Dancing%20in%20the%20Stars%20Scene%20(6_11)%20_%20Movieclips.mp4?generation=1724762482790361&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:12:03,808 connectionpool 20280 8964 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FLa%20La%20Land%20%282016%29%20-%20Dancing%20in%20the%20Stars%20Scene%20%286_11%29%20_%20Movieclips.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1306
+urllib3.connectionpool DEBUG 2024-08-27 19:12:03,928 connectionpool 20280 8964 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FLa%20La%20Land%20(2016)%20-%20Dancing%20in%20the%20Stars%20Scene%20(6_11)%20_%20Movieclips.mp4?generation=1724762482790361&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:12:03,929 _helpers 20280 8964 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FLa%20La%20Land%20(2016)%20-%20Dancing%20in%20the%20Stars%20Scene%20(6_11)%20_%20Movieclips.mp4?generation=1724762482790361&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:12:16,839 connectionpool 20280 8964 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FLa%20La%20Land%20%282016%29%20-%20Dancing%20in%20the%20Stars%20Scene%20%286_11%29%20_%20Movieclips.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1306
+urllib3.connectionpool DEBUG 2024-08-27 19:12:17,012 connectionpool 20280 8964 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FLa%20La%20Land%20(2016)%20-%20Dancing%20in%20the%20Stars%20Scene%20(6_11)%20_%20Movieclips.mp4?generation=1724762482790361&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:12:17,014 _helpers 20280 8964 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FLa%20La%20Land%20(2016)%20-%20Dancing%20in%20the%20Stars%20Scene%20(6_11)%20_%20Movieclips.mp4?generation=1724762482790361&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+django.request ERROR 2024-08-27 19:22:30,358 log 20280 17904 Internal Server Error: /series/create/
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 464, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1411, in getresponse
+    response.begin()
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 324, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 293, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 464, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1411, in getresponse
+    response.begin()
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 324, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 293, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Desktop\movieStreamingApp\utils\custom_decorators.py", line 10, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Desktop\movieStreamingApp\series_app\views.py", line 210, in series_create
+    raise e
+  File "C:\Users\Dell\Desktop\movieStreamingApp\series_app\views.py", line 164, in series_create
+    blob.upload_from_file(poster)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\cloud\storage\blob.py", line 2848, in upload_from_file
+    self._prep_and_do_upload(
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\cloud\storage\blob.py", line 2697, in _prep_and_do_upload
+    created_json = self._do_upload(
+                   ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\cloud\storage\blob.py", line 2520, in _do_upload
+    response = self._do_resumable_upload(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\cloud\storage\blob.py", line 2325, in _do_resumable_upload
+    upload, transport = self._initiate_resumable_upload(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\cloud\storage\blob.py", line 2199, in _initiate_resumable_upload
+    upload.initiate(
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\resumable_media\requests\upload.py", line 420, in initiate
+    return _request_helpers.wait_and_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\resumable_media\requests\_request_helpers.py", line 178, in wait_and_retry
+    raise error
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\resumable_media\requests\_request_helpers.py", line 155, in wait_and_retry
+    response = func()
+               ^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\resumable_media\requests\upload.py", line 412, in retriable_request
+    result = transport.request(
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\transport\requests.py", line 537, in request
+    response = super(AuthorizedSession, self).request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+urllib3.connectionpool DEBUG 2024-08-27 19:22:34,150 connectionpool 20280 17904 Starting new HTTPS connection (3): storage.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-08-27 19:22:34,366 connectionpool 20280 17904 https://storage.googleapis.com:443 "POST /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable HTTP/11" 200 0
+urllib3.connectionpool DEBUG 2024-08-27 19:22:34,491 connectionpool 20280 17904 https://storage.googleapis.com:443 "PUT /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable&upload_id=AHxI1nO8RMallmI6XrfUpanZGtrGSb-slN5W-YAgB-sqVZAaYozE9mov_NrK37Ksd-MhWCoSmHiiNzOLyfPUSBDWufHBjQWwstD5w6JXUNk_H3-1fQ HTTP/11" 200 926
+urllib3.connectionpool DEBUG 2024-08-27 19:22:34,584 connectionpool 20280 17904 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2Fprehistoric%20planet.jfif/acl?prettyPrint=false HTTP/11" 200 2540
+urllib3.connectionpool DEBUG 2024-08-27 19:22:34,697 connectionpool 20280 17904 https://storage.googleapis.com:443 "PATCH /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2Fprehistoric%20planet.jfif?projection=full&prettyPrint=false HTTP/11" 200 3913
+django.request ERROR 2024-08-27 19:31:45,854 log 20280 18876 Internal Server Error: /series/create/
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 464, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1411, in getresponse
+    response.begin()
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 324, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 293, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 464, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1411, in getresponse
+    response.begin()
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 324, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 293, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Desktop\movieStreamingApp\utils\custom_decorators.py", line 10, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Desktop\movieStreamingApp\series_app\views.py", line 210, in series_create
+    raise e
+  File "C:\Users\Dell\Desktop\movieStreamingApp\series_app\views.py", line 164, in series_create
+    blob.upload_from_file(poster)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\cloud\storage\blob.py", line 2848, in upload_from_file
+    self._prep_and_do_upload(
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\cloud\storage\blob.py", line 2697, in _prep_and_do_upload
+    created_json = self._do_upload(
+                   ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\cloud\storage\blob.py", line 2520, in _do_upload
+    response = self._do_resumable_upload(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\cloud\storage\blob.py", line 2325, in _do_resumable_upload
+    upload, transport = self._initiate_resumable_upload(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\cloud\storage\blob.py", line 2199, in _initiate_resumable_upload
+    upload.initiate(
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\resumable_media\requests\upload.py", line 420, in initiate
+    return _request_helpers.wait_and_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\resumable_media\requests\_request_helpers.py", line 178, in wait_and_retry
+    raise error
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\resumable_media\requests\_request_helpers.py", line 155, in wait_and_retry
+    response = func()
+               ^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\resumable_media\requests\upload.py", line 412, in retriable_request
+    result = transport.request(
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\transport\requests.py", line 537, in request
+    response = super(AuthorizedSession, self).request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+urllib3.connectionpool DEBUG 2024-08-27 19:31:49,951 connectionpool 20280 18876 Starting new HTTPS connection (4): storage.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-08-27 19:31:50,191 connectionpool 20280 18876 https://storage.googleapis.com:443 "POST /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable HTTP/11" 200 0
+urllib3.connectionpool DEBUG 2024-08-27 19:31:50,543 connectionpool 20280 18876 https://storage.googleapis.com:443 "PUT /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable&upload_id=AHxI1nNcjb5V2ilz9Ur1F2id_vvuaHiwA4E82xr8e0tSVn755nYXtxkPrRMgRA3u1VCSvUovMYlwZgzfhbmP5yh_BE9i8rSnEzZRSv1kKfzZbbDtcA HTTP/11" 200 859
+urllib3.connectionpool DEBUG 2024-08-27 19:31:50,628 connectionpool 20280 18876 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2Fphp.jpg/acl?prettyPrint=false HTTP/11" 200 2340
+urllib3.connectionpool DEBUG 2024-08-27 19:31:50,738 connectionpool 20280 18876 https://storage.googleapis.com:443 "PATCH /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2Fphp.jpg?projection=full&prettyPrint=false HTTP/11" 200 3596
+urllib3.connectionpool DEBUG 2024-08-27 19:34:16,863 connectionpool 20280 12492 https://storage.googleapis.com:443 "POST /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable HTTP/11" 200 0
+urllib3.connectionpool DEBUG 2024-08-27 19:34:17,073 connectionpool 20280 12492 https://storage.googleapis.com:443 "PUT /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable&upload_id=AHxI1nPBSMoIYdCiL7jcv-0-aapeyLbi0uZ8Xv3beZSSyNcBtGcuWOrWHpw2rRoULl_7T4HMXBGQzWavo7FuHB4eSzYCbImOtJmhQsXpNrBBYm1FlA HTTP/11" 200 931
+urllib3.connectionpool DEBUG 2024-08-27 19:34:17,159 connectionpool 20280 12492 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2Flife%20on%20our%20planet.jpg/acl?prettyPrint=false HTTP/11" 200 2544
+urllib3.connectionpool DEBUG 2024-08-27 19:34:17,270 connectionpool 20280 12492 https://storage.googleapis.com:443 "PATCH /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2Flife%20on%20our%20planet.jpg?projection=full&prettyPrint=false HTTP/11" 200 3923
+django.request ERROR 2024-08-27 19:37:08,866 log 20280 4740 Internal Server Error: /movie/create/
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 464, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1411, in getresponse
+    response.begin()
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 324, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 293, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 464, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1411, in getresponse
+    response.begin()
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 324, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 293, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Desktop\movieStreamingApp\utils\custom_decorators.py", line 10, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Desktop\movieStreamingApp\movie_app\views.py", line 202, in movie_create
+    raise e
+  File "C:\Users\Dell\Desktop\movieStreamingApp\movie_app\views.py", line 153, in movie_create
+    blob.upload_from_file(poster)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\cloud\storage\blob.py", line 2848, in upload_from_file
+    self._prep_and_do_upload(
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\cloud\storage\blob.py", line 2697, in _prep_and_do_upload
+    created_json = self._do_upload(
+                   ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\cloud\storage\blob.py", line 2520, in _do_upload
+    response = self._do_resumable_upload(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\cloud\storage\blob.py", line 2325, in _do_resumable_upload
+    upload, transport = self._initiate_resumable_upload(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\cloud\storage\blob.py", line 2199, in _initiate_resumable_upload
+    upload.initiate(
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\resumable_media\requests\upload.py", line 420, in initiate
+    return _request_helpers.wait_and_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\resumable_media\requests\_request_helpers.py", line 178, in wait_and_retry
+    raise error
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\resumable_media\requests\_request_helpers.py", line 155, in wait_and_retry
+    response = func()
+               ^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\resumable_media\requests\upload.py", line 412, in retriable_request
+    result = transport.request(
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\transport\requests.py", line 537, in request
+    response = super(AuthorizedSession, self).request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+urllib3.connectionpool DEBUG 2024-08-27 19:37:13,179 connectionpool 20280 4740 Starting new HTTPS connection (5): storage.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-08-27 19:37:13,372 connectionpool 20280 4740 https://storage.googleapis.com:443 "POST /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable HTTP/11" 200 0
+urllib3.connectionpool DEBUG 2024-08-27 19:37:13,802 connectionpool 20280 4740 https://storage.googleapis.com:443 "PUT /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable&upload_id=AHxI1nNVqcRl63fs_rlRvq-ia5RE269QceTzKpv6v-k2HanjgVhNoUaQU7QrQTisWdvYGFueAEK_QD0xYh7EHubONh2X9C9PvZmleNOBFvw5i2BMUg HTTP/11" 200 867
+urllib3.connectionpool DEBUG 2024-08-27 19:37:13,884 connectionpool 20280 4740 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2Ftiger.jpg/acl?prettyPrint=false HTTP/11" 200 2364
+urllib3.connectionpool DEBUG 2024-08-27 19:37:14,238 connectionpool 20280 4740 https://storage.googleapis.com:443 "PATCH /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2Ftiger.jpg?projection=full&prettyPrint=false HTTP/11" 200 3634
+google.auth.transport.requests DEBUG 2024-08-27 19:46:21,840 requests 20280 17320 Making request: POST https://oauth2.googleapis.com/token
+google.api_core.retry DEBUG 2024-08-27 19:46:21,859 retry_base 20280 17320 Retrying due to ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')), sleeping 0.5s ...
+google.auth.transport.requests DEBUG 2024-08-27 19:46:22,397 requests 20280 17320 Making request: POST https://oauth2.googleapis.com/token
+urllib3.connectionpool DEBUG 2024-08-27 19:46:22,399 connectionpool 20280 17320 Starting new HTTPS connection (2): oauth2.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-08-27 19:46:22,562 connectionpool 20280 17320 https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+google.api_core.retry DEBUG 2024-08-27 19:46:22,586 retry_base 20280 17320 Retrying due to ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')), sleeping 0.7s ...
+urllib3.connectionpool DEBUG 2024-08-27 19:46:23,338 connectionpool 20280 17320 Starting new HTTPS connection (6): storage.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-08-27 19:46:23,519 connectionpool 20280 17320 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:46:23,667 connectionpool 20280 17320 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:46:23,667 _helpers 20280 17320 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:46:24,150 connectionpool 20280 17320 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:46:24,322 connectionpool 20280 17320 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:46:24,324 _helpers 20280 17320 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:46:25,175 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:46:25,262 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:46:25,264 _helpers 20280 9304 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:46:25,697 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:46:25,796 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:46:25,797 _helpers 20280 9304 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:46:26,263 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:46:26,399 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:46:26,400 _helpers 20280 9304 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:46:26,839 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:46:26,924 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:46:26,925 _helpers 20280 9304 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:46:27,383 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:46:27,480 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:46:27,482 _helpers 20280 9304 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:46:27,925 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:46:28,070 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:46:28,071 _helpers 20280 9304 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:46:28,514 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:46:28,601 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:46:28,603 _helpers 20280 9304 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:46:29,048 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:46:29,193 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:46:29,194 _helpers 20280 9304 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:46:29,628 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:46:29,731 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:46:29,733 _helpers 20280 9304 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:46:30,179 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:46:30,312 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:46:30,313 _helpers 20280 9304 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:46:30,800 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:46:30,885 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:46:30,887 _helpers 20280 9304 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:46:31,318 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:46:31,456 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:46:31,457 _helpers 20280 9304 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:46:31,893 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:46:31,990 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:46:31,991 _helpers 20280 9304 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:46:32,446 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:46:32,585 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:46:32,586 _helpers 20280 9304 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:46:33,028 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:46:33,123 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:46:33,124 _helpers 20280 9304 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:46:33,577 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:46:33,710 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:46:33,711 _helpers 20280 9304 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:46:34,166 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:46:34,256 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:46:34,258 _helpers 20280 9304 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:46:34,702 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:46:34,822 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:46:34,824 _helpers 20280 9304 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:46:35,250 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:46:35,338 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:46:35,340 _helpers 20280 9304 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:46:35,792 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:46:35,929 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:46:35,931 _helpers 20280 9304 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:46:36,357 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:46:36,450 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:46:36,451 _helpers 20280 9304 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:46:36,892 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:46:37,013 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:46:37,013 _helpers 20280 9304 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:46:37,451 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:46:37,532 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:46:37,533 _helpers 20280 9304 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:46:37,996 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:46:38,135 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:46:38,135 _helpers 20280 9304 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:46:54,395 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:46:54,480 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:46:54,480 _helpers 20280 9304 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:46:54,921 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:46:55,025 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:46:55,026 _helpers 20280 9304 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:46:55,467 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:46:55,610 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:46:55,612 _helpers 20280 9304 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:46:56,045 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:46:56,146 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:46:56,147 _helpers 20280 9304 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:46:56,588 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:46:56,708 connectionpool 20280 9304 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:46:56,708 _helpers 20280 9304 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+google.api_core.retry DEBUG 2024-08-27 19:49:57,977 retry_base 20280 18712 Retrying due to ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')), sleeping 0.3s ...
+urllib3.connectionpool DEBUG 2024-08-27 19:49:58,329 connectionpool 20280 18712 Starting new HTTPS connection (7): storage.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-08-27 19:49:58,546 connectionpool 20280 18712 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:49:58,672 connectionpool 20280 18712 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:49:58,673 _helpers 20280 18712 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:49:59,171 connectionpool 20280 9728 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1291
+urllib3.connectionpool DEBUG 2024-08-27 19:49:59,332 connectionpool 20280 9728 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:49:59,333 _helpers 20280 9728 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FQianzhousaurus%20hunting%20Corythoraptor%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764565295974&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:00,662 connectionpool 20280 13244 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:00,847 connectionpool 20280 13244 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:00,848 _helpers 20280 13244 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:01,298 connectionpool 20280 13244 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:01,469 connectionpool 20280 13244 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:01,471 _helpers 20280 13244 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:01,938 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:02,028 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:02,029 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:02,467 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:02,560 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:02,562 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:03,018 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:03,137 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:03,137 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:03,592 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:03,678 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:03,680 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:04,138 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:04,227 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:04,228 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:04,671 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:04,797 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:04,798 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:05,247 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:05,332 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:05,334 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:05,774 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:05,914 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:05,916 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:06,351 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:06,442 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:06,443 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:06,913 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:07,075 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:07,076 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:07,518 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:07,655 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:07,656 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:08,097 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:08,239 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:08,240 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:08,699 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:08,786 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:08,788 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:09,229 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:09,364 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:09,365 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:09,798 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:09,897 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:09,898 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:10,351 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:10,555 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:10,557 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:11,001 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:11,105 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:11,107 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:11,547 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:11,672 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:11,673 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:12,106 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:12,202 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:12,203 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:12,656 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:12,802 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:12,804 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:19,591 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:19,728 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:19,729 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:20,188 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:20,362 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:20,363 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:20,844 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:21,067 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:21,069 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:21,499 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:21,628 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:21,629 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:22,069 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:22,175 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:22,176 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:22,634 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:22,727 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:22,728 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:23,221 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:23,357 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:23,358 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:23,817 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:23,961 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:23,962 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:24,402 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:24,536 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:24,537 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:44,893 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:45,037 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:45,038 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:45,490 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:45,635 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:45,637 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:46,078 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:46,165 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:46,166 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:46,611 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:46,755 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:46,756 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:47,195 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:47,287 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:47,288 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:47,758 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:47,914 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:50:47,916 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:50:52,322 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1237
+urllib3.connectionpool DEBUG 2024-08-27 19:50:52,415 connectionpool 20280 18668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media HTTP/11" 206 741499
+google.resumable_media._helpers INFO 2024-08-27 19:50:52,416 _helpers 20280 18668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20desert%20watering%20hole%20-%20%5BPrehistoric%20Planet%5D%20season%201.mp4?generation=1724764770675868&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+django.request ERROR 2024-08-27 19:54:48,808 log 20280 18992 Internal Server Error: /series/create/
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 464, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1411, in getresponse
+    response.begin()
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 324, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 293, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 464, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1411, in getresponse
+    response.begin()
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 324, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 293, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Desktop\movieStreamingApp\utils\custom_decorators.py", line 10, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Desktop\movieStreamingApp\series_app\views.py", line 210, in series_create
+    raise e
+  File "C:\Users\Dell\Desktop\movieStreamingApp\series_app\views.py", line 164, in series_create
+    blob.upload_from_file(poster)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\cloud\storage\blob.py", line 2848, in upload_from_file
+    self._prep_and_do_upload(
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\cloud\storage\blob.py", line 2697, in _prep_and_do_upload
+    created_json = self._do_upload(
+                   ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\cloud\storage\blob.py", line 2520, in _do_upload
+    response = self._do_resumable_upload(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\cloud\storage\blob.py", line 2325, in _do_resumable_upload
+    upload, transport = self._initiate_resumable_upload(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\cloud\storage\blob.py", line 2199, in _initiate_resumable_upload
+    upload.initiate(
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\resumable_media\requests\upload.py", line 420, in initiate
+    return _request_helpers.wait_and_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\resumable_media\requests\_request_helpers.py", line 178, in wait_and_retry
+    raise error
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\resumable_media\requests\_request_helpers.py", line 155, in wait_and_retry
+    response = func()
+               ^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\resumable_media\requests\upload.py", line 412, in retriable_request
+    result = transport.request(
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\transport\requests.py", line 537, in request
+    response = super(AuthorizedSession, self).request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+urllib3.connectionpool DEBUG 2024-08-27 19:54:53,300 connectionpool 20280 18992 Starting new HTTPS connection (8): storage.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-08-27 19:54:53,526 connectionpool 20280 18992 https://storage.googleapis.com:443 "POST /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable HTTP/11" 200 0
+urllib3.connectionpool DEBUG 2024-08-27 19:54:53,705 connectionpool 20280 18992 https://storage.googleapis.com:443 "PUT /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable&upload_id=AHxI1nNGMNVUkRb4eGBblbLYDaAIlWo1fsF1Miy2XFgSz9-xX3fpmxdJLiqkPZumsilQcJ0KuATpY37i9uMujZxwWy9KJh1A1ef7PTiRlkFyGUA40A HTTP/11" 200 866
+urllib3.connectionpool DEBUG 2024-08-27 19:54:53,784 connectionpool 20280 18992 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2Fmando.jpg/acl?prettyPrint=false HTTP/11" 200 2364
+urllib3.connectionpool DEBUG 2024-08-27 19:54:53,898 connectionpool 20280 18992 https://storage.googleapis.com:443 "PATCH /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2Fmando.jpg?projection=full&prettyPrint=false HTTP/11" 200 3633
+google.api_core.retry DEBUG 2024-08-27 19:57:20,019 retry_base 20280 13840 Retrying due to ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')), sleeping 0.5s ...
+urllib3.connectionpool DEBUG 2024-08-27 19:57:20,492 connectionpool 20280 13840 Starting new HTTPS connection (9): storage.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-08-27 19:57:21,677 connectionpool 20280 13840 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20Mandalorian%20%282019%29%20%28Disney%20%2B%29%20-%20Bar%20Fight%20Scenes%20_%204K%20UHD..mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1284
+urllib3.connectionpool DEBUG 2024-08-27 19:57:21,823 connectionpool 20280 13840 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20Mandalorian%20(2019)%20(Disney%20%2B)%20-%20Bar%20Fight%20Scenes%20_%204K%20UHD..mp4?generation=1724765226216346&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:57:21,825 _helpers 20280 13840 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20Mandalorian%20(2019)%20(Disney%20%2B)%20-%20Bar%20Fight%20Scenes%20_%204K%20UHD..mp4?generation=1724765226216346&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:57:22,443 connectionpool 20280 15044 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20Mandalorian%20%282019%29%20%28Disney%20%2B%29%20-%20Bar%20Fight%20Scenes%20_%204K%20UHD..mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1284
+urllib3.connectionpool DEBUG 2024-08-27 19:57:22,576 connectionpool 20280 15044 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20Mandalorian%20(2019)%20(Disney%20%2B)%20-%20Bar%20Fight%20Scenes%20_%204K%20UHD..mp4?generation=1724765226216346&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:57:22,577 _helpers 20280 15044 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FThe%20Mandalorian%20(2019)%20(Disney%20%2B)%20-%20Bar%20Fight%20Scenes%20_%204K%20UHD..mp4?generation=1724765226216346&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+django.request WARNING 2024-08-27 19:57:33,326 log 20280 17384 Not Found: /favicon.ico
+urllib3.connectionpool DEBUG 2024-08-27 19:57:58,692 connectionpool 20280 13840 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1128
+urllib3.connectionpool DEBUG 2024-08-27 19:57:58,837 connectionpool 20280 13840 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:57:58,839 _helpers 20280 13840 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:57:59,293 connectionpool 20280 16888 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1128
+urllib3.connectionpool DEBUG 2024-08-27 19:57:59,448 connectionpool 20280 16888 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media HTTP/11" 206 519134
+google.resumable_media._helpers INFO 2024-08-27 19:57:59,450 _helpers 20280 16888 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-08-27 19:57:59,706 connectionpool 20280 16888 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1128
+urllib3.connectionpool DEBUG 2024-08-27 19:57:59,788 connectionpool 20280 16888 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-08-27 19:57:59,790 _helpers 20280 16888 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.

@@ -38,7 +38,7 @@ class SeriesForm(forms.ModelForm):
     )
 
     director = forms.CharField(
-        label='Directors - optional',
+        label='Directors*',
         required=False,
         widget=forms.TextInput({'list':'director-list'})
     )
@@ -50,7 +50,7 @@ class SeriesForm(forms.ModelForm):
     )
 
     cast = forms.CharField(
-        label='Casts - optional',
+        label='Casts*',
         required=False,
         widget=forms.TextInput({'list':'cast-list'})
     )
@@ -68,7 +68,7 @@ class SeriesForm(forms.ModelForm):
     )
 
     production = forms.CharField(
-        label='Production Companies - optional',
+        label='Production Companies*',
         required=False,
         widget=forms.TextInput({'list':'production-list'})
     )

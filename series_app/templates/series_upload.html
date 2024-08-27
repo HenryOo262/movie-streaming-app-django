@@ -9,20 +9,30 @@
 {% endblock %}
 
 {% block content %} 
-    <form id="form" class="form" method="POST" enctype="multipart/form-data" action="{% url 'series_app.series_upload' %}">
+    <form id="form" class="form upload-form" method="POST" enctype="multipart/form-data" action="{% url 'series_app.series_upload' %}">
         {% csrf_token %}
-        <div class="grid-wrapper">
-            <div class="cell"> Series : </div> 
-            <div class="cell"> {{series.title}} ({{series.releaseDate.year}}) </div>
-            <div class="cell"> {{form.season.label}} : </div> 
-            <div class="cell"> {{form.season}} </div>
-            <div class="cell"> {{form.episode.label}} : </div> 
-            <div class="cell"> {{form.episode}} </div>
-            <div class="cell"> {{form.resolution.label}} : </div> 
-            <div class="cell"> {{form.resolution}} </div>
-            <div class="cell"> {{form.source.label}} : </div> 
-            <div class="cell"> {{form.source}} </div>
-        </div>   
+        <div class="grid-wrapper"> 
+            <div class="cell" style="width: auto;">
+                <div class="cell-title"> {{form.series.label}} : </div>
+                <div class="cell-input"> {{series.title}} ({{series.releaseDate.year}}) </div>
+            </div>
+            <div class="cell" style="width: auto;">
+                <div class="cell-title"> {{form.resolution.label}} : </div>
+                <div class="cell-input"> {{form.resolution}} </div>
+            </div>
+            <div class="cell" style="width: auto;">
+                <div class="cell-title"> {{form.season.label}} : </div>
+                <div class="cell-input"> {{form.season}} </div>
+            </div>
+            <div class="cell" style="width: auto;">
+                <div class="cell-title"> {{form.episode.label}} : </div>
+                <div class="cell-input"> {{form.episode}} </div>
+            </div>
+        </div>
+        <div class="cell" style="width: auto;">
+            <div class="cell-title"> {{form.source.label}} : </div>
+            <div class="cell-input"> {{form.source}} </div>
+        </div>
         <div class="button-wrapper">
             <button id="button" type="submit"> Upload </button>
         </div>

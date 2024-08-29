@@ -1,0 +1,20 @@
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/cast_card.css' %}">
+{% endblock %}
+
+<div class="card-wrapper">
+    {% for cast in casts %}
+        <a href="" class="card-holder" title="Show More"> 
+            <div class="bg-card bg-card-1"></div>
+            <div class="bg-card bg-card-2"></div>
+            <div class="card-outer"> 
+                <div class="card-inner">
+                    <div class="cast-name flex-row"> <h2> {{cast.name}} </h2> </div>
+                    <img class="image" src="{% static 'images/me.jpg' %}"> 
+                </div>
+            </div>
+        </a>
+    {% endfor %}
+</div>

@@ -1,0 +1,84 @@
+{% extends 'base_page.html' %}
+
+{% load static %}
+
+{% block title %} <title> MovWave | Add Actor </title> {% endblock %}
+{% block head %} 
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/cast.css' %}">
+{% endblock %}
+
+{% block content %} 
+    <div class="minibio flex-col">
+        <div class="minibio-header">
+            {% if not cast.image %}
+                <img class="minibio-image" src="{% static 'images/image-NA.jpg' %}"> 
+            {% else %}
+                <img class="minibio-image" src={{cast.image}}> 
+            {% endif %}
+            <div class="flex-col">
+                <h1> {{cast.name}} </h1>
+                {% if cast.imdb %}
+                    <a href="{{cast.imdb}}" title="Go to IMDB Page" class="minibio-imdb"> IMDB Page </a>
+                {% else %} 
+                    <a class="minibio-imdb imdb-disable"> IMDB Page </a>
+                {% endif %}
+            </div>
+        </div>
+        <div class="minibio-bio">
+            {% if cast.bio %}
+                <p class="minibio-biocontainer"> {{cast.bio}} </p>
+            {% else %}
+                <h2 style="width: 100%; text-align: center;"> Not Available For This Person 😔 </h2>
+            {% endif %}
+        </div>
+    </div>
+
+    {% if movies %}
+    <div class="content-wrapper" style="margin-top: 10px;">
+        <div>
+            <h1> {{cast.name}} Movies </h1>
+        </div>
+        <div class="grid-wrapper">
+            {% for movie in movies %}
+                <a class="cell" href="{% url 'movie_app.movie' id=movie.id %}">
+                    <div class="poster">
+                        <img src="{{movie.poster}}">
+                    </div>
+                    <div class="title">
+                        <p> {{movie.title}} </p>
+                    </div>
+                </a>
+            {% endfor %}
+            <div class="cell"> 
+                <a class="seemore" href="{% url 'search_app.search' content_type='movies' search_type='cast' search=cast.name %}"> See More </a>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    {% if series %}
+    <div class="content-wrapper" style="margin-top: 10px;">
+        <div>
+            <h1> {{cast.name}} Series </h1>
+        </div>
+        <div class="grid-wrapper">
+            {% for item in series %}
+                <a class="cell" href="{% url 'series_app.series' id=item.id %}">
+                    <div class="poster">
+                        <img src="{{item.poster}}">
+                    </div>
+                    <div class="title">
+                        <p> {{item.title}} </p>
+                    </div>
+                </a>
+            {% endfor %}
+            <div class="cell"> 
+                <a class="seemore" href="{% url 'search_app.search' content_type='series' search_type='cast' search=cast.name %}"> See More </a>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+
+{% endblock %} 

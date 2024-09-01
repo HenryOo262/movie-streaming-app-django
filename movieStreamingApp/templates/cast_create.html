@@ -1,0 +1,42 @@
+{% extends 'base_page.html' %}
+
+{% load static %}
+
+{% block title %} <title> MovWave | Add Actor </title> {% endblock %}
+{% block head %} 
+    <link rel="stylesheet" href="{% static 'css/movie_form.css' %}">
+    <link rel="stylesheet" href="{% static 'css/cast.css' %}">
+{% endblock %}
+
+{% block content %} 
+    <form id="form" class="form upload-form" method="POST" enctype="multipart/form-data" action="{% url 'cast_create' %}">
+        {% csrf_token %}
+        <div class="grid-wrapper">
+            <div class="cell">
+                <div class="cell-title"> {{form.name.label}} : </div>
+                <div class="cell-input"> {{form.name}} </div>
+            </div>
+            <div class="cell">
+                <div class="cell-title"> {{form.image.label}} : </div>
+                <div class="cell-input"> {{form.image}} </div>
+            </div>
+        </div>
+        <div class="cell">
+            <div class="cell-title"> {{form.imdb.label}} :</div>
+            <div class="cell-input"> {{form.imdb}} </div>
+        </div>
+        <div class="cell">
+            <div class="cell-title"> {{form.bio.label}} :</div>
+            <div class="cell-input"> {{form.bio}} </div>
+        </div>
+        <div class="button-wrapper">
+            <button type="submit"> Submit </button>
+        </div>
+    </form>
+    {% if messages %}
+        {% for message in messages %}
+            {{message}}
+        {% endfor %}
+    {% endif %}
+    {{form.errors}}
+{% endblock %} 

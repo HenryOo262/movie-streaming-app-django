@@ -2,19 +2,25 @@
 
 {% block head %}
     <link rel="stylesheet" href="{% static 'css/cast_card.css' %}">
-{% endblock %}
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&family=Satisfy&family=Sevillana&display=swap" rel="stylesheet">{% endblock %}
 
+{% if casts %}
 <div class="card-wrapper">
     {% for cast in casts %}
-        <a href="" class="card-holder" title="Show More"> 
+        <a href="{% url 'cast' id=cast.id %}" class="card-holder" title="Show More"> 
             <div class="bg-card bg-card-1"></div>
             <div class="bg-card bg-card-2"></div>
             <div class="card-outer"> 
                 <div class="card-inner">
-                    <div class="cast-name flex-row"> <h2> {{cast.name}} </h2> </div>
-                    <img class="image" src="{% static 'images/me.jpg' %}"> 
+                    <div class="cast-name flex-row"> <p> {{cast.name}} </p> </div>
+                    {% if not cast.image %}
+                        <img class="image" src="{% static 'images/image-NA.jpg' %}"> 
+                    {% else %}
+                        <img class="image" src={{cast.image}}> 
+                    {% endif %}
                 </div>
             </div>
         </a>
     {% endfor %}
 </div>
+{% endif %}

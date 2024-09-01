@@ -1,0 +1,99 @@
+
+body {
+    background-image: url('../images/galaxy-background3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.minibio {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+
+    width: 65vw;
+    height: auto;
+
+    padding: 20px;
+    margin: 40px auto;
+
+    border: solid 1px #ffffff;
+    border-radius: 2px;
+}
+
+.minibio-header {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.minibio-image {
+    border-radius: 50%;
+    object-fit: cover;
+
+    width: 200px;
+    height: 200px;
+}
+
+.minibio-imdb {
+    background-color: #F5C518;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bolder;
+
+    padding: 10px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.imdb-disable {
+    background-color: grey;
+    color: #ffffff;
+    pointer-events: none;
+}
+
+.minibio-bio {
+    padding: 20px;
+    margin: 0 auto;
+
+    width: 100%;
+}
+
+.minibio-biocontainer {
+    text-indent: 40px;
+    overflow-wrap: break-word;
+    text-align: justify;
+    padding: 0; 
+    line-height: 1.6;
+}
+
+.seemore {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+
+    border-radius: 5px;
+    border: solid 1px #ffffff;
+
+    cursor: pointer;
+}
+
+.seemore:hover {
+    border: solid 1px #ffff00;
+    color: #ffff00;
+}

@@ -1,9 +1,12 @@
+from firebase_admin import storage
+from django.contrib import messages
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, JsonResponse
 
-from .models import Genre, Country
-from movie_app.models import Movie, MovieResource
+from .forms import CastForm
 from series_app.models import Series
+from .models import Genre, Country, Cast
+from movie_app.models import Movie, MovieResource
 
 
 def index(request):
@@ -36,3 +39,60 @@ def getSearchTerms(request):
         'countries': countries,
     }
     return JsonResponse(data)
+
+
+def cast_create(request):
+    if request.method == 'GET':
+        form = CastForm()
+        return render(request, 'cast_create.html', {'form': form})
+    elif request.method == 'POST':
+        form = CastForm(request.POST,request.FILES)
+        if form.is_valid():
+            try:
+                name = form.cleaned_data['name']
+                bio = form.cleaned_data['bio']
+                image = form.cleaned_data['image']
+                imdb = form.cleaned_data['imdb']
+
+                if image is not None:
+                    bucket = storage.bucket()
+                    # creates a reference in bucket
+                    blob = bucket.blob(f'casts/{image.name}')
+                    blob.upload_from_file(image)
+                    blob.make_public()  
+                    image_url = blob.public_url 
+                else:
+                    image_url = ''
+
+                cast_object, created = Cast.objects.get_or_create(name=name)
+                if created == True:
+                    cast_object = Cast(name=name, bio=bio, image=image_url, imdb=imdb)
+                else:
+                    if not bio == '':
+                        cast_object.bio = bio
+                    if not image_url == '':
+                        cast_object.image = image_url
+                    if not imdb == '':
+                        cast_object.imdb = imdb
+                cast_object.save()
+
+                messages.success(request, 'Successfully updated the cast')
+                return render(request, 'cast_create.html', {'form': form})
+            except Exception as e:
+                raise e
+        return render(request, 'cast_create.html', {'form': form})
+    
+
+def cast(request, id):
+    try:
+        cast = Cast.objects.get(id=id)
+        movies = Movie.objects.filter(casts__id=id)[:5]
+        series = Series.objects.filter(casts__id=id)[:5]
+        context = {
+            'cast': cast,
+            'movies': movies,
+            'series': series,
+        }
+    except Exception as e:
+        raise e
+    return render(request, 'cast.html', context)

@@ -30,6 +30,8 @@ body {
     margin: 40px auto;
     padding: 40px;
 
+    border: solid 1px #ffffff;
+
     overflow: scroll;
     overflow-x: hidden;
     border-radius: 1px;

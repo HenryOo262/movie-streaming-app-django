@@ -16,4 +16,7 @@ urlpatterns = [
     path('bookmarks/', include('bookmark_app.urls')),
 
     path('searchTerms/', views.getSearchTerms),
+
+    path('cast/create', views.cast_create, name='cast_create'),
+    path('cast/<int:id>', views.cast, name='cast'),
 ]

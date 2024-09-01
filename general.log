@@ -12770,3 +12770,1400 @@ urllib3.connectionpool DEBUG 2024-09-01 11:36:50,541 connectionpool 13328 8548 h
 google.resumable_media._helpers INFO 2024-09-01 11:36:50,543 _helpers 13328 8548 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FAtomic%20Bombings%20Opening%20Scene%20-%20Fallout%202024.mp4?generation=1724948237871074&alt=media
 (which happens for composite objects), so client-side content integrity
 checking is not being performed.
+django.utils.autoreload INFO 2024-09-01 11:39:41,897 autoreload 11564 3836 Watching for file changes with StatReloader
+urllib3.util.retry DEBUG 2024-09-01 11:42:40,975 retry 11564 19624 Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+google.auth.transport.requests DEBUG 2024-09-01 11:42:40,979 requests 11564 19624 Making request: POST https://oauth2.googleapis.com/token
+urllib3.connectionpool DEBUG 2024-09-01 11:42:40,995 connectionpool 11564 19624 Starting new HTTPS connection (1): oauth2.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-09-01 11:42:41,187 connectionpool 11564 19624 https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+urllib3.connectionpool DEBUG 2024-09-01 11:42:41,193 connectionpool 11564 19624 Starting new HTTPS connection (1): storage.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-09-01 11:42:41,470 connectionpool 11564 19624 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2Fvideoplayback.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 961
+urllib3.connectionpool DEBUG 2024-09-01 11:42:41,592 connectionpool 11564 19624 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2Fvideoplayback.mp4?generation=1724930695819499&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-09-01 11:42:41,592 _helpers 11564 19624 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2Fvideoplayback.mp4?generation=1724930695819499&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-09-01 11:42:44,586 connectionpool 11564 19624 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FBlade%20Runner%202049%20%282017%29%20-%20The%20Scrapyard%20Ambush%20Scene%20%283_10%29%20_%20Movieclips.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1335
+urllib3.connectionpool DEBUG 2024-09-01 11:42:44,673 connectionpool 11564 19624 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FBlade%20Runner%202049%20(2017)%20-%20The%20Scrapyard%20Ambush%20Scene%20(3_10)%20_%20Movieclips.mp4?generation=1724671527074315&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-09-01 11:42:44,674 _helpers 11564 19624 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FBlade%20Runner%202049%20(2017)%20-%20The%20Scrapyard%20Ambush%20Scene%20(3_10)%20_%20Movieclips.mp4?generation=1724671527074315&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-09-01 11:42:56,164 connectionpool 11564 19624 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1128
+urllib3.connectionpool DEBUG 2024-09-01 11:42:56,345 connectionpool 11564 19624 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-09-01 11:42:56,347 _helpers 11564 19624 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-09-01 11:42:57,005 connectionpool 11564 21836 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1128
+urllib3.connectionpool DEBUG 2024-09-01 11:42:57,209 connectionpool 11564 21836 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media HTTP/11" 206 519134
+google.resumable_media._helpers INFO 2024-09-01 11:42:57,210 _helpers 11564 21836 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-09-01 11:42:57,757 connectionpool 11564 21836 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1128
+urllib3.connectionpool DEBUG 2024-09-01 11:42:58,015 connectionpool 11564 21836 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media HTTP/11" 206 388062
+google.resumable_media._helpers INFO 2024-09-01 11:42:58,017 _helpers 11564 21836 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-09-01 11:42:58,338 connectionpool 11564 21836 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1128
+urllib3.connectionpool DEBUG 2024-09-01 11:42:58,447 connectionpool 11564 21836 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-09-01 11:42:58,448 _helpers 11564 21836 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FSmiling%20Friends%202020%20free%20stream%20-%20Fbox.mp4?generation=1724121979957680&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-09-01 11:43:03,365 connectionpool 11564 19624 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2Fshining%20360.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 958
+urllib3.connectionpool DEBUG 2024-09-01 11:43:03,798 connectionpool 11564 19624 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2Fshining%20360.mp4?generation=1724672062691809&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-09-01 11:43:03,799 _helpers 11564 19624 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2Fshining%20360.mp4?generation=1724672062691809&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+django.utils.autoreload INFO 2024-09-01 11:45:43,441 autoreload 11564 3836 C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-09-01 11:45:46,129 autoreload 4072 4840 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-09-01 11:45:55,577 autoreload 4072 4840 C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-09-01 11:45:57,600 autoreload 3656 6460 Watching for file changes with StatReloader
+urllib3.util.retry DEBUG 2024-09-01 11:46:54,282 retry 3656 13860 Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+google.auth.transport.requests DEBUG 2024-09-01 11:46:54,284 requests 3656 13860 Making request: POST https://oauth2.googleapis.com/token
+urllib3.connectionpool DEBUG 2024-09-01 11:46:54,287 connectionpool 3656 13860 Starting new HTTPS connection (1): oauth2.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-09-01 11:46:54,498 connectionpool 3656 13860 https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+urllib3.connectionpool DEBUG 2024-09-01 11:46:54,501 connectionpool 3656 13860 Starting new HTTPS connection (1): storage.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-09-01 11:46:54,689 connectionpool 3656 13860 https://storage.googleapis.com:443 "POST /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable HTTP/11" 200 0
+urllib3.connectionpool DEBUG 2024-09-01 11:46:54,949 connectionpool 3656 13860 https://storage.googleapis.com:443 "PUT /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable&upload_id=AD-8ljtyd9JelhoEeKRZowCr2iMoxNy5j8ehIfwrI8fRxcKTpTwOKQPfv2XumXmtKMeCPffYjkuboM7nFyCVvY5bdo265msAReeRbKl7Cl0NZGNdlw HTTP/11" 200 926
+urllib3.connectionpool DEBUG 2024-09-01 11:46:55,036 connectionpool 3656 13860 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2Fdavid%20attenborough.jfif/acl?prettyPrint=false HTTP/11" 200 2540
+urllib3.connectionpool DEBUG 2024-09-01 11:46:55,143 connectionpool 3656 13860 https://storage.googleapis.com:443 "PATCH /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2Fdavid%20attenborough.jfif?projection=full&prettyPrint=false HTTP/11" 200 3913
+django.request ERROR 2024-09-01 11:51:02,758 log 3656 10492 Internal Server Error: /movie/create/
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 464, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1411, in getresponse
+    response.begin()
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 324, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 293, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 464, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1411, in getresponse
+    response.begin()
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 324, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 293, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\movieStreamingApp\utils\custom_decorators.py", line 10, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movie_app\views.py", line 202, in movie_create
+    raise e
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movie_app\views.py", line 153, in movie_create
+    blob.upload_from_file(poster)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\cloud\storage\blob.py", line 2848, in upload_from_file
+    self._prep_and_do_upload(
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\cloud\storage\blob.py", line 2697, in _prep_and_do_upload
+    created_json = self._do_upload(
+                   ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\cloud\storage\blob.py", line 2520, in _do_upload
+    response = self._do_resumable_upload(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\cloud\storage\blob.py", line 2325, in _do_resumable_upload
+    upload, transport = self._initiate_resumable_upload(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\cloud\storage\blob.py", line 2199, in _initiate_resumable_upload
+    upload.initiate(
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\resumable_media\requests\upload.py", line 420, in initiate
+    return _request_helpers.wait_and_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\resumable_media\requests\_request_helpers.py", line 178, in wait_and_retry
+    raise error
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\resumable_media\requests\_request_helpers.py", line 155, in wait_and_retry
+    response = func()
+               ^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\resumable_media\requests\upload.py", line 412, in retriable_request
+    result = transport.request(
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\transport\requests.py", line 537, in request
+    response = super(AuthorizedSession, self).request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+urllib3.connectionpool DEBUG 2024-09-01 11:51:07,996 connectionpool 3656 10492 Starting new HTTPS connection (2): storage.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-09-01 11:51:08,687 connectionpool 3656 10492 https://storage.googleapis.com:443 "POST /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable HTTP/11" 200 0
+urllib3.connectionpool DEBUG 2024-09-01 11:51:09,218 connectionpool 3656 10492 https://storage.googleapis.com:443 "PUT /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable&upload_id=AD-8ljsfMdM2uJtvgc1eNa30dgSaHWLH8U3QmQtkynb38MT2gppnQKEs0qkCEpt18fMRkqthrkuBQ5ClBjO36Hc3vFbbqGRy25o2CF-bxvhIUHTrNV0 HTTP/11" 200 926
+urllib3.connectionpool DEBUG 2024-09-01 11:51:09,314 connectionpool 3656 10492 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2Fdavid%20attenborough.jfif/acl?prettyPrint=false HTTP/11" 200 2540
+urllib3.connectionpool DEBUG 2024-09-01 11:51:09,420 connectionpool 3656 10492 https://storage.googleapis.com:443 "PATCH /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2Fdavid%20attenborough.jfif?projection=full&prettyPrint=false HTTP/11" 200 3913
+urllib3.connectionpool DEBUG 2024-09-01 11:51:46,999 connectionpool 3656 10492 https://storage.googleapis.com:443 "POST /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable HTTP/11" 200 0
+urllib3.connectionpool DEBUG 2024-09-01 11:51:47,424 connectionpool 3656 10492 https://storage.googleapis.com:443 "PUT /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable&upload_id=AD-8ljukEuThkda5T7kKQ4ZMKy0r73Bm28RrRSFP6KRKdQH0IKwoaJhqpsgebm-avaN59aTUJt2DmPYVCpSML5rhKP7s9qrz_--Y9UJ-8VdmFSZWsYw HTTP/11" 200 926
+urllib3.connectionpool DEBUG 2024-09-01 11:51:47,973 connectionpool 3656 10492 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2Fdavid%20attenborough.jfif/acl?prettyPrint=false HTTP/11" 200 2540
+urllib3.connectionpool DEBUG 2024-09-01 11:51:48,252 connectionpool 3656 10492 https://storage.googleapis.com:443 "PATCH /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2Fdavid%20attenborough.jfif?projection=full&prettyPrint=false HTTP/11" 200 3913
+django.request ERROR 2024-09-01 11:53:38,952 log 3656 23072 Internal Server Error: /cast/create
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: movieStreamingApp_cast.name
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py", line 82, in cast_create
+    raise e
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py", line 77, in cast_create
+    cast_object.save()
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: movieStreamingApp_cast.name
+django.request ERROR 2024-09-01 11:53:50,892 log 3656 10492 Internal Server Error: /cast/create
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: movieStreamingApp_cast.name
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py", line 82, in cast_create
+    raise e
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py", line 77, in cast_create
+    cast_object.save()
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: movieStreamingApp_cast.name
+django.request ERROR 2024-09-01 11:54:07,553 log 3656 18064 Internal Server Error: /cast/create
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: movieStreamingApp_cast.name
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py", line 82, in cast_create
+    raise e
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py", line 77, in cast_create
+    cast_object.save()
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: movieStreamingApp_cast.name
+django.request ERROR 2024-09-01 11:54:32,197 log 3656 18064 Internal Server Error: /cast/create
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: movieStreamingApp_cast.name
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py", line 82, in cast_create
+    raise e
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py", line 77, in cast_create
+    cast_object.save()
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: movieStreamingApp_cast.name
+django.utils.autoreload INFO 2024-09-01 12:08:07,178 autoreload 3656 6460 C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-09-01 12:08:10,033 autoreload 4084 12496 Watching for file changes with StatReloader
+django.request ERROR 2024-09-01 12:11:56,997 log 4084 15352 Internal Server Error: /cast/create
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: movieStreamingApp_cast.imdb
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py", line 84, in cast_create
+    raise e
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py", line 79, in cast_create
+    cast_object.save()
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1040, in _save_table
+    updated = self._do_update(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1105, in _do_update
+    return filtered._update(values) > 0
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1278, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1990, in execute_sql
+    cursor = super().execute_sql(result_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: movieStreamingApp_cast.imdb
+django.request ERROR 2024-09-01 12:12:06,287 log 4084 15352 Internal Server Error: /cast/create
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: movieStreamingApp_cast.imdb
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py", line 84, in cast_create
+    raise e
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py", line 79, in cast_create
+    cast_object.save()
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1040, in _save_table
+    updated = self._do_update(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1105, in _do_update
+    return filtered._update(values) > 0
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1278, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1990, in execute_sql
+    cursor = super().execute_sql(result_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: movieStreamingApp_cast.imdb
+django.request ERROR 2024-09-01 12:12:15,105 log 4084 15352 Internal Server Error: /cast/create
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: movieStreamingApp_cast.imdb
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py", line 84, in cast_create
+    raise e
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py", line 79, in cast_create
+    cast_object.save()
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1040, in _save_table
+    updated = self._do_update(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1105, in _do_update
+    return filtered._update(values) > 0
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1278, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1990, in execute_sql
+    cursor = super().execute_sql(result_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: movieStreamingApp_cast.imdb
+django.request ERROR 2024-09-01 12:14:55,879 log 4084 8892 Internal Server Error: /cast/create
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: movieStreamingApp_cast.imdb
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py", line 84, in cast_create
+    raise e
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py", line 79, in cast_create
+    cast_object.save()
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1040, in _save_table
+    updated = self._do_update(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1105, in _do_update
+    return filtered._update(values) > 0
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1278, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1990, in execute_sql
+    cursor = super().execute_sql(result_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: movieStreamingApp_cast.imdb
+django.utils.autoreload INFO 2024-09-01 12:16:45,262 autoreload 4084 12496 C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-09-01 12:16:47,615 autoreload 22236 20124 Watching for file changes with StatReloader
+django.request ERROR 2024-09-01 12:18:31,005 log 22236 17648 Internal Server Error: /cast/create
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: movieStreamingApp_cast.image
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py", line 84, in cast_create
+    raise e
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py", line 79, in cast_create
+    cast_object.save()
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1040, in _save_table
+    updated = self._do_update(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1105, in _do_update
+    return filtered._update(values) > 0
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1278, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1990, in execute_sql
+    cursor = super().execute_sql(result_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: movieStreamingApp_cast.image
+django.utils.autoreload INFO 2024-09-01 12:20:44,827 autoreload 22236 20124 C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-09-01 12:20:46,855 autoreload 19420 9464 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-09-01 12:23:39,172 autoreload 19420 9464 C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-09-01 12:23:41,606 autoreload 18136 6168 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-09-01 12:25:20,985 autoreload 18136 6168 C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-09-01 12:25:22,886 autoreload 14092 19776 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-09-01 12:25:52,521 autoreload 14092 19776 C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-09-01 12:25:54,384 autoreload 14428 13828 Watching for file changes with StatReloader
+django.request ERROR 2024-09-01 12:25:57,768 log 14428 15096 Internal Server Error: /cast/create
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py", line 75, in cast_create
+    raise e
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py", line 68, in cast_create
+    cast_object.image = image_url if image_url else cast_object.image
+                                     ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'image_url' where it is not associated with a value
+django.utils.autoreload INFO 2024-09-01 12:26:29,767 autoreload 14428 13828 C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-09-01 12:26:31,847 autoreload 2840 6896 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-09-01 12:27:26,718 autoreload 2840 6896 C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-09-01 12:27:29,023 autoreload 17416 21876 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-09-01 12:27:31,219 autoreload 17416 21876 C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-09-01 12:27:33,252 autoreload 8980 3272 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-09-01 12:28:04,677 autoreload 8980 3272 C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-09-01 12:28:06,675 autoreload 12576 1664 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-09-01 12:28:09,620 autoreload 12576 1664 C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-09-01 12:28:11,584 autoreload 10244 14072 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-09-01 12:29:26,408 autoreload 10244 14072 C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-09-01 12:29:29,009 autoreload 22956 8732 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-09-01 12:29:55,721 autoreload 22956 8732 C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-09-01 12:29:57,781 autoreload 17436 21692 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-09-01 12:30:15,959 autoreload 17436 21692 C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-09-01 12:30:17,940 autoreload 22432 4816 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-09-01 12:30:37,937 autoreload 22432 4816 C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-09-01 12:30:39,844 autoreload 16588 21040 Watching for file changes with StatReloader
+urllib3.util.retry DEBUG 2024-09-01 12:31:29,447 retry 16588 21672 Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+google.auth.transport.requests DEBUG 2024-09-01 12:31:29,450 requests 16588 21672 Making request: POST https://oauth2.googleapis.com/token
+urllib3.connectionpool DEBUG 2024-09-01 12:31:29,454 connectionpool 16588 21672 Starting new HTTPS connection (1): oauth2.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-09-01 12:31:29,639 connectionpool 16588 21672 https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+urllib3.connectionpool DEBUG 2024-09-01 12:31:29,644 connectionpool 16588 21672 Starting new HTTPS connection (1): storage.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-09-01 12:31:29,862 connectionpool 16588 21672 https://storage.googleapis.com:443 "POST /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable HTTP/11" 200 0
+urllib3.connectionpool DEBUG 2024-09-01 12:31:30,267 connectionpool 16588 21672 https://storage.googleapis.com:443 "PUT /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable&upload_id=AD-8ljsttp9RqSBVExHwrcOiE8mYzZHMvrc8LrkfFoW98RttFxaHurQ3MhagTKAFBhPvGak1BrBlYL2NekrLDLZ_cqJRlgO5EzZmM2Ad4MJX6YzbDQ HTTP/11" 200 1035
+urllib3.connectionpool DEBUG 2024-09-01 12:31:30,358 connectionpool 16588 21672 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/casts%2FLifelike_Vision_create_a_very_cute_little_robot_1.jpg/acl?prettyPrint=false HTTP/11" 200 2868
+urllib3.connectionpool DEBUG 2024-09-01 12:31:30,464 connectionpool 16588 21672 https://storage.googleapis.com:443 "PATCH /storage/v1/b/video-stream-app-6b509.appspot.com/o/casts%2FLifelike_Vision_create_a_very_cute_little_robot_1.jpg?projection=full&prettyPrint=false HTTP/11" 200 4432
+google.api_core.retry DEBUG 2024-09-01 12:39:02,587 retry_base 16588 17176 Retrying due to ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')), sleeping 0.6s ...
+urllib3.connectionpool DEBUG 2024-09-01 12:39:03,177 connectionpool 16588 17176 Starting new HTTPS connection (2): storage.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-09-01 12:39:03,371 connectionpool 16588 17176 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FBlade%20Runner%202049%20%282017%29%20-%20The%20Scrapyard%20Ambush%20Scene%20%283_10%29%20_%20Movieclips.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1335
+urllib3.connectionpool DEBUG 2024-09-01 12:39:03,541 connectionpool 16588 17176 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FBlade%20Runner%202049%20(2017)%20-%20The%20Scrapyard%20Ambush%20Scene%20(3_10)%20_%20Movieclips.mp4?generation=1724671527074315&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-09-01 12:39:03,543 _helpers 16588 17176 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FBlade%20Runner%202049%20(2017)%20-%20The%20Scrapyard%20Ambush%20Scene%20(3_10)%20_%20Movieclips.mp4?generation=1724671527074315&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+django.request ERROR 2024-09-01 13:11:07,246 log 16588 8860 Internal Server Error: /movie/create/
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 464, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1411, in getresponse
+    response.begin()
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 324, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 293, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 464, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1411, in getresponse
+    response.begin()
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 324, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 293, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\movieStreamingApp\utils\custom_decorators.py", line 10, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movie_app\views.py", line 202, in movie_create
+    raise e
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movie_app\views.py", line 153, in movie_create
+    blob.upload_from_file(poster)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\cloud\storage\blob.py", line 2848, in upload_from_file
+    self._prep_and_do_upload(
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\cloud\storage\blob.py", line 2697, in _prep_and_do_upload
+    created_json = self._do_upload(
+                   ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\cloud\storage\blob.py", line 2520, in _do_upload
+    response = self._do_resumable_upload(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\cloud\storage\blob.py", line 2325, in _do_resumable_upload
+    upload, transport = self._initiate_resumable_upload(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\cloud\storage\blob.py", line 2199, in _initiate_resumable_upload
+    upload.initiate(
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\resumable_media\requests\upload.py", line 420, in initiate
+    return _request_helpers.wait_and_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\resumable_media\requests\_request_helpers.py", line 178, in wait_and_retry
+    raise error
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\resumable_media\requests\_request_helpers.py", line 155, in wait_and_retry
+    response = func()
+               ^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\resumable_media\requests\upload.py", line 412, in retriable_request
+    result = transport.request(
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\transport\requests.py", line 537, in request
+    response = super(AuthorizedSession, self).request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+urllib3.connectionpool DEBUG 2024-09-01 13:11:12,394 connectionpool 16588 8860 Starting new HTTPS connection (3): storage.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-09-01 13:11:12,694 connectionpool 16588 8860 https://storage.googleapis.com:443 "POST /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable HTTP/11" 200 0
+urllib3.connectionpool DEBUG 2024-09-01 13:11:13,018 connectionpool 16588 8860 https://storage.googleapis.com:443 "PUT /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable&upload_id=AD-8ljt-E6ASXILdBsSbuXWLsZF3TnWKB1hqeFCPjTppUSrXak9E6N0-xScUq-jVIrvtr51tUfjgfvl5XnFWPCbVhhHCRsWg7gOfY3arezE9OBnFDQ HTTP/11" 200 926
+urllib3.connectionpool DEBUG 2024-09-01 13:11:13,364 connectionpool 16588 8860 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2Fdavid%20attenborough.jfif/acl?prettyPrint=false HTTP/11" 200 2540
+urllib3.connectionpool DEBUG 2024-09-01 13:11:13,481 connectionpool 16588 8860 https://storage.googleapis.com:443 "PATCH /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2Fdavid%20attenborough.jfif?projection=full&prettyPrint=false HTTP/11" 200 3913
+django.request ERROR 2024-09-01 13:11:13,535 log 16588 8860 Internal Server Error: /movie/create/
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: movie_app_movie.poster
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\movieStreamingApp\utils\custom_decorators.py", line 10, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movie_app\views.py", line 202, in movie_create
+    raise e
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movie_app\views.py", line 158, in movie_create
+    new_movie.save()
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: movie_app_movie.poster
+urllib3.connectionpool DEBUG 2024-09-01 13:11:27,009 connectionpool 16588 8860 https://storage.googleapis.com:443 "POST /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable HTTP/11" 200 0
+urllib3.connectionpool DEBUG 2024-09-01 13:11:30,533 connectionpool 16588 8860 https://storage.googleapis.com:443 "PUT /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable&upload_id=AD-8ljsdil1Hiy06gZuGlyzGQfpYMiJTfjJ16cHj6G79RQg0oe8CHt8W5z77yU7DypNifkWvd11XwBTsBP7n5EthG1Fvqt35h3YFTQpQmYJYbQfsaQ HTTP/11" 200 924
+urllib3.connectionpool DEBUG 2024-09-01 13:11:30,589 connectionpool 16588 11256 Starting new HTTPS connection (4): storage.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-09-01 13:11:30,620 connectionpool 16588 8860 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2FIMG_20240817_190628.jpg/acl?prettyPrint=false HTTP/11" 200 2532
+urllib3.connectionpool DEBUG 2024-09-01 13:11:30,729 connectionpool 16588 8860 https://storage.googleapis.com:443 "PATCH /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2FIMG_20240817_190628.jpg?projection=full&prettyPrint=false HTTP/11" 200 3901
+urllib3.connectionpool DEBUG 2024-09-01 13:11:30,748 connectionpool 16588 11256 https://storage.googleapis.com:443 "POST /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable HTTP/11" 200 0
+urllib3.connectionpool DEBUG 2024-09-01 13:11:34,328 connectionpool 16588 2376 https://storage.googleapis.com:443 "POST /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable HTTP/11" 200 0
+urllib3.connectionpool DEBUG 2024-09-01 13:11:34,515 connectionpool 16588 3748 Starting new HTTPS connection (5): storage.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-09-01 13:11:35,073 connectionpool 16588 9244 Starting new HTTPS connection (6): storage.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-09-01 13:11:35,765 connectionpool 16588 11256 https://storage.googleapis.com:443 "PUT /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable&upload_id=AD-8ljsH3QnUa0fpNY9kdFznWoylIVJa3lV3WVx0tcakm-SMrlOYcjmdlDXOSyyiOZHcejsvQcdaQO2Z559aGa-rsk55X1ZBCTVJEqF3gkptWPgGhg HTTP/11" 200 924
+urllib3.connectionpool DEBUG 2024-09-01 13:11:35,947 connectionpool 16588 3748 https://storage.googleapis.com:443 "POST /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable HTTP/11" 200 0
+urllib3.connectionpool DEBUG 2024-09-01 13:11:36,187 connectionpool 16588 11256 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2FIMG_20240817_190628.jpg/acl?prettyPrint=false HTTP/11" 200 2532
+urllib3.connectionpool DEBUG 2024-09-01 13:11:36,456 connectionpool 16588 9244 https://storage.googleapis.com:443 "POST /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable HTTP/11" 200 0
+urllib3.connectionpool DEBUG 2024-09-01 13:11:36,772 connectionpool 16588 17996 Starting new HTTPS connection (7): storage.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-09-01 13:11:37,050 connectionpool 16588 11256 https://storage.googleapis.com:443 "PATCH /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2FIMG_20240817_190628.jpg?projection=full&prettyPrint=false HTTP/11" 200 3901
+django.request ERROR 2024-09-01 13:11:37,102 log 16588 11256 Internal Server Error: /movie/create/
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: movie_app_movie.poster
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\movieStreamingApp\utils\custom_decorators.py", line 10, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movie_app\views.py", line 202, in movie_create
+    raise e
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movie_app\views.py", line 158, in movie_create
+    new_movie.save()
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: movie_app_movie.poster
+urllib3.connectionpool DEBUG 2024-09-01 13:11:39,122 connectionpool 16588 17996 https://storage.googleapis.com:443 "POST /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable HTTP/11" 200 0
+urllib3.connectionpool DEBUG 2024-09-01 13:11:39,936 connectionpool 16588 2376 https://storage.googleapis.com:443 "PUT /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable&upload_id=AD-8ljt0yJoADkNf-fwbhnAaS4E5tx9zfHLV7_j4rmlISkTHCcWDfbiVBYzgMkEy2cTLoEYcjkTxSgP5g-3wy3TyLFaUM-unlBg3ZUU5DjfQ7s2bLd0 HTTP/11" 200 924
+urllib3.connectionpool DEBUG 2024-09-01 13:11:40,340 connectionpool 16588 2376 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2FIMG_20240817_190628.jpg/acl?prettyPrint=false HTTP/11" 200 2532
+urllib3.connectionpool DEBUG 2024-09-01 13:11:40,724 connectionpool 16588 2376 https://storage.googleapis.com:443 "PATCH /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2FIMG_20240817_190628.jpg?projection=full&prettyPrint=false HTTP/11" 200 3901
+django.request ERROR 2024-09-01 13:11:40,767 log 16588 2376 Internal Server Error: /movie/create/
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: movie_app_movie.poster
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\movieStreamingApp\utils\custom_decorators.py", line 10, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movie_app\views.py", line 202, in movie_create
+    raise e
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movie_app\views.py", line 158, in movie_create
+    new_movie.save()
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: movie_app_movie.poster
+urllib3.connectionpool DEBUG 2024-09-01 13:11:49,163 connectionpool 16588 17996 https://storage.googleapis.com:443 "PUT /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable&upload_id=AD-8ljuqaY03dKyCCOEwVta3l9Vg-GPwWTBozzOv4aXt9jwoQlrqeGk2ZAiLfiAiCTKLcaQbcldy2g3Z1brD-sWN41MSpATXHypEE7D1Gu4EsohHkeY HTTP/11" 200 924
+urllib3.connectionpool DEBUG 2024-09-01 13:11:49,412 connectionpool 16588 17996 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2FIMG_20240817_190628.jpg/acl?prettyPrint=false HTTP/11" 200 2532
+urllib3.connectionpool DEBUG 2024-09-01 13:11:49,646 connectionpool 16588 17996 https://storage.googleapis.com:443 "PATCH /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2FIMG_20240817_190628.jpg?projection=full&prettyPrint=false HTTP/11" 200 3901
+django.request ERROR 2024-09-01 13:11:49,686 log 16588 17996 Internal Server Error: /movie/create/
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: movie_app_movie.poster
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\movieStreamingApp\utils\custom_decorators.py", line 10, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movie_app\views.py", line 202, in movie_create
+    raise e
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movie_app\views.py", line 158, in movie_create
+    new_movie.save()
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: movie_app_movie.poster
+urllib3.connectionpool DEBUG 2024-09-01 13:12:00,448 connectionpool 16588 9244 https://storage.googleapis.com:443 "PUT /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable&upload_id=AD-8ljtIVC_1O1asbxct9-8YD9QZDEx72ZRNLhBFOTzSB9gBYCV_hacPGz0fshO-uurwZFnWPsNJ5UpG1f-GgkMFd76nEo31dpLxsfh_TDzqwQ2ebw HTTP/11" 200 924
+urllib3.connectionpool DEBUG 2024-09-01 13:12:01,315 connectionpool 16588 9244 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2FIMG_20240817_190628.jpg/acl?prettyPrint=false HTTP/11" 200 2532
+urllib3.connectionpool DEBUG 2024-09-01 13:12:02,018 connectionpool 16588 9244 https://storage.googleapis.com:443 "PATCH /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2FIMG_20240817_190628.jpg?projection=full&prettyPrint=false HTTP/11" 200 3901
+django.request ERROR 2024-09-01 13:12:02,270 log 16588 9244 Internal Server Error: /movie/create/
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: movie_app_movie.poster
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\movieStreamingApp\utils\custom_decorators.py", line 10, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movie_app\views.py", line 202, in movie_create
+    raise e
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movie_app\views.py", line 158, in movie_create
+    new_movie.save()
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: movie_app_movie.poster
+urllib3.connectionpool DEBUG 2024-09-01 13:12:03,396 connectionpool 16588 3748 https://storage.googleapis.com:443 "PUT /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable&upload_id=AD-8ljspcFcP_cQx-64NbdXHVQN4VvCFuS6kTEOo-Bs8uHKyfMD4OOJ4zoouQE2o2QMWlbvne4SJtt1nNDs0f0sfXEBkPnPt2_NQzU7qBthNOzV7oJc HTTP/11" 200 924
+urllib3.connectionpool DEBUG 2024-09-01 13:12:03,494 connectionpool 16588 3748 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2FIMG_20240817_190628.jpg/acl?prettyPrint=false HTTP/11" 200 2532
+urllib3.connectionpool DEBUG 2024-09-01 13:12:03,645 connectionpool 16588 3748 https://storage.googleapis.com:443 "PATCH /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2FIMG_20240817_190628.jpg?projection=full&prettyPrint=false HTTP/11" 200 3901
+django.request ERROR 2024-09-01 13:12:03,712 log 16588 3748 Internal Server Error: /movie/create/
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: movie_app_movie.poster
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\movieStreamingApp\utils\custom_decorators.py", line 10, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movie_app\views.py", line 202, in movie_create
+    raise e
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movie_app\views.py", line 158, in movie_create
+    new_movie.save()
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: movie_app_movie.poster
+urllib3.connectionpool DEBUG 2024-09-01 13:12:47,752 connectionpool 16588 17996 https://storage.googleapis.com:443 "POST /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable HTTP/11" 200 0
+urllib3.connectionpool DEBUG 2024-09-01 13:12:48,181 connectionpool 16588 17996 https://storage.googleapis.com:443 "PUT /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable&upload_id=AD-8ljsBMOAjaeyBkPhZCe5tQlLAKOIqljMiZ9TSaJQE2ipqT8yzsgMZwKtLB2clLD9eLpMsHDNi1DtazLl1p8utFQ9VfbTx-g_ViQHTrwZDBQErVw HTTP/11" 200 859
+urllib3.connectionpool DEBUG 2024-09-01 13:12:48,265 connectionpool 16588 17996 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2F277.jpg/acl?prettyPrint=false HTTP/11" 200 2340
+urllib3.connectionpool DEBUG 2024-09-01 13:12:48,422 connectionpool 16588 17996 https://storage.googleapis.com:443 "PATCH /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2F277.jpg?projection=full&prettyPrint=false HTTP/11" 200 3596
+urllib3.connectionpool DEBUG 2024-09-01 13:13:37,396 connectionpool 16588 11784 https://storage.googleapis.com:443 "POST /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable HTTP/11" 200 0
+urllib3.connectionpool DEBUG 2024-09-01 13:13:37,879 connectionpool 16588 11784 https://storage.googleapis.com:443 "PUT /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable&upload_id=AD-8lju1Spx8QGv4DWpquuhg9SyfNlNtwiww0zXKY1OBA0hAKyuPiiVVRsrXs4qc_l9sBzoShHnmUQetroUIf5MtD6J5Q7i17d4EnBZEace3CQn0Bg HTTP/11" 200 859
+urllib3.connectionpool DEBUG 2024-09-01 13:13:37,967 connectionpool 16588 11784 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2F277.jpg/acl?prettyPrint=false HTTP/11" 200 2340
+urllib3.connectionpool DEBUG 2024-09-01 13:13:38,086 connectionpool 16588 11784 https://storage.googleapis.com:443 "PATCH /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2F277.jpg?projection=full&prettyPrint=false HTTP/11" 200 3596
+django.request ERROR 2024-09-01 13:13:38,147 log 16588 11784 Internal Server Error: /movie/create/
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: movie_app_movie.poster
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\movieStreamingApp\utils\custom_decorators.py", line 10, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movie_app\views.py", line 202, in movie_create
+    raise e
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movie_app\views.py", line 158, in movie_create
+    new_movie.save()
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: movie_app_movie.poster
+urllib3.connectionpool DEBUG 2024-09-01 13:13:47,725 connectionpool 16588 11784 https://storage.googleapis.com:443 "POST /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable HTTP/11" 200 0
+urllib3.connectionpool DEBUG 2024-09-01 13:13:48,178 connectionpool 16588 11784 https://storage.googleapis.com:443 "PUT /upload/storage/v1/b/video-stream-app-6b509.appspot.com/o?uploadType=resumable&upload_id=AD-8ljt8lTtI1yFPspv_aXm3DTfRrGL8_-QgZdnKOn-9Ezif1tH_v_QJOevLXLaIINeJo7zyFK8bz3UeBp1yc_DlrXK_BfI03gIkBotAF5Hr0-gOJLw HTTP/11" 200 875
+urllib3.connectionpool DEBUG 2024-09-01 13:13:48,313 connectionpool 16588 11784 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2F1378998.jpg/acl?prettyPrint=false HTTP/11" 200 2388
+urllib3.connectionpool DEBUG 2024-09-01 13:13:48,428 connectionpool 16588 11784 https://storage.googleapis.com:443 "PATCH /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2F1378998.jpg?projection=full&prettyPrint=false HTTP/11" 200 3672
+django.utils.autoreload INFO 2024-09-01 13:47:02,913 autoreload 16588 21040 C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
+django.utils.autoreload INFO 2024-09-01 13:47:05,690 autoreload 4804 20252 Watching for file changes with StatReloader

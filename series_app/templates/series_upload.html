@@ -39,12 +39,8 @@
         {{form.sourceFileName}}
         {{form.series}}
     </form>
-    {% if messages %}
-        {% for message in messages %}
-            {{message}}
-        {% endfor %}
-    {% endif %}
-    {{form.errors}}
+    <!-- Message Box -->
+    {% include 'message.html' %}
     <div class="loading" id="loading">
         <img src="{% static 'images/loading.gif' %}">
         <h1 style="color: whitesmoke;"> Delivering the file . . . . </h1>  

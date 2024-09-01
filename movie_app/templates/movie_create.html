@@ -93,10 +93,6 @@
             {% endfor %}
         </datalist>
     </form>
-    {% if messages %}
-        {% for message in messages %}
-            {{message}}
-        {% endfor %}
-    {% endif %}
-    {{form.errors}}
+    <!-- Message Box -->
+    {% include 'message.html' %}
 {% endblock %} 

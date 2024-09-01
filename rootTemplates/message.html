@@ -1,0 +1,10 @@
+{% load static %}
+
+{% if messages %}
+    {% for message in messages %}
+    <div class="msg {{message.tags}}"> {{message}} </div> 
+    {% endfor %}
+{% endif %}
+{% if form.errors %}
+    <div class="msg error"> {{form.errors}} </div> 
+{% endif %}

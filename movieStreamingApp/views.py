@@ -54,29 +54,24 @@ def cast_create(request):
                 image = form.cleaned_data['image']
                 imdb = form.cleaned_data['imdb']
 
-                if image is not None:
+                if image:
                     bucket = storage.bucket()
                     # creates a reference in bucket
                     blob = bucket.blob(f'casts/{image.name}')
                     blob.upload_from_file(image)
                     blob.make_public()  
                     image_url = blob.public_url 
-                else:
-                    image_url = ''
 
                 cast_object, created = Cast.objects.get_or_create(name=name)
-                if created == True:
-                    cast_object = Cast(name=name, bio=bio, image=image_url, imdb=imdb)
-                else:
-                    if not bio == '':
-                        cast_object.bio = bio
-                    if not image_url == '':
-                        cast_object.image = image_url
-                    if not imdb == '':
-                        cast_object.imdb = imdb
+                cast_object.bio = bio if bio else cast_object.bio
+                cast_object.image = image_url if image else cast_object.image
+                cast_object.imdb = imdb if imdb else cast_object.imdb
                 cast_object.save()
 
-                messages.success(request, 'Successfully updated the cast')
+                if created:
+                    messages.success(request, 'Successfully created the cast')
+                else:
+                    messages.success(request, 'Successfully updated the cast')
                 return render(request, 'cast_create.html', {'form': form})
             except Exception as e:
                 raise e

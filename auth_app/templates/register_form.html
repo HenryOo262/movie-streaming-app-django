@@ -37,9 +37,7 @@
         </div>
         <button class="button" type="submit"> Register </button>
         <p> Already have an account ? <a href="{% url 'auth_app.auth_login' %}"> Login Here </a> </p>
-        {% for message in messages %}
-            {{message}}
-        {% endfor %}
-        {{form.errors}}
     </form>
+    <!-- Message Box -->
+    {% include 'message.html' %}
 {% endblock %} 

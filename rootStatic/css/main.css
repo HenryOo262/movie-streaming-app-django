@@ -10,3 +10,28 @@
 html {
     scroll-behavior: smooth;
 }
+
+/* Message tags */
+
+.msg {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #2b2b2b;
+    padding: 10px;
+}
+
+.error {
+    color: #ff3333;
+    margin: 10px;
+}
+
+.success {
+    color: #adff2f;
+    margin: 10px;
+}
+
+.info {
+    color: #00bfff;
+    margin: 10px;
+}

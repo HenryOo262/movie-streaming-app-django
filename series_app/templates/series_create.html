@@ -99,13 +99,6 @@
             {% endfor %}
         </datalist>
     </form>
-    {% if messages %}
-        {% for message in messages %}
-            {{message}}
-        {% endfor %}
-    {% endif %}
-    {{form.errors}}
+    <!-- Message Box -->
+    {% include 'message.html' %}
 {% endblock %} 
-{% block script %} 
-    <script src="{% static 'javascript/checkboxCell_handler.js' %}"></script>
-{% endblock %}

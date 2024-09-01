@@ -203,3 +203,10 @@ body {
 .login:hover, .profile svg:hover {
     fill: #00bfff;
 }
+
+@media only screen and (max-width: 650px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}

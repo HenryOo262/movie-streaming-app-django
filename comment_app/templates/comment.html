@@ -30,10 +30,10 @@
         <div> {{comment_form.commentText}} </div>
         <div> <small id="counter1"></small> </div>
         <button class="comment-button" type="submit"> Add Comment </button>
-        {{comment_form.error}}
+        <span class="error"> {{comment_form.error}} </span>
         {% if messages %}
             {% for message in messages %}
-                {{message}}
+                <span class="{{message.tags}}"> {{message}} </span>
             {% endfor %}
         {% endif %}
     </form>

@@ -104,3 +104,17 @@
     transition: all 0.5s;
 }
 
+@media only screen and (max-width: 650px) {
+    .card-outer, .bg-card {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .card-wrapper {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 30px;
+    }
+}

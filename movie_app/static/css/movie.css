@@ -53,6 +53,12 @@ a {
     margin: 20px auto;
 }
 
+.button-wrapper div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .download-button, .available-resolution-button, .current-resolution-button, .upload-button {
     background-color: #ffffff;
     color: #000000;
@@ -174,6 +180,13 @@ a {
     .poster-wrapper {
         width: 30vw;
         height: auto;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .button-wrapper {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
     }
 }
 

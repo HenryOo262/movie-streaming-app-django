@@ -36,7 +36,10 @@ def series(request, id, current_season=None, current_episode=None, resolution=No
                 current_season = series.season_set.get(season=current_season)
 
                 episodes = current_season.episode_set.values('episode').order_by('episode')
-                current_episode = current_season.episode_set.get(episode=current_episode)
+                try:
+                    current_episode = current_season.episode_set.get(episode=current_episode)
+                except Exception as e:
+                    current_episode = current_season.episode_set.first()
                 
             except ObjectDoesNotExist as obj:
                 if(request.user.is_superuser) :

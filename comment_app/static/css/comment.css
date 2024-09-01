@@ -33,8 +33,8 @@
 }
 
 .comment-button:hover {
-    color: #ffff00;
-    border-color: #ffff00;
+    color: #00bfff;
+    border-color: #00bfff;
 }
 
 .commentText {
@@ -98,7 +98,7 @@
 }
 
 .delete:hover svg, .edit:hover svg {
-    fill: #ffff00;
+    fill: #00bfff;
 }
 
 .editModal {
@@ -147,7 +147,7 @@
 }
 
 .goback-button:hover svg {
-    fill: #ffff00;
+    fill: #00bfff;
 }
 
 .load-comments {
@@ -164,7 +164,7 @@
 }
 
 .loader:hover {
-    color: #ffff00;
+    color: #00bfff;
 }
 
 .hidden {

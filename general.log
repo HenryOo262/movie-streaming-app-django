@@ -14167,3 +14167,315 @@ urllib3.connectionpool DEBUG 2024-09-01 13:13:48,313 connectionpool 16588 11784 
 urllib3.connectionpool DEBUG 2024-09-01 13:13:48,428 connectionpool 16588 11784 https://storage.googleapis.com:443 "PATCH /storage/v1/b/video-stream-app-6b509.appspot.com/o/posters%2F1378998.jpg?projection=full&prettyPrint=false HTTP/11" 200 3672
 django.utils.autoreload INFO 2024-09-01 13:47:02,913 autoreload 16588 21040 C:\Users\Dell\Downloads\movieStreamingApp\movieStreamingApp\views.py changed, reloading.
 django.utils.autoreload INFO 2024-09-01 13:47:05,690 autoreload 4804 20252 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2024-09-01 13:48:15,408 autoreload 7464 14476 Watching for file changes with StatReloader
+django.request WARNING 2024-09-01 13:51:21,922 log 7464 19688 Not Found: /favicon.ico
+urllib3.util.retry DEBUG 2024-09-01 13:51:24,238 retry 7464 20444 Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+google.auth.transport.requests DEBUG 2024-09-01 13:51:24,241 requests 7464 20444 Making request: POST https://oauth2.googleapis.com/token
+urllib3.connectionpool DEBUG 2024-09-01 13:51:24,248 connectionpool 7464 20444 Starting new HTTPS connection (1): oauth2.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-09-01 13:51:24,473 connectionpool 7464 20444 https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+urllib3.connectionpool DEBUG 2024-09-01 13:51:24,476 connectionpool 7464 20444 Starting new HTTPS connection (1): storage.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-09-01 13:51:24,631 connectionpool 7464 20444 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2Fvideoplayback.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 961
+urllib3.connectionpool DEBUG 2024-09-01 13:51:24,871 connectionpool 7464 20444 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2Fvideoplayback.mp4?generation=1724930695819499&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-09-01 13:51:24,873 _helpers 7464 20444 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2Fvideoplayback.mp4?generation=1724930695819499&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-09-01 13:51:25,378 connectionpool 7464 20444 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2Fvideoplayback.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 961
+urllib3.connectionpool DEBUG 2024-09-01 13:51:25,548 connectionpool 7464 20444 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2Fvideoplayback.mp4?generation=1724930695819499&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-09-01 13:51:25,550 _helpers 7464 20444 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2Fvideoplayback.mp4?generation=1724930695819499&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-09-01 13:51:31,854 connectionpool 7464 4472 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FT-Rex%20Ambush%20Scene%20-%20Jurassic%20Park%20%281993%29%20Movie%20Clip%20HD.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1229
+urllib3.connectionpool DEBUG 2024-09-01 13:51:31,995 connectionpool 7464 4472 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FT-Rex%20Ambush%20Scene%20-%20Jurassic%20Park%20(1993)%20Movie%20Clip%20HD.mp4?generation=1724670292240757&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-09-01 13:51:31,996 _helpers 7464 4472 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FT-Rex%20Ambush%20Scene%20-%20Jurassic%20Park%20(1993)%20Movie%20Clip%20HD.mp4?generation=1724670292240757&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-09-01 13:51:33,063 connectionpool 7464 4472 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FT-Rex%20Ambush%20Scene%20-%20Jurassic%20Park%20%281993%29%20Movie%20Clip%20HD.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1229
+urllib3.connectionpool DEBUG 2024-09-01 13:51:33,230 connectionpool 7464 4472 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FT-Rex%20Ambush%20Scene%20-%20Jurassic%20Park%20(1993)%20Movie%20Clip%20HD.mp4?generation=1724670292240757&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-09-01 13:51:33,231 _helpers 7464 4472 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FT-Rex%20Ambush%20Scene%20-%20Jurassic%20Park%20(1993)%20Movie%20Clip%20HD.mp4?generation=1724670292240757&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+django.utils.autoreload INFO 2024-09-01 13:52:06,496 autoreload 9700 17728 Watching for file changes with StatReloader
+urllib3.util.retry DEBUG 2024-09-01 13:52:16,476 retry 9700 20628 Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+google.auth.transport.requests DEBUG 2024-09-01 13:52:16,481 requests 9700 20628 Making request: POST https://oauth2.googleapis.com/token
+urllib3.connectionpool DEBUG 2024-09-01 13:52:16,486 connectionpool 9700 20628 Starting new HTTPS connection (1): oauth2.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-09-01 13:52:16,633 connectionpool 9700 20628 https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+urllib3.connectionpool DEBUG 2024-09-01 13:52:16,636 connectionpool 9700 20628 Starting new HTTPS connection (1): storage.googleapis.com:443
+urllib3.connectionpool DEBUG 2024-09-01 13:52:16,809 connectionpool 9700 20628 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FAtomic%20Bombings%20Opening%20Scene%20-%20Fallout%202024.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1153
+urllib3.connectionpool DEBUG 2024-09-01 13:52:16,944 connectionpool 9700 20628 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FAtomic%20Bombings%20Opening%20Scene%20-%20Fallout%202024.mp4?generation=1724948237871074&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-09-01 13:52:16,945 _helpers 9700 20628 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FAtomic%20Bombings%20Opening%20Scene%20-%20Fallout%202024.mp4?generation=1724948237871074&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-09-01 13:52:17,508 connectionpool 9700 20628 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FAtomic%20Bombings%20Opening%20Scene%20-%20Fallout%202024.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1153
+urllib3.connectionpool DEBUG 2024-09-01 13:52:17,645 connectionpool 9700 20628 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FAtomic%20Bombings%20Opening%20Scene%20-%20Fallout%202024.mp4?generation=1724948237871074&alt=media HTTP/11" 206 252911
+google.resumable_media._helpers INFO 2024-09-01 13:52:17,646 _helpers 9700 20628 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FAtomic%20Bombings%20Opening%20Scene%20-%20Fallout%202024.mp4?generation=1724948237871074&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-09-01 13:52:17,787 connectionpool 9700 20628 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FAtomic%20Bombings%20Opening%20Scene%20-%20Fallout%202024.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1153
+urllib3.connectionpool DEBUG 2024-09-01 13:52:17,871 connectionpool 9700 20628 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FAtomic%20Bombings%20Opening%20Scene%20-%20Fallout%202024.mp4?generation=1724948237871074&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-09-01 13:52:17,872 _helpers 9700 20628 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FAtomic%20Bombings%20Opening%20Scene%20-%20Fallout%202024.mp4?generation=1724948237871074&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-09-01 13:52:49,391 connectionpool 9700 12308 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2Fvideoplayback.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 961
+urllib3.connectionpool DEBUG 2024-09-01 13:52:49,587 connectionpool 9700 12308 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2Fvideoplayback.mp4?generation=1724930695819499&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-09-01 13:52:49,588 _helpers 9700 12308 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2Fvideoplayback.mp4?generation=1724930695819499&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-09-01 13:52:50,046 connectionpool 9700 12308 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2Fvideoplayback.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 961
+urllib3.connectionpool DEBUG 2024-09-01 13:52:50,182 connectionpool 9700 12308 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2Fvideoplayback.mp4?generation=1724930695819499&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-09-01 13:52:50,183 _helpers 9700 12308 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2Fvideoplayback.mp4?generation=1724930695819499&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-09-01 13:54:27,811 connectionpool 9700 16832 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2Fvideoplayback.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 961
+urllib3.connectionpool DEBUG 2024-09-01 13:54:27,928 connectionpool 9700 16832 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2Fvideoplayback.mp4?generation=1724930695819499&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-09-01 13:54:27,929 _helpers 9700 16832 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2Fvideoplayback.mp4?generation=1724930695819499&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+django.request WARNING 2024-09-01 13:54:28,820 log 9700 2396 Not Found: /favicon.ico
+django.request WARNING 2024-09-01 13:54:45,603 log 9700 6420 Not Found: /favicon.ico
+urllib3.connectionpool DEBUG 2024-09-01 13:57:08,536 connectionpool 9700 6420 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FAtomic%20Bombings%20Opening%20Scene%20-%20Fallout%202024.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1153
+urllib3.connectionpool DEBUG 2024-09-01 13:57:08,651 connectionpool 9700 6420 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FAtomic%20Bombings%20Opening%20Scene%20-%20Fallout%202024.mp4?generation=1724948237871074&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-09-01 13:57:08,652 _helpers 9700 6420 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FAtomic%20Bombings%20Opening%20Scene%20-%20Fallout%202024.mp4?generation=1724948237871074&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-09-01 13:57:09,193 connectionpool 9700 6420 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FAtomic%20Bombings%20Opening%20Scene%20-%20Fallout%202024.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1153
+urllib3.connectionpool DEBUG 2024-09-01 13:57:09,342 connectionpool 9700 6420 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FAtomic%20Bombings%20Opening%20Scene%20-%20Fallout%202024.mp4?generation=1724948237871074&alt=media HTTP/11" 206 252911
+google.resumable_media._helpers INFO 2024-09-01 13:57:09,343 _helpers 9700 6420 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FAtomic%20Bombings%20Opening%20Scene%20-%20Fallout%202024.mp4?generation=1724948237871074&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-09-01 13:57:09,488 connectionpool 9700 6420 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FAtomic%20Bombings%20Opening%20Scene%20-%20Fallout%202024.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1153
+urllib3.connectionpool DEBUG 2024-09-01 13:57:09,581 connectionpool 9700 6420 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FAtomic%20Bombings%20Opening%20Scene%20-%20Fallout%202024.mp4?generation=1724948237871074&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-09-01 13:57:09,583 _helpers 9700 6420 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/series%2FAtomic%20Bombings%20Opening%20Scene%20-%20Fallout%202024.mp4?generation=1724948237871074&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-09-01 13:57:31,038 connectionpool 9700 3968 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1036
+urllib3.connectionpool DEBUG 2024-09-01 13:57:31,327 connectionpool 9700 3968 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-09-01 13:57:31,327 _helpers 9700 3968 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-09-01 13:57:32,070 connectionpool 9700 3968 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1036
+urllib3.connectionpool DEBUG 2024-09-01 13:57:32,282 connectionpool 9700 3968 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-09-01 13:57:32,283 _helpers 9700 3968 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+django.request ERROR 2024-09-01 13:58:22,185 log 9700 11268 Internal Server Error: /movie/20
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movie_app\views.py", line 74, in movie
+    raise e
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movie_app\views.py", line 71, in movie
+    return render(request, 'movie.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'movie_app.movie_stream' with keyword arguments '{'source': ''}' not found. 1 pattern(s) tried: ['movie/stream/(?P<source>[^/]+)/\\Z']
+django.request ERROR 2024-09-01 13:58:26,489 log 9700 11268 Internal Server Error: /movie/20
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movie_app\views.py", line 74, in movie
+    raise e
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movie_app\views.py", line 71, in movie
+    return render(request, 'movie.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'movie_app.movie_stream' with keyword arguments '{'source': ''}' not found. 1 pattern(s) tried: ['movie/stream/(?P<source>[^/]+)/\\Z']
+urllib3.connectionpool DEBUG 2024-09-01 13:58:35,003 connectionpool 9700 11268 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FMulan%20%281998%29%20Trailer%20%231%20-%20Movieclips%20Classic%20Trailers.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1211
+urllib3.connectionpool DEBUG 2024-09-01 13:58:35,148 connectionpool 9700 11268 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FMulan%20(1998)%20Trailer%20%231%20-%20Movieclips%20Classic%20Trailers.mp4?generation=1725162456594607&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-09-01 13:58:35,149 _helpers 9700 11268 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FMulan%20(1998)%20Trailer%20%231%20-%20Movieclips%20Classic%20Trailers.mp4?generation=1725162456594607&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2024-09-01 13:58:35,802 connectionpool 9700 11268 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FMulan%20%281998%29%20Trailer%20%231%20-%20Movieclips%20Classic%20Trailers.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1211
+urllib3.connectionpool DEBUG 2024-09-01 13:58:36,016 connectionpool 9700 11268 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FMulan%20(1998)%20Trailer%20%231%20-%20Movieclips%20Classic%20Trailers.mp4?generation=1725162456594607&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2024-09-01 13:58:36,017 _helpers 9700 11268 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FMulan%20(1998)%20Trailer%20%231%20-%20Movieclips%20Classic%20Trailers.mp4?generation=1725162456594607&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+django.request ERROR 2024-09-01 13:58:36,823 log 9700 7064 Internal Server Error: /movie/20
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movie_app\views.py", line 74, in movie
+    raise e
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movie_app\views.py", line 71, in movie
+    return render(request, 'movie.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'movie_app.movie_stream' with keyword arguments '{'source': ''}' not found. 1 pattern(s) tried: ['movie/stream/(?P<source>[^/]+)/\\Z']
+django.request WARNING 2024-09-01 13:58:52,784 log 9700 19424 Not Found: /favicon.ico
+django.request ERROR 2024-09-01 13:59:13,210 log 9700 7064 Internal Server Error: /movie/20
+Traceback (most recent call last):
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movie_app\views.py", line 74, in movie
+    raise e
+  File "C:\Users\Dell\Downloads\movieStreamingApp\movie_app\views.py", line 30, in movie
+    movie         = Movie.objects.get(id=id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+movie_app.models.Movie.DoesNotExist: Movie matching query does not exist.

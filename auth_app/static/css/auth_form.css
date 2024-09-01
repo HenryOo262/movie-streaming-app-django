@@ -23,7 +23,7 @@ a {
 }
 
 a:hover {
-    color: #ffff00;
+    color: #00bfff;
 }
 
 .blackoverlay {
@@ -84,8 +84,8 @@ a:hover {
 }
 
 .button:hover {
-    color: #ffff00;
-    border-color: #ffff00;
+    color: #00bfff;
+    border-color: #00bfff;
 }
 
 .grid-wrapper {
@@ -114,7 +114,7 @@ a:hover {
 }
 
 .grid-wrapper input:focus {
-    outline: solid 2px #ffff00;
+    outline: solid 2px #00bfff;
     transition-duration: 0.4s;
 }
 
@@ -140,7 +140,7 @@ a:hover {
 }
 
 .logout:hover svg {
-    fill: #ffff00;
+    fill: #00bfff;
 }
 
 @media only screen and (max-width: 1000px) and (min-width: 600px) {

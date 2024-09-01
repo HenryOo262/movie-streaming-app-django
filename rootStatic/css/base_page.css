@@ -28,7 +28,7 @@ body {
 }
 
 .modal-icon svg:hover {
-    fill: #ffff00; 
+    fill: #00bfff; 
 }
 
 .modal {
@@ -154,7 +154,7 @@ body {
 }
 
 .search-bar-button svg:hover {
-    fill: #ffff00;
+    fill: #00bfff;
 }
 
 .login {
@@ -180,12 +180,12 @@ body {
 }
 
 .login:hover {
-    color: #ffff00;
-    border: solid 2px #ffff00;
+    color: #00bfff;
+    border: solid 2px #00bfff;
 }
 
 .login:hover svg {
-    fill: #ffff00;
+    fill: #00bfff;
 }
 
 .profile {
@@ -201,5 +201,5 @@ body {
 }
 
 .login:hover, .profile svg:hover {
-    fill: #ffff00;
+    fill: #00bfff;
 }

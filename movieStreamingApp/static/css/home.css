@@ -74,12 +74,12 @@ body {
 }
 
 .contentType-button:hover {
-    color: #ffff00;
-    border: solid 1px #ffff00;
+    color: #00bfff;
+    border: solid 1px #00bfff;
 }
 
 .current-contentType {
-    background-color: #ffff00;
+    background-color: #00bfff;
     color: black;
 
     border: solid 1px #000000;
@@ -161,7 +161,7 @@ body {
 }
 
 .cell:hover p {
-    color: #ffff00;
+    color: #00bfff;
 
     transition-property: color;
     transition-timing-function: ease;
@@ -186,8 +186,8 @@ body {
 }
 
 .step-link:hover {
-    color: #ffff00;
-    border-color: #ffff00;
+    color: #00bfff;
+    border-color: #00bfff;
 }
 
 @media only screen and (max-width: 650px) {

@@ -100,7 +100,7 @@ body {
 }
 
 .search-bar-button svg:hover {
-    fill: #ffff00;
+    fill: #00bfff;
 }
 
 .homepage {
@@ -125,8 +125,8 @@ body {
 
 .homepage:hover  {
     background-color: #000000;
-    color: #ffff00;
-    border: solid 1px #ffff00;
+    color: #00bfff;
+    border: solid 1px #00bfff;
 }
 
 .homepage svg {
@@ -134,7 +134,7 @@ body {
 }
 
 .homepage:hover svg {
-    fill: #ffff00;
+    fill: #00bfff;
 }
 
 .about-movwave p {

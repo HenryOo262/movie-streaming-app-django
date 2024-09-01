@@ -69,13 +69,13 @@ a {
 }
 
 .current-resolution-button {
-    background-color: #ffff00;
+    background-color: #00bfff;
     color: #000000;
     pointer-events: none;
 }
 
 .available-resolution-button:hover, .download-button:hover, .upload-button:hover {
-    background-color: #ffff00;
+    background-color: #00bfff;
     color: #000000;
 }
 
@@ -116,7 +116,7 @@ a {
 }
 
 .not-bookmarked:hover, .bookmarked {
-    fill: #ffff00;
+    fill: #00bfff;
 }
 
 .not-bookmarked, .bookmarked:hover {
@@ -145,7 +145,7 @@ a {
 }
 
 .grid-wrapper a:hover, .login-to-comment a:hover {
-    color: #ffff00;
+    color: #00bfff;
 }
 
 .bookmark_button {

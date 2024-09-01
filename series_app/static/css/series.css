@@ -35,12 +35,12 @@
 }
 
 .season:hover {
-    color: #ffff00;
-    border: solid 1px #ffff00
+    color: #00bfff;
+    border: solid 1px #00bfff
 }
 
 .current-season {
-    background-color: #ffff00; 
+    background-color: #00bfff; 
     color: #000000; 
     pointer-events: none; 
     border: solid 1px #000000;

@@ -137,10 +137,16 @@ body {
     fill: #00bfff;
 }
 
-.about-movwave p {
+.about-movwave p, ul, li {
     font-size: 14px;
 
     margin-top: 10px;
+
+    list-style-type: square;
+}
+
+.about-movwave span {
+    color: #00bfff;
 }
 
 @media only screen and (max-width: 650px) {
@@ -156,7 +162,7 @@ body {
         padding: 10px 30px;
     }
 
-    .about-movwave p {
+    .about-movwave p, ul, li {
         font-size: 12px;
     }
 

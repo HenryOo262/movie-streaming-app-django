@@ -1,11 +1,14 @@
 from firebase_admin import storage
 from django.contrib import messages
 from django.shortcuts import render, redirect
+from django.core.paginator import Paginator
+from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse, JsonResponse
+from django.contrib.contenttypes.models import ContentType
 
 from .forms import CastForm
 from series_app.models import Series
-from .models import Genre, Country, Cast
+from .models import Genre, Country, Cast, WatchHistory
 from movie_app.models import Movie, MovieResource
 
 
@@ -91,3 +94,24 @@ def cast(request, id):
     except Exception as e:
         raise e
     return render(request, 'cast.html', context)
+
+
+@login_required
+def watchHistory(request, content_type):
+    """ Returns Paginated Pages of Watched History movies """
+    if content_type == 'movies':
+        model = Movie
+    elif content_type == 'series':
+        model = Series
+
+    watch_history = WatchHistory.objects.filter(user=request.user, content_type=ContentType.objects.get_for_model(model)).order_by('-addedDateTime')
+    paginator = Paginator(watch_history, 12)
+
+    page_number = request.GET.get("page")
+    page_obj = paginator.get_page(page_number)
+
+    context = {
+        "page_obj": page_obj, 
+        "content_type": content_type,
+    } 
+    return render(request, 'watch_history.html', context) 

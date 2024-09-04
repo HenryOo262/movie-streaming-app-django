@@ -15,6 +15,7 @@ from utils.custom_decorators import superuser_required
 from utils.file_iterator import file_iterator
 
 from . import forms
+from utils.watch_history import add_watchHistory
 from comment_app.models import Comment
 from bookmark_app.models import Bookmark
 from comment_app.forms import CommentForm, EditForm
@@ -92,6 +93,11 @@ def series(request, id, current_season=None, current_episode=None, resolution=No
                 'bookmarked': bookmarked,
                 'content_type':'series',
             }
+
+            # add to watch history
+            if request.user.is_authenticated:
+                add_watchHistory(request=request, id=id, content_type=ContentType.objects.get_for_model(Series))
+
             return render(request, 'series.html', context)
         
         except Exception as e:

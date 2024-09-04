@@ -40,9 +40,7 @@
                 Logout
             </a> 
         </div>
-        {% for message in messages %}
-            {{message}}
-        {% endfor %}
-        {{form.errors}}
     </form>
+    <!-- Message Box -->
+    {% include 'message.html' %}
 {% endblock %} 

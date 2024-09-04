@@ -15,6 +15,8 @@ urlpatterns = [
     path('comments/', include('comment_app.urls')),
     path('bookmarks/', include('bookmark_app.urls')),
 
+    path('watchHistory/<str:content_type>', views.watchHistory, name='watchHistory'),
+
     path('searchTerms/', views.getSearchTerms),
 
     path('cast/create', views.cast_create, name='cast_create'),

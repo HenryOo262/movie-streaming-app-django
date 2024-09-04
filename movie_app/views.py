@@ -11,6 +11,7 @@ from django.contrib.contenttypes.models import ContentType
 from django.contrib.auth.decorators import login_required
 from django.http import StreamingHttpResponse, HttpResponse, HttpResponseRedirect
 from utils.file_iterator import file_iterator
+from utils.watch_history import add_watchHistory
 
 from . import forms
 from comment_app.models import Comment
@@ -68,6 +69,11 @@ def movie(request, id, resolution=None):
                 'bookmarked': bookmarked,
                 'content_type':'movies',
             }
+
+            # add to watch history
+            if request.user.is_authenticated:
+                add_watchHistory(request=request, id=id, content_type=ContentType.objects.get_for_model(Movie))
+
             return render(request, 'movie.html', context)
 
         except Exception as e:

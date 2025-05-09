@@ -29,7 +29,7 @@ DEBUG = True
 # ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ['arrow112.pythonanywhere.com', 'localhost']
 
-APPEND_SLASH = False
+# APPEND_SLASH = False
 
 # Application definition
 

@@ -2,6 +2,10 @@
 
 Movie Streaming Website developed as a Semester VI CS-205 Web Development with Python project at UCSY.
 
+## MovWave
+
+This is a movie streaming website using Django as a backend with SQLite3 and Firebase.
+
 ## Identified Bugs
 
 + Comment deletion is not working as expected

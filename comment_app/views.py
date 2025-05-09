@@ -52,7 +52,7 @@ def delete_comment(request, comment_id):
             messages.success(request, 'Comment deleted successfully')
             return HttpResponse(status = 200)
         except Exception as e:
-            raise e
+            messages.success(request, f'Error deleting comment - {e}')
             return HttpResponse(status = 500)
     
 

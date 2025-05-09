@@ -2,6 +2,12 @@
 
 Movie Streaming Website developed as a Semester VI CS-205 Web Development with Python project at UCSY.
 
+## Identified Bugs
+
++ Comment deletion is not working as expected
+
++ Actor info css is not responsive
+
 ## Setting Up The Project 
 
 ### Firebase Console

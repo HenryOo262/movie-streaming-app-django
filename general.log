@@ -23986,3 +23986,262 @@ urllib3.connectionpool DEBUG 2024-09-04 21:08:33,665 connectionpool 7044 11828 h
 google.resumable_media._helpers INFO 2024-09-04 21:08:33,666 _helpers 7044 11828 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2Fvideoplayback.mp4?generation=1724930695819499&alt=media
 (which happens for composite objects), so client-side content integrity
 checking is not being performed.
+django.utils.autoreload INFO 2025-05-09 12:54:29,005 autoreload 4980 9704 Watching for file changes with StatReloader
+urllib3.util.retry DEBUG 2025-05-09 12:54:41,608 retry 4980 10132 Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+google.auth.transport.requests DEBUG 2025-05-09 12:54:41,625 requests 4980 10132 Making request: POST https://oauth2.googleapis.com/token
+urllib3.connectionpool DEBUG 2025-05-09 12:54:41,639 connectionpool 4980 10132 Starting new HTTPS connection (1): oauth2.googleapis.com:443
+urllib3.connectionpool DEBUG 2025-05-09 12:54:41,880 connectionpool 4980 10132 https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+urllib3.connectionpool DEBUG 2025-05-09 12:54:41,885 connectionpool 4980 10132 Starting new HTTPS connection (1): storage.googleapis.com:443
+urllib3.connectionpool DEBUG 2025-05-09 12:54:42,138 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:54:42,338 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:54:42,339 _helpers 4980 10132 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:54:42,885 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:54:43,058 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:54:43,059 _helpers 4980 10132 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:54:43,484 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:54:43,592 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:54:43,593 _helpers 4980 10132 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:54:44,072 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:54:44,238 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:54:44,239 _helpers 4980 10132 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:54:44,714 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:54:44,814 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:54:44,815 _helpers 4980 10132 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:54:45,294 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:54:45,402 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:54:45,402 _helpers 4980 10132 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:54:45,857 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:54:46,000 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:54:46,001 _helpers 4980 10132 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:54:46,447 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:54:46,555 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:54:46,556 _helpers 4980 10132 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:54:47,053 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:54:47,224 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:54:47,225 _helpers 4980 10132 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:54:47,713 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:54:47,816 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:54:47,817 _helpers 4980 10132 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:54:48,308 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:54:48,529 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:54:48,530 _helpers 4980 10132 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:54:48,947 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:54:49,036 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:54:49,036 _helpers 4980 10132 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:54:49,521 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:54:49,653 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:54:49,654 _helpers 4980 10132 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:54:50,167 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:54:50,266 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:54:50,267 _helpers 4980 10132 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:54:50,753 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:54:50,932 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:54:50,933 _helpers 4980 10132 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:54:51,418 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:54:51,520 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:54:51,521 _helpers 4980 10132 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:54:52,007 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:54:52,138 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:54:52,139 _helpers 4980 10132 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:54:52,549 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:54:52,652 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:54:52,654 _helpers 4980 10132 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:54:53,103 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:54:53,285 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:54:53,286 _helpers 4980 10132 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:54:53,780 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:54:53,883 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:54:53,884 _helpers 4980 10132 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:54:54,329 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:54:54,629 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:54:54,630 _helpers 4980 10132 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:54:55,145 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:54:55,248 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:54:55,248 _helpers 4980 10132 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:54:55,682 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:54:55,876 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:54:55,876 _helpers 4980 10132 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:54:56,381 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:54:56,483 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:54:56,484 _helpers 4980 10132 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:54:56,975 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:54:57,131 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:54:57,133 _helpers 4980 10132 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:54:57,540 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:54:57,638 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:54:57,639 _helpers 4980 10132 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:54:58,102 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:54:58,214 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:54:58,215 _helpers 4980 10132 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:54:58,662 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:54:58,827 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:54:58,828 _helpers 4980 10132 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:54:59,285 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:54:59,395 connectionpool 4980 10132 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:54:59,397 _helpers 4980 10132 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:54:59,847 connectionpool 4980 4576 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:55:00,019 connectionpool 4980 4576 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:55:00,020 _helpers 4980 4576 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:55:00,415 connectionpool 4980 4576 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:55:00,518 connectionpool 4980 4576 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:55:00,518 _helpers 4980 4576 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:55:00,977 connectionpool 4980 4576 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:55:01,196 connectionpool 4980 4576 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:55:01,197 _helpers 4980 4576 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:55:01,666 connectionpool 4980 4576 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:55:01,765 connectionpool 4980 4576 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:55:01,766 _helpers 4980 4576 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:55:02,227 connectionpool 4980 4576 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:55:02,492 connectionpool 4980 4576 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:55:02,494 _helpers 4980 4576 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:55:02,943 connectionpool 4980 4576 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:55:03,039 connectionpool 4980 4576 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:55:03,039 _helpers 4980 4576 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:55:03,471 connectionpool 4980 4576 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:55:03,696 connectionpool 4980 4576 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:55:03,697 _helpers 4980 4576 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:55:04,153 connectionpool 4980 4576 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:55:04,261 connectionpool 4980 4576 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:55:04,262 _helpers 4980 4576 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:55:04,723 connectionpool 4980 4576 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:55:04,912 connectionpool 4980 4576 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:55:04,913 _helpers 4980 4576 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:55:05,369 connectionpool 4980 4576 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:55:05,469 connectionpool 4980 4576 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:55:05,470 _helpers 4980 4576 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:55:05,934 connectionpool 4980 4576 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:55:06,222 connectionpool 4980 4576 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:55:06,223 _helpers 4980 4576 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:55:06,640 connectionpool 4980 4576 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:55:06,735 connectionpool 4980 4576 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:55:06,736 _helpers 4980 4576 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:55:07,188 connectionpool 4980 4576 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:55:07,380 connectionpool 4980 4576 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:55:07,381 _helpers 4980 4576 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:55:07,829 connectionpool 4980 4576 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:55:07,930 connectionpool 4980 4576 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 950838
+google.resumable_media._helpers INFO 2025-05-09 12:55:07,930 _helpers 4980 4576 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:55:08,331 connectionpool 4980 4576 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:55:08,505 connectionpool 4980 4576 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:55:08,506 _helpers 4980 4576 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:55:30,897 connectionpool 4980 9668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:55:31,028 connectionpool 4980 9668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:55:31,029 _helpers 4980 9668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:55:31,440 connectionpool 4980 9668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:55:31,539 connectionpool 4980 9668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:55:31,540 _helpers 4980 9668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:55:31,948 connectionpool 4980 13896 Starting new HTTPS connection (2): storage.googleapis.com:443
+urllib3.connectionpool DEBUG 2025-05-09 12:55:31,965 connectionpool 4980 9668 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:55:32,127 connectionpool 4980 9668 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:55:32,128 _helpers 4980 9668 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:55:32,186 connectionpool 4980 13896 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:55:32,297 connectionpool 4980 13896 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:55:32,297 _helpers 4980 13896 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:55:33,575 connectionpool 4980 13896 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1079
+urllib3.connectionpool DEBUG 2025-05-09 12:55:33,745 connectionpool 4980 13896 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:55:33,746 _helpers 4980 13896 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2FYour%20name%20-%20Best%20scenes.mp4?generation=1724671823406299&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+urllib3.connectionpool DEBUG 2025-05-09 12:55:54,053 connectionpool 4980 14460 https://storage.googleapis.com:443 "GET /storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2Fvideoplayback.mp4?projection=noAcl&prettyPrint=false HTTP/11" 200 1004
+urllib3.connectionpool DEBUG 2025-05-09 12:55:54,221 connectionpool 4980 14460 https://storage.googleapis.com:443 "GET /download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2Fvideoplayback.mp4?generation=1725510350019965&alt=media HTTP/11" 206 1000001
+google.resumable_media._helpers INFO 2025-05-09 12:55:54,223 _helpers 4980 14460 No MD5 checksum was returned from the service while downloading https://storage.googleapis.com/download/storage/v1/b/video-stream-app-6b509.appspot.com/o/movies%2Fvideoplayback.mp4?generation=1725510350019965&alt=media
+(which happens for composite objects), so client-side content integrity
+checking is not being performed.
+django.utils.autoreload INFO 2025-05-09 17:10:13,961 autoreload 9580 12944 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2025-05-09 17:13:44,146 autoreload 10940 12004 Watching for file changes with StatReloader

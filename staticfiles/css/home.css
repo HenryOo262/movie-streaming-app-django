@@ -1,0 +1,219 @@
+
+body {
+    background-image: url('../images/galaxy-background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.welcome-user {
+    color: #ffffff;
+
+    width: 100%;
+    margin: 10px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.welcome-user h1 {
+    background-color: rgba(0, 0, 0, 0.5);
+
+    padding: 10px;
+    margin-right: 40px;
+
+    border-radius: 5px;
+}
+
+.content-wrapper {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+
+    width: 90vw;
+    margin: 40px auto;
+    padding: 20px;
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.content-wrapper * {
+    margin-bottom: 20px;
+}
+
+.header-wrapper {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contentType-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.contentType-button {
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+
+    padding: 10px;
+    margin-bottom: 0px;
+
+    border: solid 1px #ffffff;
+}
+
+.contentType-button:hover {
+    color: #00bfff;
+    border: solid 1px #00bfff;
+}
+
+.current-contentType {
+    background-color: #00bfff;
+    color: black;
+
+    border: solid 1px #000000;
+    pointer-events: none;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 100%;
+    /*column-gap: 20px;*/
+}
+
+.cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.poster {
+    position: relative;
+
+    width: 80%;
+    height: 80%;
+}
+
+.poster img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; Maintain aspect ratio of the image */
+}
+
+.poster::after {
+    content: url('data:image/svg+xml,%3Csvg%20xmlns="http://www.w3.org/2000/svg"%20height="48px"%20viewBox="0%20-960%20960%20960"%20width="48px"%20fill="%23000000"%3E%3Cpath%20d="m380-300%20280-180-280-180v360ZM480-80q-83%200-156-31.5T197-197q-54-54-85.5-127T80-480q0-83%2031.5-156T197-763q54-54%20127-85.5T480-880q83%200%20156%2031.5T763-763q54%2054%2085.5%20127T880-480q0%2083-31.5%20156T763-197q-54%2054-127%2085.5T480-80Zm0-80q134%200%20227-93t93-227q0-134-93-227t-227-93q-134%200-227%2093t-93%20227q0%20134%2093%20227t227%2093Zm0-320Z"%2F%3E%3C%2Fsvg%3E');
+
+    background-color: #ffffff;
+    opacity: 0;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;   
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition-property: opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.5s;
+}
+
+.poster:hover::after {
+    opacity: 0.4;
+    
+    transition-property: opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.5s;
+}
+
+.poster::after, .poster img {
+    border-radius: 10px;
+}
+
+.title {
+    overflow: hidden;
+}
+
+.cell p {    
+    transition-property: color;
+    transition-timing-function: ease;
+    transition-duration: 0.5s;
+}
+
+.cell:hover p {
+    color: #00bfff;
+
+    transition-property: color;
+    transition-timing-function: ease;
+    transition-duration: 0.5s;
+}
+
+.pagination {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-link {
+    color: #ffffff;
+    text-decoration: none;
+
+    padding: 5px;
+
+    border: solid white 1px;
+}
+
+.step-link:hover {
+    color: #00bfff;
+    border-color: #00bfff;
+}
+
+@media only screen and (max-width: 650px) {
+    .grid-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+    }
+
+    .welcome-user {
+        justify-content: center;
+    }
+
+    .welcome-user h1 {
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .grid-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+    .welcome-user {
+        font-size: 12px;
+    }
+}

@@ -78,7 +78,8 @@ function commentMaker(comment) {
         // Delete
         const form = document.createElement('form');
         form.className = 'comment-operation deleteForm';
-        form.action = `${window.location.origin}/comments/${comment.commentId}/delete/`; 
+        form.action = `${window.location.origin}/comments/${comment.commentId}/delete`;
+        form.action = form.action + '/'
         form.method = 'POST';
 
         form.addEventListener('submit', (event) => {
